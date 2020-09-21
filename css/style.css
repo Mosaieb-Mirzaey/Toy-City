@@ -1,42 +1,121 @@
 
-/*Inter Font*/
-@font-face {font-family: 'InterRegular';
-    src: url(../fonts/Inter/Inter-Regular-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+/*IRANSans Font*/
+@font-face {font-family: 'IRANSansRegular';
+    src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'InterBlack';
-    src: url(../fonts/Inter/Inter-Black-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'IRANSans_UltraLight';
+    src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'InterLight';
-    src: url(../fonts/Inter/Inter-ExtraLight-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'IRANSans_Light';
+    src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'InterThin';
-    src: url(../fonts/Inter/Inter-Thin-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'IRANSans_Medium';
+    src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'InterMedium';
-    src: url(../fonts/Inter/Inter-Medium-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'IRANSans_Bold';
+    src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'InterBold';
-    src: url(../fonts/Inter/Inter-Bold-slnt=0.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+
+
+/*IRAN Yekan Font*/
+@font-face {font-family: 'IRANYekanRegular';
+    src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
-@font-face {font-family: 'Inter-Variable';
-    src: url(../fonts/Inter/Inter-VariableFont_slnt,wght.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+@font-face {font-family: 'IRANYekanThin';
+    src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
     font-weight: auto;
 }
+@font-face {font-family: 'IRANYekanLight';
+    src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanMedium';
+    src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanBold';
+    src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+
+@font-face {font-family: 'IRANYekanExtraBold';
+    src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+@font-face {font-family: 'IRANYekanBlack';
+    src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    font-weight: auto;
+}
+
+
+
+
+
 
 
 body {
     background-color: white;
-    font-family: Inter-Variable;
+    font-family: IRANYekan;
 }
 
 a {
     text-decoration: none;
-    font: 12px Inter-Variable, sans-serif;
+    font: 12px IRANYekan, sans-serif;
 }
 
+/* Header */
+
+header{
+    /* image 19 */
+    /*background: url(../image/Banner/toy.jpg);*/
+    height: 500px;
+}
+
+header .mainNav{
+    background: #2A41E8;
+    color: white;
+}
+
+header .mainNav ul>li>a {
+    color: white;
+    font-family: "IRANYekan ExtraBold";
+}
+
+header .category {
+    background-color: #fdeaea;
+}
+
+header .category>form {
+
+}
+
+header .category ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+header .category li {
+    float: right;
+    padding: 5px;
+}
+
+header .category li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+}
+
+header .category li a:hover {
+    background-color: #111111;
+}

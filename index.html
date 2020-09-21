@@ -21,52 +21,57 @@
 
 <body>
 <!-- header -->
-
 <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff74ad;">
+    <nav class="navbar navbar-expand-md mainNav">
         <a class="navbar-brand" href="#">
-            <img src="image/Logo/Logo-FA-EN.png" width="160px" alt="">
+            <img src="image/Logo/Logo-FA-EN.png" width="140px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1,#navbar2" aria-controls="navbar1,#navbar2" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="fa fa-bars text-white"></span>
         </button>
-
-            <div class="collapse navbar-collapse" id="navbar1">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">سبد خرید<span class="sr-only">Shopping cart</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">علاقه مندی ها</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ورود / عضویت</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse flex-column" id="navbar2">
-                <div>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ml-md-3">
+                    <a class="nav-link" href="#">سبد خرید<span class="sr-only">Shopping cart</span></a>
+                </li>
+                <li class="nav-item ml-md-3">
+                    <a class="nav-link" href="#">علاقه مندی ها</a>
+                </li>
+                <li class="nav-item ml-md-3">
+                    <a class="nav-link" href="#">ورود / عضویت</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-
+    <div class="category pt-2" id="navbar2">
+        <form class="d-flex justify-content-center mx-auto my-lg-0">
+            <input class=" mr-sm-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
+            <button class="my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <ul class="mx-auto mt-2 mt-lg-0">
+            <li class=" active">
+                <a class="" href="#">اسباب بازی<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+                <a class="" href="#">عروسک</a>
+            </li>
+            <li class="">
+                <a class="disabled" href="#">سیسمونی</a>
+            </li>
+            <li class="">
+                <a class="disabled" href="#">تولد</a>
+            </li>
+            <li class="">
+                <a class="disabled" href="#">لوازم تحریر</a>
+            </li>
+            <li class="">
+                <a class="disabled" href="#">لوازم تحریر</a>
+            </li>
+        </ul>
+    </div>
 </header>
+
+
 
 <!--Banner-->
 <section Id="banner">

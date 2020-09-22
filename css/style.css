@@ -57,7 +57,9 @@
 
 
 
-
+html{
+    font-size: 16px;
+}
 
 body {
     background-color: white;
@@ -74,12 +76,22 @@ a {
 header{
     /* image 19 */
     /*background: url(../image/Banner/toy.jpg);*/
-    height: 500px;
+    /*height: 500px;*/
 }
 
 header .mainNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background: #2A41E8;
     color: white;
+}
+
+header .toggler{
+    height: 2rem;
+    background-color: transparent;
+    border: none;
 }
 
 header .mainNav ul>li>a {
@@ -87,15 +99,7 @@ header .mainNav ul>li>a {
     font-family: "IRANYekan ExtraBold";
 }
 
-header .category {
-    background-color: #fdeaea;
-}
-
-header .category>form {
-
-}
-
-header .category ul {
+.category ul {
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -103,19 +107,80 @@ header .category ul {
     justify-content: center;
 }
 
-header .category li {
+.category li {
     float: right;
     padding: 5px;
 }
 
-header .category li a {
-    display: block;
+.category {
+    background-color: #fdeaea;
+    margin-top: 80px;
+}
+
+.category li a {
     color: black;
     text-align: center;
     padding: 3px;
     text-decoration: none;
 }
 
-header .category li a:hover {
+.category li a:hover {
     background-color: #111111;
+}
+
+
+
+
+
+/* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    p{
+        color:green;
+    }
+}
+
+/* Medium devices (tablets, Max width 768px) */
+@media (max-width: 768px) {
+    header ul {
+        position: absolute;
+        list-style-type: none;
+        background-color: #0070f1;
+        top: 55px;
+        padding: 15px 20px 20px 20px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    header ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    header .navbarCollapse>li {
+        float: right;
+        padding: 5px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    p{
+        color:blue;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    p{
+        color:brown;
+    }
 }

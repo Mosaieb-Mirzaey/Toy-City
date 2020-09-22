@@ -22,28 +22,28 @@
 <body>
 <!-- header -->
 <header id="header">
-    <nav class="navbar navbar-expand-md mainNav">
+    <nav class="d-flex mainNav">
         <a class="navbar-brand" href="#">
             <img src="image/Logo/Logo-FA-EN.png" width="140px" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1,#navbar2" aria-controls="navbar1,#navbar2" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="toggler d-md-none" type="button">
             <span class="fa fa-bars text-white"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar1">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ml-md-3">
-                    <a class="nav-link" href="#">سبد خرید<span class="sr-only">Shopping cart</span></a>
-                </li>
-                <li class="nav-item ml-md-3">
-                    <a class="nav-link" href="#">علاقه مندی ها</a>
-                </li>
-                <li class="nav-item ml-md-3">
-                    <a class="nav-link" href="#">ورود / عضویت</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="mr-md-auto mt-md-3">
+            <li class="ml-md-5">
+                <a class="navLink" href="#">سبد خرید<span class="sr-only">Shopping cart</span></a>
+            </li>
+            <li class="ml-md-5">
+                <a class="navLink" href="#">علاقه مندی ها</a>
+            </li>
+            <li class="ml-md-5">
+                <a class="navLink" href="#">ورود / عضویت</a>
+            </li>
+        </ul>
     </nav>
-    <div class="category pt-2" id="navbar2">
+</header>
+
+<section class="category pt-2" id="navbar2">
         <form class="d-flex justify-content-center mx-auto my-lg-0">
             <input class=" mr-sm-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
             <button class="my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
@@ -68,8 +68,7 @@
                 <a class="disabled" href="#">لوازم تحریر</a>
             </li>
         </ul>
-    </div>
-</header>
+</section>
 
 
 

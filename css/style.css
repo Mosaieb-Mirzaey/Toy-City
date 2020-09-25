@@ -58,12 +58,13 @@
 
 
 html{
-    font-size: 16px;
+    font-size: 12px;
 }
 
 body {
     background-color: white;
     font-family: IRANYekan;
+    max-width: 1920px;
 }
 
 a {
@@ -71,32 +72,60 @@ a {
     font: 12px IRANYekan, sans-serif;
 }
 
+form{
+    background: rgba(45, 28, 179, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+}
+form>input{
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-bottom: 3px;
+}
+form>input::placeholder{
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+input:focus {
+    text-indent: 10px;
+}
+
 /* Header */
 
 header{
-    /* image 19 */
-    /*background: url(../image/Banner/toy.jpg);*/
+    /* images 19 */
+    /*background: url(../images/Banner/toy.jpg);*/
     /*height: 500px;*/
 }
 
 header .mainNav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     background: #2A41E8;
     color: white;
 }
 
-header .toggler{
-    height: 2rem;
-    background-color: transparent;
-    border: none;
-}
 
 header .mainNav ul>li>a {
     color: white;
     font-family: "IRANYekan ExtraBold";
+}
+
+
+/* category */
+.category {
+    background-color: #fdeaea;
+    /*margin-top: 80px;*/
+    border-radius: 0 0 30% 30% / 0 0 40% 40%;
+}
+
+.category>form>a>i {
+    vertical-align: sub;
 }
 
 .category ul {
@@ -110,11 +139,6 @@ header .mainNav ul>li>a {
 .category li {
     float: right;
     padding: 5px;
-}
-
-.category {
-    background-color: #fdeaea;
-    margin-top: 80px;
 }
 
 .category li a {
@@ -134,8 +158,18 @@ header .mainNav ul>li>a {
 
 /* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
 
+/* Mobile devices (mobile, Max width 576px) */
+@media (max-width: 576px) {
+    .category>form>input{
+
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    html{
+        font-size: 13px;
+    }
     p{
         color:green;
     }
@@ -143,19 +177,52 @@ header .mainNav ul>li>a {
 
 /* Medium devices (tablets, Max width 768px) */
 @media (max-width: 768px) {
+    header .nav-small {
+        background: #2A41E8;
+        width: 100%;
+        z-index: 2;
+    }
+    header .toggler{
+        height: 2rem;
+        background-color: transparent;
+        border: none;
+        outline:none;
+    }
+
     header ul {
         position: absolute;
         list-style-type: none;
-        background-color: #0070f1;
-        top: 55px;
-        padding: 15px 20px 20px 20px;
+        background-color: rgb(46, 103, 202);
+        top: -8.1rem;
+        width: 35%;
+        padding: 20px 20px 11px 20px;
+        border-radius: 0 0 0 10px;
+        z-index: 0;
+        transition: 1500ms;
     }
+    header ul LI{
+        margin-bottom: 15px;
+        border-bottom: 1px solid darkgray;
+    }
+    .category>form{
+        position: absolute;
+        top: 1rem;
+        right: 37vw;
+        z-index: 5;
+    }
+    .category>form>input{
+        width: 143px;
+        height: 25px;
+    }
+
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    html{
+        font-size: 14px;
+    }
     header ul {
         display: flex;
         list-style-type: none;
@@ -173,6 +240,9 @@ header .mainNav ul>li>a {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    html{
+        font-size: 15px;
+    }
     p{
         color:blue;
     }
@@ -180,7 +250,11 @@ header .mainNav ul>li>a {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    html{
+        font-size: 16px;
+    }
     p{
         color:brown;
     }
 }
+

@@ -27,6 +27,18 @@
             <button class="toggler mr-3 p-2 mt-3 d-md-none" type="button">
                 <span class="btnIcon fa fa-bars text-white"></span>
             </button>
+
+            <div class="search d-md-none ml-auto mr-3">
+                <i class="fa fa-search"></i>
+            </div>
+            <div id="search-box" class="d-md-none deactivate py-3">
+                <div class="input-group border bg-white mx-auto">
+                    <input type="text" class="form-control border-0 py-0 m-1">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary  border-0" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
             <a class="navbar-brand mr-auto ml-3 mr-md-3" href="#">
                 <img src="images/Logo/Logo-FA-EN.png" width="140px" alt="">
             </a>
@@ -46,32 +58,86 @@
     </nav>
 </header>
 
-<section class="category pt-2" id="navbar2">
-        <form class="d-none d-sm-flex justify-content-center mx-auto my-lg-0">
+<section id="navSlide">
+    <!--Carousel Wrapper-->
+    <div id="slideShow">
+        <div id="carousel-top" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item banner-1 active">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h2 class="carousel-title">
+                                دنیای اسباب بازی
+                            </h2>
+                            <p class="carousel-text">
+                                هر چی اسباب بازی بخوای اینجا داریم
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item banner-2">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h2 class="carousel-title">انواع بازی های فکری</h2>
+                            <p class="carousel-text">
+                                دوس داری بازی فکری یاد بگیری، همین الان خرید کن
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item banner-3">
+                    <div class="carousel-overlay">
+                        <div class="carousel-content">
+                            <h2 class="carousel-title">انواع کیت های رابتیک</h2>
+                            <p class="carousel-text">
+                                بسته های رباتیک با نقشه همراه برای دانش آموزان
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#carousel-top" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                <a href="#carousel-top" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-top" data-slide-to="1"></li>
+                    <li data-target="#carousel-top" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="category pt-2">
+        <form class="d-none d-md-flex justify-content-center mx-auto my-lg-0">
             <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
             <a class="my-2 my-sm-0 px-3" type="submit"><i class="fa fa-search"></i></a>
         </form>
-        <ul class="mx-auto mt-2 mt-lg-0 pb-2">
+        <ul class=" mx-auto mt-2 mt-lg-0 pb-2">
             <li class=" active">
-                <a class="" href="#">اسباب بازی<span class="sr-only">(current)</span></a>
+                <a class="cat-1" href="#">اسباب بازی<span class="sr-only">(current)</span></a>
             </li>
-            <li class="">
+            <li class="cat-2">
                 <a class="" href="#">عروسک</a>
             </li>
-            <li class="">
+            <li class="cat-3">
                 <a class="disabled" href="#">سیسمونی</a>
             </li>
-            <li class="">
+            <li class="cat-4">
                 <a class="disabled" href="#">تولد</a>
             </li>
-            <li class="">
+            <li class="cat-5">
                 <a class="disabled" href="#">لوازم تحریر</a>
             </li>
-            <li class="">
+            <li class="cat-6">
                 <a class="disabled" href="#">لوازم تحریر</a>
             </li>
         </ul>
+    </div>
 </section>
+
+
+
 
 
 

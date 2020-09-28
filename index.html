@@ -43,7 +43,10 @@
                 <img src="images/Logo/Logo-FA-EN.png" width="140px" alt="">
             </a>
         </div>
-
+        <form class="d-none d-md-flex justify-content-center m-auto">
+            <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
+            <a class="my-2 my-sm-0 px-3" type="submit"><i class="fa fa-search"></i></a>
+        </form>
         <ul class="mr-md-auto mt-md-3" data-nav="deactivate">
             <li class="ml-md-5">
                 <a class="navLink" href="#">سبد خرید<span class="sr-only">Shopping cart</span></a>
@@ -60,11 +63,51 @@
 
 <section id="navSlide">
     <!--Carousel Wrapper-->
+    <div class="category">
+        <ul class=" mx-auto mb-0">
+            <li class=" active">
+                <a class="cat-1" href="#">
+                    <i><img src="images/icon/toys.png" alt="toys-icon"></i>
+                    اسباب بازی
+                </a>
+            </li>
+            <li class="cat-2">
+                <a class="" href="#">
+                    <i><img src="images/icon/Dolls.png" alt="toys-icon"></i>
+                    عروسک
+                </a>
+            </li>
+            <li class="cat-3">
+                <a class="disabled" href="#">
+                    <i><img src="images/icon/babyStroller.png" alt="toys-icon"></i>
+                    سیسمونی
+                </a>
+            </li>
+            <li class="cat-4">
+                <a class="disabled" href="#">
+                    <i><img src="images/icon/birthday.png" alt="toys-icon"></i>
+                    تولد
+                </a>
+            </li>
+            <li class="cat-5">
+                <a class="disabled" href="#">
+                    <i><img src="images/icon/stationery.png" alt="toys-icon"></i>
+                    لوازم تحریر
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <i><img src="images/icon/book.png" alt="toys-icon"></i>
+                    کتاب و فرهنگ
+                </a>
+            </li>
+        </ul>
+    </div>
     <div id="slideShow">
         <div id="carousel-top" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item banner-1 active">
-                    <div class="carousel-overlay">
+                    <div class="carousel-overlay col-6">
                         <div class="carousel-content">
                             <h2 class="carousel-title">
                                 دنیای اسباب بازی
@@ -76,7 +119,7 @@
                     </div>
                 </div>
                 <div class="carousel-item banner-2">
-                    <div class="carousel-overlay">
+                    <div class="carousel-overlay col-6">
                         <div class="carousel-content">
                             <h2 class="carousel-title">انواع بازی های فکری</h2>
                             <p class="carousel-text">
@@ -86,7 +129,7 @@
                     </div>
                 </div>
                 <div class="carousel-item banner-3">
-                    <div class="carousel-overlay">
+                    <div class="carousel-overlay col-6">
                         <div class="carousel-content">
                             <h2 class="carousel-title">انواع کیت های رابتیک</h2>
                             <p class="carousel-text">
@@ -106,33 +149,6 @@
                 </ol>
             </div>
         </div>
-    </div>
-
-    <div class="category pt-2">
-        <form class="d-none d-md-flex justify-content-center mx-auto my-lg-0">
-            <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
-            <a class="my-2 my-sm-0 px-3" type="submit"><i class="fa fa-search"></i></a>
-        </form>
-        <ul class=" mx-auto mt-2 mt-lg-0 pb-2">
-            <li class=" active">
-                <a class="cat-1" href="#">اسباب بازی<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="cat-2">
-                <a class="" href="#">عروسک</a>
-            </li>
-            <li class="cat-3">
-                <a class="disabled" href="#">سیسمونی</a>
-            </li>
-            <li class="cat-4">
-                <a class="disabled" href="#">تولد</a>
-            </li>
-            <li class="cat-5">
-                <a class="disabled" href="#">لوازم تحریر</a>
-            </li>
-            <li class="cat-6">
-                <a class="disabled" href="#">لوازم تحریر</a>
-            </li>
-        </ul>
     </div>
 </section>
 
@@ -166,7 +182,7 @@
 
 
 <!--Footer & contact me-->
-<!--<footer class="footer">-->
+<footer class="footer">
 <!--    <div class="container">-->
 <!--        <div class="row footer-top text-center text-md-left">-->
 <!--            <div class="col-md-6 col-12 px-0 copyRight">-->
@@ -357,7 +373,7 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-<!--</footer>-->
+</footer>
 
 
 <script src="js/jquery-3.3.1.min.js "></script>

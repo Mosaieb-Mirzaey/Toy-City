@@ -72,29 +72,7 @@ a {
     font: 12px IRANYekan, sans-serif;
 }
 
-form{
-    background: rgba(45, 28, 179, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-sizing: border-box;
-    border-radius: 20px;
-    color: white;
-    width: fit-content;
-}
-form>input{
-    outline: none;
-    background-color: transparent;
-    color: white;
-    border: none;
-    margin-bottom: 3px;
-}
-form>input::placeholder{
-    color: white;
-    text-align: center;
-    font-size: 0.9rem;
-}
-input:focus {
-    text-indent: 10px;
-}
+
 
 /* Header */
 
@@ -107,13 +85,46 @@ header .mainNav{
     right: 0;
     left: 0;
     height: 56px;
-    background: #2A41E8;
-    color: white;
+    background: #ffffff;
+    color: #404040;
+    z-index: 10;
 }
 
+header .mainNav form {
+    height: 31px;
+    margin-top: 0.5rem;
+}
+
+header .mainNav form>a>i {
+    vertical-align: sub;
+}
+
+header .mainNav form{
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(250, 0, 185);
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #434343;
+    width: fit-content;
+}
+header .mainNav form>input{
+    outline: none;
+    background-color: transparent;
+    color: #454545;
+    border: none;
+    margin-bottom: 3px;
+}
+header .mainNav form>input::placeholder{
+    color: #4f4f4f;
+    text-align: center;
+    font-size: 0.9rem;
+}
+header .mainNav input:focus {
+    text-indent: 10px;
+}
 
 header .mainNav ul>li>a {
-    color: white;
+    color: #717171;
     font-family: "IRANYekan ExtraBold";
 }
 
@@ -124,11 +135,60 @@ header .mainNav ul>li>a {
     position: relative;
 }
 
+
+
+
+#navSlide .category {
+    z-index: -1;
+    background: linear-gradient(135deg,#ec008c 30%,#ed1c23 100%);
+}
+
+
+
+#navSlide .category ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#navSlide .category li {
+    float: right;
+    padding: 5px;
+    display: flex;
+    border-left: 1px solid rgba(97,9,33,0.15);
+    border-right: 1px solid rgba(97,9,33,0.15);
+    margin-left: -1px;
+}
+#navSlide .category li:hover {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+#navSlide .category .cat-6 {
+    border-left: 1px solid rgba(97,9,33,0.15);
+}
+
+#navSlide .category li a {
+    font-family: "IRANYekan ExtraBold";
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+
+#navSlide .category li a:hover {
+    border-bottom: 3px solid white;
+}
+#navSlide .category i img{
+    width: 24px;
+}
+
+
+
+
 #navSlide #slideShow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     box-shadow: -2px 24px 74px 4px rgba(0, 0, 0, 0.78);
     z-index: -1;
 }
@@ -189,75 +249,26 @@ header .mainNav ul>li>a {
     top: 65%;
 }
 
-
-#navSlide #slideShow .banner-1 {
-    background-image: url('../images/Banner/banner1.jpg')
+#navSlide #slideShow .banner-1{
+    background: url('../images/Banner/bgBanner5.jpg') no-repeat;
 }
-#navSlide #slideShow .banner-2 {
-    background-image: url('../images/Banner/banner2.jpg')
+#navSlide #slideShow .banner-2{
+    background: url('../images/Banner/bgBanner9.jpg') no-repeat;
 }
-#navSlide #slideShow .banner-3 {
-    background-image: url('../images/Banner/banner3.jpg')
-}
-
-
-
-#navSlide .category {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    background-size: contain !important;
-    border-radius: 0 0 30% 30% / 0 0 40% 40%;
-    background: linear-gradient(180deg, rgba(99, 120, 241, 0.7) 0%, rgba(99, 120, 241, 0.028) 100%);
+#navSlide #slideShow .banner-3{
+    background: url('../images/Banner/bgBanner3.jpg') no-repeat;
 }
 
-#navSlide .category form>a>i {
-    vertical-align: sub;
+#navSlide #slideShow .banner-1 .carousel-overlay{
+    background: url('../images/Banner/banner1.png') no-repeat;
+}
+#navSlide #slideShow .banner-2 .carousel-overlay{
+    background: url('../images/Banner/banner2.png') no-repeat;
+}
+#navSlide #slideShow .banner-3 .carousel-overlay{
+    background: url('../images/Banner/banner3.png') no-repeat;
 }
 
-#navSlide .category ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    justify-content: center;
-}
-
-#navSlide .category li {
-    float: right;
-    padding: 5px;
-}
-
-#navSlide .category li a {
-    font-family: "IRANYekan ExtraBold";
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-}
-
-#navSlide .category li a:hover {
-    background-color: #111111;
-}
-#navSlide .category .cat-1 a{
-    color: #51e29d;
-}
-#navSlide .category .cat-2 a{
-    color: #e77675;
-}
-#navSlide .category .cat-3 a{
-    color: #8fdb51;
-}
-#navSlide .category .cat-4 a{
-    color: #fab630;
-}
-#navSlide .category .cat-5 a{
-    color: #10b6fe;
-}
-#navSlide .category .cat-6 a{
-    color: #ff5824;
-}
 
 
 

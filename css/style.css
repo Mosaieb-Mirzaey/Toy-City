@@ -1,57 +1,70 @@
 
 /*IRANSans Font*/
-@font-face {font-family: 'IRANSansRegular';
-    src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
+@media {
+    @font-face {font-family: 'IRANSansRegular';
+        src: url(../fonts/iransans/IRANSans.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_UltraLight';
+        src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Light';
+        src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Medium';
+        src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANSans_Bold';
+        src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
 }
-@font-face {font-family: 'IRANSans_UltraLight';
-    src: url(../fonts/iransans/IRANSans_UltraLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANSans_Light';
-    src: url(../fonts/iransans/IRANSans_Light.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANSans_Medium';
-    src: url(../fonts/iransans/IRANSans_Medium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANSans_Bold';
-    src: url(../fonts/iransans/IRANSans_Bold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
+
 
 
 /*IRAN Yekan Font*/
-@font-face {font-family: 'IRANYekanRegular';
-    src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanThin';
-    src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanLight';
-    src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanMedium';
-    src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanBold';
-    src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
+@media {
+    @font-face {font-family: 'IRANYekanRegular';
+        src: url(../fonts/IRANYekan/IRANYekanRegular.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanThin';
+        src: url(../fonts/IRANYekan/IRANYekanThin.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanLight';
+        src: url(../fonts/IRANYekan/IRANYekanLight.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanMedium';
+        src: url(../fonts/IRANYekan/IRANYekanMedium.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanBold';
+        src: url(../fonts/IRANYekan/IRANYekanBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanExtraBold';
+        src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'IRANYekanBlack';
+        src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'iranyekanwebmedium';
+        src: url(../fonts/IRANYekan/iranyekanwebmedium.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: auto;
+    }
+    @font-face {font-family: 'iranyekanwebbold';
+        src: url(../fonts/IRANYekan/iranyekanwebbold.woff) format('woff'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        font-weight: bold;
+    }
 }
 
-@font-face {font-family: 'IRANYekanExtraBold';
-    src: url(../fonts/IRANYekan/IRANYekanExtraBold.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
-@font-face {font-family: 'IRANYekanBlack';
-    src: url(../fonts/IRANYekan/IRANYekanBlack.ttf) format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    font-weight: auto;
-}
 
 
 
@@ -75,199 +88,394 @@ a {
 
 
 /* Header */
+@media {
+    header{
+        position: relative;
+        height: 56px;
+    }
+    header .mainNav{
+        position: fixed;
+        right: 0;
+        left: 0;
+        height: 56px;
+        background: #ffffff;
+        color: #404040;
+        z-index: 10;
+    }
 
-header{
-    position: relative;
-    height: 56px;
-}
-header .mainNav{
-    position: fixed;
-    right: 0;
-    left: 0;
-    height: 56px;
-    background: #ffffff;
-    color: #404040;
-    z-index: 10;
-}
+    header .mainNav form {
+        height: 31px;
+        margin-top: 0.5rem;
+    }
 
-header .mainNav form {
-    height: 31px;
-    margin-top: 0.5rem;
-}
+    header .mainNav form>a>i {
+        vertical-align: sub;
+    }
 
-header .mainNav form>a>i {
-    vertical-align: sub;
-}
+    header .mainNav form{
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgb(250, 0, 185);
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: #434343;
+        width: fit-content;
+    }
+    header .mainNav form>input{
+        outline: none;
+        background-color: transparent;
+        color: #454545;
+        border: none;
+        margin-bottom: 3px;
+    }
+    header .mainNav form>input::placeholder{
+        color: #4f4f4f;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    header .mainNav input:focus {
+        text-indent: 10px;
+    }
 
-header .mainNav form{
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid rgb(250, 0, 185);
-    box-sizing: border-box;
-    border-radius: 5px;
-    color: #434343;
-    width: fit-content;
-}
-header .mainNav form>input{
-    outline: none;
-    background-color: transparent;
-    color: #454545;
-    border: none;
-    margin-bottom: 3px;
-}
-header .mainNav form>input::placeholder{
-    color: #4f4f4f;
-    text-align: center;
-    font-size: 0.9rem;
-}
-header .mainNav input:focus {
-    text-indent: 10px;
-}
+    header .mainNav ul>li>a {
+        color: #717171;
+        font-family: "IRANYekan ExtraBold";
+    }
 
-header .mainNav ul>li>a {
-    color: #717171;
-    font-family: "IRANYekan ExtraBold";
 }
-
 
 
 /* *** Slide Show *** */
-#navSlide {
-    position: relative;
+@media {
+    #navSlide {
+        position: relative;
+    }
+
+
+
+
+    #navSlide .category {
+        z-index: -1;
+        background: linear-gradient(135deg,#ec008c 30%,#ed1c23 100%);
+    }
+
+
+
+    #navSlide .category ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    #navSlide .category li {
+        float: right;
+        padding: 5px;
+        display: flex;
+        border-left: 1px solid rgba(97,9,33,0.15);
+        border-right: 1px solid rgba(97,9,33,0.15);
+        margin-left: -1px;
+    }
+    #navSlide .category li:hover {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    #navSlide .category .cat-6 {
+        border-left: 1px solid rgba(97,9,33,0.15);
+    }
+
+    #navSlide .category li a {
+        font-family: "IRANYekan ExtraBold";
+        text-align: center;
+        padding: 3px;
+        text-decoration: none;
+        color: white;
+        border-bottom: 3px solid transparent;
+    }
+
+    #navSlide .category li a:hover {
+        border-bottom: 3px solid white;
+    }
+    #navSlide .category i img{
+        width: 24px;
+    }
+
+
+
+
+    #navSlide #slideShow {
+        box-shadow: -2px 24px 74px 4px rgba(0, 0, 0, 0.78);
+        z-index: -1;
+    }
+
+    #navSlide #carousel-top .carousel-item {
+        height: 80vh;
+        background-size: cover;
+        min-height: 580px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #navSlide #carousel-top li {
+        height: 20px;
+        width: 20px;
+        opacity: 80%;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    #navSlide #carousel-top .carousel-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 40px;
+    }
+
+    #navSlide #carousel-top .carousel-content {
+        max-width: 900px;
+        color: white;
+        margin: 10% 0;
+        padding: 0 25px;
+    }
+
+    #navSlide #carousel-top .carousel-title {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 40px;
+        animation-duration: 1.5s;
+        animation-delay: 1s;
+        animation-iteration-count: revert;
+    }
+
+
+    #navSlide #carousel-top .carousel-text {
+        margin-bottom: 50px;
+        font-weight: 300;
+        font-size: 19px;
+        animation-duration: 1.3s;
+        animation-delay: 1.6s;
+        animation-iteration-count: revert;
+    }
+
+    #navSlide .carousel-control-prev-icon, .carousel-control-next-icon {
+        position: absolute;
+        top: 65%;
+    }
+
+    #navSlide #slideShow .banner-1{
+        background: url('../images/Banner/bgBanner5.jpg') no-repeat;
+    }
+    #navSlide #slideShow .banner-2{
+        background: url('../images/Banner/bgBanner9.jpg') no-repeat;
+    }
+    #navSlide #slideShow .banner-3{
+        background: url('../images/Banner/bgBanner3.jpg') no-repeat;
+    }
+
+    #navSlide #slideShow .banner-1 .carousel-overlay{
+        background: url('../images/Banner/banner1.png') no-repeat;
+    }
+    #navSlide #slideShow .banner-2 .carousel-overlay{
+        background: url('../images/Banner/banner2.png') no-repeat;
+    }
+    #navSlide #slideShow .banner-3 .carousel-overlay{
+        background: url('../images/Banner/banner3.png') no-repeat;
+    }
+
 }
 
 
+/* step1 */
+@media {
+    .step1 {
+        margin-top: 3rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: #F5F5F5;
+    }
+    .step1 .container{
+        max-width: 1220px;
+    }
+    .step1 .card-bracket{
+        background-color: white;
+        padding:  4px;
+        margin: 0 4px 0 4px;
+        border-radius: 10px;
+    }
+    .step1 .card {
+        font-family: iranyekanwebmedium;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+        display: flex;
+    }
 
+    .step1 .card-img-top {
+        height: 15rem;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 28px 19px -23px #4c4c4c42;
+    }
+    .step1 .card .badge-offer {
+        font-size: 0.8rem;
+        position: absolute;
+        border-radius: 0.3rem;
+        right: 0.4rem;
+        top: 0.4rem;
+    }
+    .step1 .card .badge-heart {
+        background-color: #ff299f61;
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.4rem;
+        top: 0.4rem;
+    }
+    .step1 .card .card-title{
+        font-family: IRANYekanBold;
+        color: #B7B7B7;
+        font-size: 0.75rem;
+    }
+    .step1 .card .badge-opinion {
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.6rem;
+        font-weight: 200;
+        color: white;
+        position: absolute;
+        border-radius: 0.3rem;
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+    .step1 .card .badge-room, .step1 .card .badge-guest,
+    .step1 .card .badge-aria{
+        padding: 0.1rem 0.3rem 0 0.3rem;
+        font-size: 0.7rem;
+        font-weight: 200;
+        border-radius: 0.3rem;
+    }
+    .step1 .card .card-foot{
+        border-radius: 0.3rem;
+    }
+    .step1 .card .rental{
+        font-size: 0.7rem;
+        font-weight: 200;
+    }
+    .step1 .card .landlord{
+        font-size: 0.8rem;
+        color: #4B4B4B;
+    }
+    .step1 .card .price{
+        font-size: 0.9rem;
+        color: #4B4B4B;
+    }
+    .step1 .card .cardBtn{
+        font-family: iranyekanwebmedium;
+        font-size: 0.72rem;
+        width: 8rem;
+    }
+    .step1 .card .cardBtn i{
+        font-size: 1rem;
+    }
 
-#navSlide .category {
-    z-index: -1;
-    background: linear-gradient(135deg,#ec008c 30%,#ed1c23 100%);
+    .step1 .owl-nav {
+        position: absolute;
+        top: 9rem;
+        left: -0.7rem;
+        right: -0.7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .step1 .owl-nav .owl-prev span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+    .step1 .owl-nav .owl-next span {
+        font-size: 2rem;
+        color: #FF6161;
+    }
+}
+
+/* Step2 */
+@media {
+    .step2{
+        background-color: #eeeff1;
+        padding: 15px 0;
+    }
+
+    #top-slider {
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 15px;
+    }
+    .step2 #top-slider .btnControl{
+        font-size: 2rem;
+        color: #ec008c;
+    }
+    #top-slider footer {
+        position: absolute;
+        z-index: 4;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(60,70,90,0.8);
+    }
+    .carousel-indicators {
+        position: static;
+    }
+    .carousel-indicators li {
+        border-top: 0;
+    }
+    #top-slider footer ol {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 50px;
+    }
+    #top-slider footer li {
+        position: relative;
+        width: 20%;
+        font-size: 12px;
+        color: white;
+        height: 100%;
+        background-color: #41303e;
+        text-indent: 0;
+        text-align: center;
+        margin: 0;
+        padding-top: 15px;
+        transition-duration: 0.2s;
+    }
+    #top-slider footer li.active {
+        font-family: iranyekanwebbold;
+        font-size: 1rem;
+        background-color: white;
+        color: #ec008c;
+    }
+
+    #top-slider footer li.active::before {
+        content:"";
+        position: absolute;
+        border: 10px solid transparent;
+        border-bottom-color: white;
+        width: 0;
+        height: 0;
+        top: -31%;
+        right: 50%;
+        margin-right: -10px;
+    }
+
+    #banners {
+        margin: 0 -4px;
+    }
+
+    #banners a:hover {
+        box-shadow: 0 0 1px 3px rgba(255 , 0 , 0 , 0.2);
+    }
 }
 
 
-
-#navSlide .category ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    justify-content: center;
-}
-
-#navSlide .category li {
-    float: right;
-    padding: 5px;
-    display: flex;
-    border-left: 1px solid rgba(97,9,33,0.15);
-    border-right: 1px solid rgba(97,9,33,0.15);
-    margin-left: -1px;
-}
-#navSlide .category li:hover {
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-}
-#navSlide .category .cat-6 {
-    border-left: 1px solid rgba(97,9,33,0.15);
-}
-
-#navSlide .category li a {
-    font-family: "IRANYekan ExtraBold";
-    text-align: center;
-    padding: 3px;
-    text-decoration: none;
-    color: white;
-    border-bottom: 3px solid transparent;
-}
-
-#navSlide .category li a:hover {
-    border-bottom: 3px solid white;
-}
-#navSlide .category i img{
-    width: 24px;
-}
-
-
-
-
-#navSlide #slideShow {
-    box-shadow: -2px 24px 74px 4px rgba(0, 0, 0, 0.78);
-    z-index: -1;
-}
-
-#navSlide #carousel-top .carousel-item {
-    height: 80vh;
-    background-size: cover;
-    min-height: 580px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#navSlide #carousel-top li {
-    height: 20px;
-    width: 20px;
-    opacity: 80%;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-}
-
-#navSlide #carousel-top .carousel-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 40px;
-}
-
-#navSlide #carousel-top .carousel-content {
-    max-width: 900px;
-    color: white;
-    margin: 10% 0;
-    padding: 0 25px;
-}
-
-#navSlide #carousel-top .carousel-title {
-    margin-bottom: 50px;
-    font-weight: 600;
-    font-size: 40px;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
-    animation-iteration-count: revert;
-}
-
-
-#navSlide #carousel-top .carousel-text {
-    margin-bottom: 50px;
-    font-weight: 300;
-    font-size: 19px;
-    animation-duration: 1.3s;
-    animation-delay: 1.6s;
-    animation-iteration-count: revert;
-}
-
-#navSlide .carousel-control-prev-icon, .carousel-control-next-icon {
-    position: absolute;
-    top: 65%;
-}
-
-#navSlide #slideShow .banner-1{
-    background: url('../images/Banner/bgBanner5.jpg') no-repeat;
-}
-#navSlide #slideShow .banner-2{
-    background: url('../images/Banner/bgBanner9.jpg') no-repeat;
-}
-#navSlide #slideShow .banner-3{
-    background: url('../images/Banner/bgBanner3.jpg') no-repeat;
-}
-
-#navSlide #slideShow .banner-1 .carousel-overlay{
-    background: url('../images/Banner/banner1.png') no-repeat;
-}
-#navSlide #slideShow .banner-2 .carousel-overlay{
-    background: url('../images/Banner/banner2.png') no-repeat;
-}
-#navSlide #slideShow .banner-3 .carousel-overlay{
-    background: url('../images/Banner/banner3.png') no-repeat;
-}
 
 
 

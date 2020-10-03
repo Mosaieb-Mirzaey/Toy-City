@@ -1,4 +1,8 @@
-
+// SmoothScroll runner
+new SmoothScroll ('a[href*="#"]', {
+    easing: 'linear',
+    speed: 1000,
+});
 
 // Header mobile Button toggle
 
@@ -38,3 +42,12 @@ search.addEventListener("click", function (){
         // navbarNav.classList.remove("show")
     }
 })
+
+
+$(Window).on('scroll load' , function () {
+    if ($(window).scrollTop() > 250) {
+        $('#go-to-top').css('opacity' , '1').css('visibility' , 'visible');
+    } else {
+        $('#go-to-top').css('opacity' , '0').css('visibility' , 'hidden');
+    }
+});

@@ -5,7 +5,7 @@
         //Main Slider
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-            autoplay: true,
+            autoplay: false,
             rtl:true,
             loop: true,
             nav:true,

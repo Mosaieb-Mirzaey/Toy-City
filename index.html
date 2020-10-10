@@ -61,8 +61,8 @@
     </nav>
 </header>
 
-<section id="navSlide">
-    <!--Carousel Wrapper-->
+<!--NavSlide-->
+<section class="navSlide">
     <div class="category">
         <ul class=" mx-auto mb-0">
             <li class=" active">
@@ -103,52 +103,79 @@
             </li>
         </ul>
     </div>
-    <div id="slideShow">
-        <div id="carousel-top" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item banner-1 active">
-                    <div class="carousel-overlay">
-                        <div class="carousel-content col-6">
-                            <h2 class="carousel-title">
-                                دنیای اسباب بازی
-                            </h2>
-                            <p class="carousel-text">
-                                هر چی اسباب بازی بخوای اینجا داریم
-                            </p>
+</section>
+
+
+<section class="sliderTop">
+    <div class="container-fluid p-0">
+        <div class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                        <div class="card" data-animation-in="">
+                            <img class="card-img-top" src="images/Banner/bgBanner5.jpg" height="450" alt="Card image cap">
+                            <div class="card-img-overlay banner-1">
+                                <div class="col-6">
+                                    <div class="container sliderContent">
+                                        <h2 class="carousel-title" >دنیای اسباب بازی</h2>
+                                        <p class="carousel-text" >
+                                            هر چی اسباب بازی بخوای اینجا داریم
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                        <div class="card" data-animation-in="">
+                            <img class="card-img-top" src="images/Banner/bgBanner9.jpg" height="450" alt="Card image cap">
+                            <div class="card-img-overlay banner-2 d-flex">
+                                <div class="col-6">
+                                    <div class="container sliderContent">
+                                        <h2 class="carousel-title">انواع بازی های فکری</h2>
+                                        <p class="carousel-text">
+                                            دوس داری بازی فکری یاد بگیری، همین الان خرید کن
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                        <div class="card" data-animation-in="">
+                            <img class="card-img-top" src="images/Banner/bgBanner3.jpg" height="450" alt="Card image cap">
+                            <div class="card-img-overlay banner-3 d-flex">
+                                <div class="col-6">
+                                    <div class="container sliderContent">
+                                        <h2 class="carousel-title">انواع کیت های رابتیک</h2>
+                                        <p class="carousel-text">
+                                            بسته های رباتیک با نقشه همراه برای دانش آموزان
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item banner-2">
-                    <div class="carousel-overlay"></div>
-                    <div class="carousel-content col-6">
-                        <h2 class="carousel-title">انواع بازی های فکری</h2>
-                        <p class="carousel-text">
-                            دوس داری بازی فکری یاد بگیری، همین الان خرید کن
-                        </p>
-                    </div>
+            </div>
+            <div class="owl-dots">
+                <div class="owl-dot active">
+                    <span></span>
                 </div>
-                <div class="carousel-item banner-3">
-                    <div class="carousel-overlay"></div>
-                    <div class="carousel-content col-6">
-                        <h2 class="carousel-title">انواع کیت های رابتیک</h2>
-                        <p class="carousel-text">
-                            بسته های رباتیک با نقشه همراه برای دانش آموزان
-                        </p>
-                    </div>
+                <div class="owl-dot">
+                    <span></span>
                 </div>
-
-                <a href="#carousel-top" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-                <a href="#carousel-top" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-top" data-slide-to="1"></li>
-                    <li data-target="#carousel-top" data-slide-to="2"></li>
-                </ol>
+                <div class="owl-dot">
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
+    <div class="divider-1 d-flex">
+        <img src="images/Banner/colorful-stars.png" class="w-100" alt="divider">
+    </div>
 </section>
+
 
 <!--Step-1-->
 <section class="step1">
@@ -558,7 +585,7 @@
 </section>
 
 
-<!--Step-1-->
+<!--Step-2 card and slideBanner-->
 <section class="step2">
     <div class="container">
         <div class="row">
@@ -600,59 +627,108 @@
             </div>
         </div>
         <div class="row mb-5" id="banners">
-            <col-12 class="col-sm-4 mb-2 px-1">
+            <div class="include col-sm-4 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-1.jpg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
-            <col-12 class="col-sm-8 mb-2 px-1">
+            </div>
+            <div class="include col-sm-8 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-8.jpeg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
-            <col-12 class="col-sm-4 mb-2 px-1">
+            </div>
+            <div class="include col-sm-4 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-3.jpg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
-            <col-12 class="col-sm-4 mb-2 px-1">
+            </div>
+            <div class="include col-sm-4 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-4.jpg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
-            <col-12 class="col-sm-4 mb-2 px-1">
+            </div>
+            <div class="include col-sm-4 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-5.jpg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
-            <col-12 class="col-sm-8 mb-2 px-1">
+            </div>
+            <div class="include col-sm-8 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-7.jpeg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
-            <col-12 class="col-sm-4 mb-2 px-1">
+            </div>
+            <div class="include col-sm-4 mb-2 px-1">
                 <div class="card my-shadow">
                     <a href="#">
                         <img class="card-img" src="images/card/step2-card-2.jpg" height="264" alt="banner-main">
                     </a>
                 </div>
-            </col-12>
+            </div>
         </div>
     </div>
 </section>
 
+<!--Age Category-->
+<section class="ageCategory">
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col-2">
+                <div class="card including d-flex ">
+                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
+                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/0-ta-1-sal.jpg" alt="Age Category image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card including d-flex ">
+                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
+                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/1-ta-3-sal.jpg" alt="Age Category image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card including d-flex ">
+                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
+                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/3-ta-5-sal.jpg" alt="Age Category image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card including d-flex ">
+                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
+                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/5-ta-8-sal.jpg" alt="Age Category image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card including d-flex ">
+                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
+                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/8-ta-12-sal.jpg" alt="Age Category image">
+                    </a>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card including d-flex ">
+                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
+                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/12-sal_51w1-51.jpg" alt="Age Category image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 

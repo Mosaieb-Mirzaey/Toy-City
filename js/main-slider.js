@@ -3,13 +3,14 @@
     $(document).ready(function(){
         "use strict";
         //Main Slider
-        var owl = $('.owl-carousel');
+        var owl = $('.step1 .owl-carousel');
         owl.owlCarousel({
             autoplay: false,
             rtl:true,
             loop: true,
             nav:true,
             smartSpeed:550,
+            autoplayTimeout: 3000,
             dots: false,
             responsive:{
                 touchDrag: true,

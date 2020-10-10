@@ -144,23 +144,13 @@ a {
 }
 
 
-/* *** Slide Show *** */
+/* *** Nav Slide - category *** */
 @media {
-    #navSlide {
-        position: relative;
-    }
-
-
-
-
-    #navSlide .category {
+    .navSlide .category {
         z-index: -1;
         background: linear-gradient(135deg,#ec008c 30%,#ed1c23 100%);
     }
-
-
-
-    #navSlide .category ul {
+    .navSlide .category ul {
         display: flex;
         list-style-type: none;
         padding: 0;
@@ -168,7 +158,7 @@ a {
         justify-content: center;
     }
 
-    #navSlide .category li {
+    .navSlide .category li {
         float: right;
         padding: 5px;
         display: flex;
@@ -176,15 +166,15 @@ a {
         border-right: 1px solid rgba(97,9,33,0.15);
         margin-left: -1px;
     }
-    #navSlide .category li:hover {
+    .navSlide .category li:hover {
         border-left: 2px solid white;
         border-right: 2px solid white;
     }
-    #navSlide .category .cat-6 {
+    .navSlide .category .cat-6 {
         border-left: 1px solid rgba(97,9,33,0.15);
     }
 
-    #navSlide .category li a {
+    .navSlide .category li a {
         font-family: "IRANYekan ExtraBold";
         text-align: center;
         padding: 3px;
@@ -193,104 +183,66 @@ a {
         border-bottom: 3px solid transparent;
     }
 
-    #navSlide .category li a:hover {
+    .navSlide .category li a:hover {
         border-bottom: 3px solid white;
     }
-    #navSlide .category i img{
+    .navSlide .category i img{
         width: 24px;
     }
+}
 
 
-
-
-    #navSlide #slideShow {
-        box-shadow: -2px 24px 74px 4px rgba(0, 0, 0, 0.78);
-        z-index: -1;
+/* *** Slide Show *** */
+@media {
+    .sliderTop {
+        position: relative;
+        direction: ltr;
     }
-
-    #navSlide #carousel-top .carousel-item {
-        height: 80vh;
-        background-size: cover;
-        min-height: 50vw;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    #navSlide #carousel-top li {
-        height: 20px;
-        width: 20px;
-        opacity: 80%;
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    }
-
-    #navSlide #carousel-top .carousel-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding-top: 40px;
-    }
-
-    #navSlide #carousel-top .carousel-content {
-        max-width: 900px;
+    .sliderTop .card {
+        position: relative;
+        direction: rtl;
         color: white;
-        margin: 10% 0;
-        padding: 0 25px;
     }
-
-    #navSlide #carousel-top .carousel-title {
-        margin-bottom: 50px;
-        font-weight: 600;
-        font-size: 40px;
-        animation-duration: 1.5s;
-        animation-delay: 1s;
-        animation-iteration-count: revert;
-    }
-
-
-    #navSlide #carousel-top .carousel-text {
-        margin-bottom: 50px;
-        font-weight: 300;
-        font-size: 19px;
-        animation-duration: 1.3s;
-        animation-delay: 1.6s;
-        animation-iteration-count: revert;
-    }
-
-    #navSlide .carousel-control-prev-icon, .carousel-control-next-icon {
+    .sliderTop .owl-nav{
+        color: white;
         position: absolute;
-        top: 65%;
+        top: 8.5rem;
+        left: 0;
+        right: 0;
     }
-
-    #navSlide #slideShow .banner-1{
-        background: url('../images/Banner/bgBanner5.jpg') no-repeat;
+    .sliderTop .card  .sliderContent{
+        margin: 10% 25%;
     }
-    #navSlide #slideShow .banner-2{
-        background: url('../images/Banner/bgBanner9.jpg') no-repeat;
+    .sliderTop .icon-control {
+        font-size: 2.2rem;
     }
-    #navSlide #slideShow .banner-3{
-        background: url('../images/Banner/bgBanner3.jpg') no-repeat;
+    .sliderTop .owl-nav button:focus {
+        outline: none;
     }
-
-    #navSlide #slideShow .banner-1 .carousel-overlay{
+    .sliderTop .banner-1 {
         background: url('../images/Banner/banner1.png') no-repeat;
+        background-size: 50%;
     }
-    #navSlide #slideShow .banner-2 .carousel-overlay{
+    .sliderTop .banner-2 {
         background: url('../images/Banner/banner2.png') no-repeat;
+        background-size: 50%;
     }
-    #navSlide #slideShow .banner-3 .carousel-overlay{
+    .sliderTop .banner-3 {
         background: url('../images/Banner/banner3.png') no-repeat;
+        background-size: 50%;
     }
-
+    .divider-1{
+        margin-top: -7rem;
+        position: absolute;
+        z-index: 2;
+    }
 }
 
 
 /* step1 */
 @media {
     .step1 {
-        margin-top: 3rem;
+        margin-top:0.5rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
         background-color: #F5F5F5;
@@ -397,6 +349,7 @@ a {
     }
 }
 
+
 /* Step2 */
 @media {
     .step2{
@@ -404,7 +357,7 @@ a {
         padding: 15px 0;
     }
 
-    #top-slider {
+    .step2 #top-slider {
         border-radius: 4px;
         overflow: hidden;
         position: relative;
@@ -414,7 +367,7 @@ a {
         font-size: 2rem;
         color: #ec008c;
     }
-    #top-slider footer {
+    .step2 #top-slider footer {
         position: absolute;
         z-index: 4;
         left: 0;
@@ -422,19 +375,19 @@ a {
         bottom: 0;
         background-color: rgba(60,70,90,0.8);
     }
-    .carousel-indicators {
-        position: static;
-    }
-    .carousel-indicators li {
+    .step2 .carousel-indicators li {
         border-top: 0;
     }
-    #top-slider footer ol {
+    .step2 #top-slider footer ol {
         margin: 0;
         padding: 0;
         display: flex;
         height: 50px;
+        border-radius: 0 0 10px 10px;
+        background: rgb(63,251,69);
+        background: radial-gradient(circle, rgb(63,251,691) 0%, rgb(252,70,230) 100%);
     }
-    #top-slider footer li {
+    .step2 #top-slider footer li {
         position: relative;
         width: 20%;
         font-size: 12px;
@@ -447,14 +400,14 @@ a {
         padding-top: 15px;
         transition-duration: 0.2s;
     }
-    #top-slider footer li.active {
-        font-family: iranyekanwebbold;
+    .step2 #top-slider footer li.active {
+        font-family: iranyekanwebbold, sans-serif;
         font-size: 1rem;
         background-color: white;
         color: #ec008c;
     }
 
-    #top-slider footer li.active::before {
+    .step2 #top-slider footer li.active::before {
         content:"";
         position: absolute;
         border: 10px solid transparent;
@@ -466,14 +419,59 @@ a {
         margin-right: -10px;
     }
 
-    #banners {
+    .step2 #banners {
         margin: 0 -4px;
     }
+    .step2 #banners .card{
+        border-radius: 10px;
+        overflow: hidden;
+    }
 
-    #banners a:hover {
+    .step2 #banners a:hover {
         box-shadow: 0 0 1px 3px rgba(255 , 0 , 0 , 0.2);
     }
+    .step2 .include .card-img{
+        transition: 1s;
+    }
+    .step2 .include{
+        border-radius: 1rem;
+    }
+    .step2 .include:hover{
+        transition: 1s;
+        box-shadow: 0px 0px 8px 2px #ff1cd6;
+    }
+    .step2 .include .card-img:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
 }
+
+
+/* Age Category */
+@media {
+    .ageCategory .including{
+        border: none;
+        border-radius: 50%;
+    }
+    .ageCategory .ageCategorylink:hover {
+        animation-name: "animate__animated animate__heartBeat";
+    }
+    .ageCategory .ageCategoryImg{
+        height: 11rem;
+        width: 8.5rem;
+        border-radius: 2rem;
+    }
+    .ageCategory .ageCategorylink{
+        border-radius: 50%;
+        transition: 1s;
+    }
+    .ageCategory .ageCategorylink:hover{
+        box-shadow: 0px 0px 29px 7px #ff1cd6;
+        transition: 1s;
+        transform: scale(1.2);
+    }
+}
+
 
 /* Footer */
 @media {

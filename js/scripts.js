@@ -55,7 +55,7 @@ $(Window).on('scroll load' , function () {
 });
 
 
-var owl = $('.sliderTop .owl-carousel');
+let owl = $('.sliderTop .owl-carousel');
 owl.owlCarousel({
     autoplay: true,
     loop: true,
@@ -63,10 +63,9 @@ owl.owlCarousel({
     smartSpeed:3000,
     autoplayTimeout: 8000,
     dots: false,
-    // animateIn: 'animate__bounceInDown',
-    // animateOut: 'animate__fadeOut',
     items:1,
 });
+
 
 $('.sliderTop .owl-nav').addClass("d-flex justify-content-between");
 
@@ -92,3 +91,5 @@ function ageIconHoverIn(item){
 function ageIconHoverOut(item){
     $(item).removeClass("animate__animated animate__heartBeat")
 }
+
+

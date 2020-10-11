@@ -3,7 +3,7 @@
     $(document).ready(function(){
         "use strict";
         //Main Slider
-        var owl = $('.step1 .owl-carousel');
+        var owl = $('.step1 .owl-carousel, .step3 .owl-carousel');
         owl.owlCarousel({
             autoplay: false,
             rtl:true,

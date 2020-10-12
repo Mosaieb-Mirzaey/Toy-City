@@ -46,7 +46,7 @@ search.addEventListener("click", function (){
 })
 
 
-$(Window).on('scroll load' , function () {
+$(window).on('scroll load' , function () {
     if ($(window).scrollTop() > 250) {
         $('#go-to-top').css('opacity' , '1').css('visibility' , 'visible');
     } else {
@@ -92,4 +92,10 @@ function ageIconHoverOut(item){
     $(item).removeClass("animate__animated animate__heartBeat")
 }
 
+function albumCardHoverIn(item){
+    $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(0.2) rotate(270deg)'})
+}
+function albumCardHoverOut(item){
+    $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
+}
 

@@ -192,7 +192,7 @@ a {
 }
 
 
-/* *** Slide Show *** */
+/* *** Slide Show - sliderTop *** */
 @media {
     .sliderTop {
         position: relative;
@@ -230,6 +230,10 @@ a {
     .sliderTop .banner-3 {
         background: url('../images/Banner/banner3.png') no-repeat;
         background-size: 50%;
+    }
+    .sliderTop .btn-carousel{
+        font-size: 0.8rem;
+        width: 7rem;
     }
     .divider-1{
         margin-top: -7rem;
@@ -594,7 +598,7 @@ a {
         padding-top: 30%;
         color: white;
         top: -50%;
-        transition-duration: 0.4s;
+        transition-duration: 1s;
         opacity: 0;
     }
 
@@ -629,7 +633,15 @@ a {
         color: white;
         background-color: #f300e8;
     }
+    .step4 .subCard{
+        position: absolute;
+        top: 11rem;
+        left: 0;
+        right: 0;
+        background: linear-gradient(0deg,#ec008c 20%,#ffffff99 80%);        border-radius: 100% 100% 0 0;
+    }
 }
+
 
 
 /* Footer */

@@ -1,7 +1,7 @@
 
 new WOW().init();
 // SmoothScroll runner
-new SmoothScroll ('a[href*="#"]', {
+new SmoothScroll ('a[href*="#header"]', {
     easing: 'linear',
     speed: 1000,
 });
@@ -99,3 +99,9 @@ function albumCardHoverOut(item){
     $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
 }
 
+// function albumCardHoverIn(item){
+//     $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(0.2) rotate(270deg)'})
+// }
+// function albumCardHoverOut(item){
+//     $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
+// }

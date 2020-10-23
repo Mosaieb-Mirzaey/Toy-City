@@ -62,7 +62,7 @@ owl.owlCarousel({
     nav:true,
     smartSpeed:3000,
     autoplayTimeout: 8000,
-    dots: false,
+    dots: true,
     items:1,
 });
 
@@ -98,6 +98,19 @@ function albumCardHoverIn(item){
 function albumCardHoverOut(item){
     $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
 }
+$('.sliderTop .owl-nav .owl-prev').css({
+    "transform":"rotate(180deg)",
+    "background-color": "#ab0112",
+    "padding": "2rem 1.7rem"
+}).html(`<img src="images/Banner/Chevron.svg" width="40px" alt="arrow slider">`);
+
+$('.sliderTop .owl-nav .owl-next').css({
+    "background-color": "#ab0112",
+    "padding": "2rem 1.7rem"
+}).html(`<img src="images/Banner/Chevron.svg" width="40px" alt="arrow slider">`)
+
+//گلوله های پایین اسلایدر
+$(".sliderTop .owl-dots button").html(`<span class="fa fa-circle"></span>`);
 
 // function albumCardHoverIn(item){
 //     $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(0.2) rotate(270deg)'})

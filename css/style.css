@@ -23,8 +23,6 @@
     }
 }
 
-
-
 /*IRAN Yekan Font*/
 @media {
     @font-face {font-family: 'IRANYekanRegular';
@@ -76,7 +74,6 @@
 
 
 
-
 html{
     font-size: 12px;
 }
@@ -84,13 +81,12 @@ html{
 body {
     background-color: white;
     font-family: IRANYekanRegular,sans-serif;
-    width: 1349px;
     max-width: 1920px;
 }
 
 a {
     text-decoration: none;
-    font: 12px IRANYekanRegular, sans-serif;
+    font: 13px IRANYekanRegular, sans-serif;
 }
 a:hover {
     text-decoration: none;
@@ -105,6 +101,9 @@ a:hover {
         position: relative;
         height: 56px;
     }
+    header .navbar-brand img{
+        vertical-align: baseline;
+    }
     header .mainNav{
         position: fixed;
         right: 0;
@@ -114,38 +113,47 @@ a:hover {
         color: #ffffff;
         z-index: 10;
     }
+    header .mainNav ul{
+        margin-top: 29px;
+        left: 20px;
+    }
     header .mainNav ul li{
         height: 28px;
         width: auto;
         position: relative;
         padding: 0 5px 0 0;
+        margin: 0 10px 0 0;
         color: #ffffff;
-        text-transform: uppercase;
         display: inline-block;
         line-height: 28px;
         text-align: center;
-        font-size: 1.2rem;
+    }
+    header .mainNav ul .li-1{
+        background-color: white;
+        color: black;
+        padding-right: 6px;
     }
     header .mainNav ul .li-1:before{
         content: "";
         position: absolute;
         border-style: solid;
-        top: -5px;
+        top: -2px;
         left: -8px;
-        border-width: 0 0 33px 8px;
+        border-width: 0 0 26px 9px;
         border-color: transparent transparent #ffffff;
     }
     header .mainNav ul .li-1:after{
         content: "";
         position: absolute;
         border-style: solid;
-        top: -5px;
+        top: -1px;
         right: 0;
-        border-width: 5px 0 0 5rem;
+        border-width: 5px 0 0 76px;
         border-color: transparent transparent transparent #ffffff;
     }
     header .mainNav ul .li-3{
         background-color: #dd042b;
+        padding-right: 6px;
     }
     header .mainNav ul .li-3:before{
         content: "";
@@ -162,13 +170,13 @@ a:hover {
         border-style: solid;
         top: -5px;
         right: 0;
-        border-width: 5px 0 0 7rem;
+        border-width: 5px 0 0 94px;
         border-color: transparent transparent transparent #dd042b;
     }
     header .mainNav ul>li>a {
         color: #ffffff;
         font-family: "IRANYekanExtraBold", sans-serif;
-        font-size: 0.75rem;
+        font-size: 12px;
     }
 }
 
@@ -177,144 +185,96 @@ a:hover {
     .searchNav{
         background: rgb(221,4,43);
         background: linear-gradient(90deg, rgba(221,4,43,1) 0%, rgba(221,4,43,1) 100%);        position: relative;
-        height: 8rem;
+        z-index: 5;
     }
     .searchNav .mainNav{
         height: 100%;
         color: #404040;
         z-index: 10;
     }
-    .searchNav .mainNav form {
-        margin-top: 0.5rem;
+    .searchNav .mainNav .toggleParent{
+        height: fit-content;
     }
-    .searchNav .mainNav form>a>i {
-        font-size: 1.2rem;
-        vertical-align: sub;
-        color: #00ff0c;
-        top: -25px;
-        left: 12px;
+    .searchNav .mainNav .toggle{
+        font-size: 2rem;
+        cursor: pointer;
     }
-    .searchNav .mainNav form{
-        background: white;
-        box-sizing: border-box;
-        color: #434343;
-        width: fit-content;
+    .searchNav .mainNav .searchToggle i{
+        font-size: 1.4rem;
+        top: 43%;
+        left: 29%;
     }
-    .searchNav .mainNav form>input{
-        outline: none;
-        background-color: transparent;
-        color: #454545;
-        border: none;
-        margin-bottom: 3px;
+    .searchNav .bgSearchMobile{
+        background-color: white;
     }
-    .searchNav .mainNav form>input::placeholder{
-        text-align: center;
-        font-size: 0.9rem;
+    .searchNav .deactivate {
+        display: none;
     }
-    .searchNav .mainNav input:focus {
-        text-indent: 10px;
+    .searchNav .activate {
+        display: block;
     }
-    .searchNav .mainNav form a{
-        width: 3rem;
+    .searchNav .bgSearchMobile:before{
+        content: "";
+        position: absolute;
         border-style: solid;
-        border-width: 30px 10px 0 0;
-        border-color: #00ff0c transparent transparent;
+        bottom: 37%;
+        left: 29%;
+        border-width: 0 13px 13px 12px;
+        border-color: transparent transparent #ffffff;
     }
-    .searchNav .mainNav ul>li>a {
-        color: #717171;
-        font-family: "IRANYekanExtraBold",sans-serif;
+    .searchNav .bgSearchMobile .searchMobile{
+        background: #b49759;
+    }
+    .searchNav .searchMobile input{
+        margin: 5px 5px 5px 0;
+        border: none;
+        height: 2rem;
+    }
+    .searchNav .searchMobile input:focus{
+        outline: none;
+    }
+    .searchNav .searchMobile .searchBtn{
+        margin: 5px 0 5px 5px;
+        height: 2rem;
+    }
+    .searchNav .searchMobile a{
+        font-family: IRANYekanExtraBold, sans-serif;
+        font-size: 1rem;
+        background-color: #ab0112;
+        width: 23%;
+    }
+    .searchNav .searchMobile a i{
+        margin-top: 2px;
     }
 }
 
 /* *** Nav Slide - category *** */
 @media {
-    .navSlide .category {
+    .navSlide {
         position: relative;
         z-index: 2;
     }
-    .navSlide .category ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        justify-content: center;
+    .navSlide .deactivate {
+        transition: 1s;
+        right: -400px;
     }
-
-    .navSlide .category li {
-        float: right;
-        padding: 5px;
-        display: flex;
-        border-left: 1px solid rgba(97,9,33,0.15);
-        border-right: 1px solid rgba(97,9,33,0.15);
-        margin-left: -1px;
-    }
-    .navSlide .category li:hover {
-        border-left: 2px solid white;
-        border-right: 2px solid white;
-    }
-    .navSlide .category .cat-1, .navSlide .category .cat-6 {
-        background-color: #b49759;
-    }
-    .navSlide .category ul li:first-child{
-        position: relative;
-        border: none;
-    }
-    .navSlide .category ul li:first-child:before {
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: 0;
-        left: 6.25rem;;
-        border-width: 3.2rem 10px 0 0;
-        border-color: #b49759 #e0e0e000 #b0b0b000;
-    }
-    .navSlide .category ul li:first-child:after{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: 43px;
+    .navSlide .activate {
+        transition: 1s;
         right: 0;
-        border-width: 7px 0 0 6.3rem;
-        border-color: #b49759 transparent transparent transparent;
+    }
+    .navSlide .categoryMobile{
+        background-color: #dd042b;
+    }
+    .navSlide .categoryMobile img{
+        width: 22rem;
+    }
+    .navSlide .categoryMobile ul li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style: none;
     }
 
-    .navSlide .category ul li:last-child{
-        position: relative;
-        border: none;
-    }
-    .navSlide .category ul li:last-child:before {
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: 0;
-        left: -0.7rem;
-        border-width: 55px 0 0 14px;
-        border-color: #b49759 transparent transparent;
-    }
-    .navSlide .category ul li:last-child:after{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: 43px;
-        right: 0;
-        border-width: 0 0 10px 7.3rem;
-        border-color: transparent transparent transparent #b49759;
-    }
 
-    .navSlide .category li a {
-        font-family: "IRANYekanExtraBold",sans-serif;
-        text-align: center;
-        padding: 3px;
-        text-decoration: none;
-        color: white;
-        border-bottom: 3px solid transparent;
-    }
-
-    .navSlide .category li a:hover {
-        border-bottom: 3px solid white;
-    }
-    .navSlide .category i img{
-        width: 24px;
-    }
 }
 
 
@@ -360,7 +320,7 @@ a:hover {
         top: -21px;
         left: 0;
         border-style: solid;
-        border-width: 0 0 22px 94px;
+        border-width: 0 0 22px 81px;
         border-color: #79666600 #ffffff00 #ab0112 #ffffff00;
     }
     .sliderTop .owl-nav .owl-next:before{
@@ -409,7 +369,7 @@ a:hover {
     }
     .sliderTop .owl-dots {
         position: absolute;
-        bottom: 34rem;
+        bottom: 26rem;
         left: 1rem;
         right: 1rem;
         display: flex;
@@ -430,79 +390,44 @@ a:hover {
     }
 }
 
-
-
 /* Step2 */
 @media {
     .step2{
-        margin-top: -6rem;
+        margin-top: 2rem;
         padding: 15px 0;
     }
     .step2 #banners {
         margin: 0 -4px;
     }
-
-    .step2 .card-img-overlay {
-        background-color: rgba(0,0,0,0.3);
-        text-align: center;
-        padding-top: 14%;
-        color: white;
-        top: -50%;
-        transition-duration: 1s;
-        opacity: 0;
-    }
-
-    .step2 .card:hover .card-img-overlay {
-        top: 0;
-        opacity: 1;
-    }
-
     .step2 .card {
         overflow: hidden;
         box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         margin-bottom: 40px;
-        height: 14rem;
+        border-radius: 0;
     }
-
-    .step2 .card-img-overlay h4 {
-        margin-bottom: 16px;
-    }
-
-    .step2 .card-img-overlay p {
-        margin-bottom: 40px;
-    }
-
-    .step2 .card-img-overlay a {
-        padding: 0 8px;
+    .step2 .card-img-overlay {
+        text-align: center;
+        padding-top: 14%;
         color: white;
+        transition-duration: 1s;
     }
-
-    .step2 .card-img-overlay a:hover {
-        color: lightgreen;
-    }
-    .step2 .card-foot .cardBtn:hover{
-        color: white;
-        background-color: #73c026;
-    }
-    .step2 .subCard{
+    .step2 .card-img-overlay .title {
         position: absolute;
-        top: 11rem;
         left: 0;
         right: 0;
+        bottom: 0;
+        background-color:green;
+    }
+    .step2 .card-img-overlay a {
         color: white;
-        background: #73c026;
-    }
-    .step2 .subCard .titleSlideCard{
-        font-family: IRANYekanExtraBold,sans-serif;
+        font-family: IRANYekanExtraBold, sans-serif;
         font-size: 0.8rem;
     }
-    .step2 .subCard .subP{
-        font-family: IRANYekanRegular,sans-serif;
-        font-size: 0.8rem;
+    .step2 .card-img-overlay a:hover {
+        color: #2cb1fc;
     }
 
 }
-
 
 /* Age Category */
 @media {
@@ -664,7 +589,7 @@ a:hover {
         border-style: solid;
         top: -17px;
         right: 0;
-        border-width: 17px 0 0 37.57rem;
+        border-width: 17px 0 0 21.57rem;
         border-color: transparent transparent transparent #dd042b;
     }
     .tab-content .nav:after{
@@ -788,27 +713,40 @@ a:hover {
 
 /* Footer */
 @media {
-    #footer {
-        background: linear-gradient(135deg,#dd042b 30%,#ed1c23 100%);
+    #footer{
+        background-color: white;
+    }
+    #footer .bg-footer {
+        background-color: #dd042b;
         padding-top: 60px;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 0.85rem;
     }
-
-    #footer h5 {
-        font-weight: 400;
-        padding-bottom: 15px;
-        border-bottom: 2px #ffffff solid;
-        margin-bottom: 20px;
+    #footer .container-fluid {
+        width: 94%;
+    }
+    #footer h6 {
+        font-family: "iranyekanwebbold", sans-serif;
+        font-size: 0.95rem;
+        padding-bottom: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+    #footer h3 {
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 1rem;
+        padding-bottom: 0.7rem;
+        margin-bottom: 0.8rem;
+    }
+    #footer .trustSymbol{
+        width: 12.35rem;
     }
 
     #footer .col-lg-3 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     #footer ul li {
         padding: 6px 0;
-        border-bottom: 1px solid #ffffff;
     }
 
     #footer li:first-child {
@@ -828,69 +766,111 @@ a:hover {
         color: #ffffff;
         padding-left: 3px;
     }
-
-    #footer .link {
-        margin-top: 60px;
+    #footer .contact .title{
+        background: #ab0112;
+        width: 160px;
+        position: absolute;
+        right: 41px;
+    }
+    #footer .contact .title:before{
+        content: "";
+        position: absolute;
+        border-style: solid;
+        top: -10px;
+        right: 0;
+        border-width: 10px 0 0 10rem;
+        border-color: transparent transparent transparent #ab0112;
+    }
+    #footer .contact .title:after{
+        content: "";
+        position: absolute;
+        border-style: solid;
+        top: -10px;
+        right: 160px;
+        border-width: 0 7px 41px 0px;
+        border-color: transparent #ab0112 transparent transparent;
+    }
+    #footer .contact .triangle:before {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        top: 0;
+        right: 33px;
+        border-width: 0 0 29px 8px;
+        border-color: transparent #ab0112 transparent;
     }
 
-    #footer .link a {
-        font-size: 18px;
-        display: inline-block;
-        width: 34px;
-        height: 34px;
-        /*background-color: transparent;*/
-        color: #ffffff;
-        border-radius: 50%;
-        line-height: 2.1em;
-        margin-left: 4px;
-        text-align: center;
-        transition-duration: 0.3s;
+    #footer .link a .pic1 {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        background: url(../images/icon/faceBook.png) no-repeat;
+    }
+    #footer .link a .pic2 {
+        background: url(../images/icon/twitter.png) no-repeat;
+    }
+    #footer .link a .pic3 {
+        background: url(../images/icon/youtube.png) no-repeat;
+    }
+    #footer .link a .pic4 {
+        background: url(../images/icon/instagram.png) no-repeat;
     }
 
-    #footer .link a:hover {
-        background-color: #2c6;
+    #footer .link a .link:hover {
+        transform: scale(1.1);
     }
 
+    #footer .mail{
+        height: 2.2rem;
+    }
     #footer input {
         float: right;
-        border: 0;
         padding: 4px;
         width: 70%;
+        height: 100%;
+    }
+    #footer input::placeholder{
+        font-size: 0.7rem;
     }
 
     #footer button {
         float: right;
-        background-color: #2c6;
-        border: 0;
         width: 30%;
+        height: 100%;
         padding: 4px;
-        color: #ffffff;
+        color: #fff;
         cursor: pointer;
         transition-duration: 0.3s;
     }
-
-    #go-to-top {
-        position: fixed;
-        left: 15px;
-        bottom: 15px;
-        display: inline-block;
-        width: 46px;
-        height: 46px;
-        background-color: #38BD43;
-        color: #ffffff;
-        text-align: center;
-        border-radius: 50%;
-        line-height: 3.7em;
-        transition-duration: 0.5s;
+    #footer .copyright{
+        font-family: iranyekanwebmedium, sans-serif;
+        background-color: #2E2855;
+        font-size: 0.8rem;
     }
-
-    #go-to-top:hover {
-        background-color: #ec008c;
-    }
-
 
 }
 
+/* Top Scroll */
+@media {
+    #go-to-top {
+        position: fixed;
+        right: 3rem;
+        bottom: 40px;
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #ab0112;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 2.5rem;
+        transition-duration: 0.5s;
+        z-index: 10;
+    }
+
+    #go-to-top:hover {
+        background-color: #331FC8;
+    }
+}
 
 
 
@@ -898,9 +878,7 @@ a:hover {
 
 /* Mobile devices (mobile, Max width 576px) */
 @media (max-width: 576px) {
-    #navSlide form>input{
 
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -908,74 +886,19 @@ a:hover {
     html{
         font-size: 13px;
     }
+    header .mainNav ul .li-1:after {
+        border-width: 5px 0 0 75px;
+    }
+    header .mainNav ul .li-1:before {
+        border-width: 0 0 27px 9px;
+    }
 }
 
 /* Medium devices (tablets, Max width 768px) */
 @media (max-width: 768px) {
-    header .nav-small {
-        background: #2A41E8;
-        width: 100%;
-        z-index: 0;
+    header .navbar-brand img {
+        width: 11.4rem;
     }
-    header .toggler{
-        height: 2rem;
-        background-color: transparent;
-        border: none;
-        outline:none;
-    }
-
-    header .mainNav .search{
-        font-size: 22px;
-    }
-
-    header #search-box {
-        z-index: 0;
-        position: absolute;
-        background-color: #1c3f7f;
-        left: 0;
-        width: 100%;
-        transition: 1s;
-    }
-    .deactivate {
-        top: -100px;
-    }
-    .activate {
-        top: 61px;
-    }
-    header>#search-box>.input-group{
-        border-radius: 6px;
-        max-width: 80%;
-    }
-
-
-    header ul {
-        position: absolute;
-        list-style-type: none;
-        background-color: rgb(46, 103, 202);
-        top: -8.1rem;
-        width: 35%;
-        padding: 20px 20px 11px 20px;
-        border-radius: 0 0 0 10px;
-        z-index: -1;
-        transition: 1500ms;
-    }
-    header ul LI{
-        margin-bottom: 15px;
-        border-bottom: 1px solid darkgray;
-    }
-
-    #navSlide form{
-        position: absolute;
-        top: -3.3rem;
-        right: 13vw;
-        z-index: 1;
-    }
-    #navSlide form>input{
-        width: 143px;
-        height: 25px;
-    }
-
-
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -983,45 +906,180 @@ a:hover {
     html{
         font-size: 14px;
     }
-    header ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        justify-content: center;
-    }
-    .searchNav .mainNav{
-        background: url(../images/Banner/nav.png) center -4rem no-repeat;
-    }
-    .searchNav .suggested {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-        overflow: hidden;
-        justify-content: center;
-    }
-    .searchNav .suggested div{
-        background-color: #00ff0c;
+
+    /*Header*/
+    @media {
+        header .mainNav ul{
+            margin-top: 29px;
+            left: 50px;
+        }
+        header .mainNav ul .li-1:before{
+            border-width: 0 0 27px 8px;
+        }
+        header .mainNav ul .li-1:after{
+            top: 0;
+            border-width: 5px 0 0 75px;
+        }
+        header .mainNav ul .li-3:before{
+            border-width: 0 0 33px 8px;
+        }
+        header .mainNav ul .li-3:after{
+            border-width: 5px 0 0 96px;
+        }
     }
 
-    header .navbarCollapse>li {
-        float: right;
-        padding: 5px;
+    /*SearchNav*/
+    @media {
+        .searchNav .mainNav{
+            height: 100%;
+            color: #404040;
+            z-index: 10;
+        }
     }
+
+    .navSlide .categoryMobile img{
+        width: 27rem;
+    }
+
+    .tab-content .nav:before{
+        border-width: 17px 0 0 37.57rem;
+    }
+
 
 }
 
+/* large devices (tablets, Max width 992px) */
+@media (max-width: 992px){
+    .searchNav .suggested img{
+        width: 7rem;
+    }
+
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     html{
         font-size: 15px;
     }
 
+    /*Header*/
+    @media {
+        header .mainNav ul {
+            margin-top: 29px;
+            left: 80px;
+        }
+        header .mainNav ul .li-3:after {
+            border-width: 5px 0 0 98px;
+        }
+        header .mainNav ul .li-1:before {
+            border-width: 0 0 28px 8px;
+        }
+    }
+    /*Search Nav*/
+    @media {
+        .searchNav{
+            height: 8rem;
+        }
+        .searchNav .mainNav {
+            background: url(../images/Banner/nav.png) center -4rem no-repeat;
+        }
+        .searchNav .mainNav form>a>i {
+            font-size: 1.2rem;
+            vertical-align: sub;
+            color: #00ff0c;
+            top: -25px;
+            left: 12px;
+        }
+        .searchNav .mainNav form{
+            margin-top: 0.5rem;
+            background: white;
+            box-sizing: border-box;
+            color: #434343;
+            width: fit-content;
+        }
+        .searchNav .mainNav form>input{
+            outline: none;
+            background-color: transparent;
+            color: #454545;
+            border: none;
+            margin-bottom: 3px;
+        }
+        .searchNav .mainNav form>input::placeholder{
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .searchNav .mainNav input:focus {
+            text-indent: 10px;
+        }
+        .searchNav .mainNav form a{
+            width: 3rem;
+            border-style: solid;
+            border-width: 30px 10px 0 0;
+            border-color: #00ff0c transparent transparent;
+        }
+    }
+    /* *** Nav Slide - category *** */
+    @media {
+        .navSlide .category {
+            position: relative;
+            z-index: 2;
+        }
+        .navSlide .category ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: center;
+        }
+        .navSlide .category li {
+            float: right;
+            padding: 5px;
+            display: flex;
+            border-left: 1px solid rgba(97,9,33,0.15);
+            border-right: 1px solid rgba(97,9,33,0.15);
+            margin-left: -1px;
+            height: 46px;
+        }
+        .navSlide .category li:hover {
+            transform: scale(1.1);
+        }
+        .navSlide .category .cat-1, .navSlide .category .cat-6 {
+            background-color: #b49759;
+        }
+        .navSlide .category li a {
+            font-family: "IRANYekanExtraBold",sans-serif;
+            text-align: center;
+            padding: 3px;
+            text-decoration: none;
+            color: white;
+            border-bottom: 3px solid transparent;
+        }
+        .navSlide .category li a:hover {
+            font-size: 13px;
+        }
+        .navSlide .category i img{
+            width: 24px;
+        }
+        .navSlide .category ul li:first-child{
+            position: relative;
+            background: url("../images/icon/catgor-i-2.png") no-repeat;
+            border: none;
+            height: 60px;
+        }
+        .navSlide .category ul li:last-child{
+            position: relative;
+            background: url("../images/icon/catgor-i-1.png") no-repeat;
+            border: none;
+            height: 60px;
+        }
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     html{
         font-size: 16px;
+    }
+    header .mainNav ul .li-3:after {
+        border-width: 5px 0 0 99px;
     }
 }
 

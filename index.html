@@ -21,75 +21,104 @@
 
 <body class="mx-auto">
 <!-- header -->
-<header id="header">
-    <nav class="d-flex mainNav text-white">
-        <div class="nav-small d-flex">
-            <button class="toggler mr-3 p-2 mt-3 d-md-none" type="button">
-                <span class="btnIcon fa fa-bars text-white"></span>
-            </button>
-
-            <div class="search d-md-none ml-auto mr-3">
-                <i class="fa fa-search"></i>
-            </div>
-            <a class="navbar-brand mr-auto ml-3 mr-md-3" href="#">
+<header id="header" class="position-relative">
+    <nav class="d-inline-block mainNav text-white">
+        <div class="d-inline-block ml-auto">
+            <a class="navbar-brand mr-auto d-none d-lg-inline-block" href="#">
                 <img src="images/Logo/Logo-FA-EN.png" width="140px" alt="">
             </a>
         </div>
-        <ul class="mr-md-auto mt-md-4 pt-md-1" data-nav="deactivate">
-            <li class="ml-md-2 bg-white px-2">
-                <a class="navLink li-1 text-dark" href="#">
+        <ul class="mr-md-auto d-inline-block position-absolute">
+            <li class="">
+                <a class="navLink li-1" href="#">
                     <i class="fa fa-cart-arrow-down"></i>
-                    <span>سبد خرید <span class="sr-only">Shopping cart</span></span>
+                    <span class=" ">سبد خرید <span class="sr-only">Shopping cart</span></span>
                 </a>
             </li>
-            <li class="li-2 ml-md-2 px-2">
+            <li class="li-2">
                 <i class="fa fa-heart"></i>
-                <a class="navLink" href="#">علاقه مندی ها</a>
+                <a class=" navLink" href="#">علاقه مندی ها</a>
             </li>
-            <li class="li-3 ml-md-5 px-2">
+            <li class="li-3">
                 <i class="fa fa-sign-in"></i>
-                <a class="navLink" href="#">ورود / عضویت</a>
+                <a class=" navLink" href="#">ورود / عضویت</a>
             </li>
         </ul>
     </nav>
 </header>
 
-<section class="searchNav">
-    <div class="d-flex justify-content-between px-4 mainNav">
-        <form class="d-none d-md-flex justify-content-center my-auto">
+<section class="searchNav position-relative">
+    <div class="mainNav d-flex justify-content-between align-items-center px-4 position-relative">
+        <div class="toggleParent p-2 d-lg-none" onclick="navbarBtn(this)">
+            <span class="toggle"><i class="fa fa-bars text-white"></i></span>
+        </div>
+        <form class="d-none d-lg-flex justify-content-center my-auto">
             <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
             <a class="my-2 my-sm-0 px-3 position-relative" type="submit">
                 <i class="fa fa-search text-white position-absolute"></i>
             </a>
         </form>
-        <div class="nav-small d-md-none d-flex">
-            <button class="toggler mr-3 p-2 mt-3" type="button">
-                <span class="btnIcon fa fa-bars text-white"></span>
-            </button>
-            <div class="search  ml-auto mr-3">
-                <i class="fa fa-search"></i>
-            </div>
-            <div class="search-box deactivate py-3">
-                <div class="input-group border bg-white mx-auto">
-                    <input type="text" class="form-control border-0 py-0 m-1">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary  border-0" type="button"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
+        <div class="d-inline-block">
+            <a class="navbar-brand mr-auto d-inline-block d-lg-none" href="#">
+                <img src="images/Logo/Logo-mobile.png" width="110px" alt="">
+            </a>
         </div>
-        <a href="#" class="suggested my-auto d-flex align-items-center bg-white text-black-50">
-            <div class="pr-2 pl-3 py-1 h-100 ml-auto"><span class="fa fa-arrow-right text-white"></span></div>
-             <span class="px-3">پیشنهاد ویژه</span>
+        <a class="searchToggle my-2 my-sm-0 px-3 d-lg-none" type="submit">
+            <i class="fa fa-search text-white position-absolute" onclick="mobileSearch(this)"></i>
         </a>
+        <a href="#" class="suggested my-auto d-flex align-items-center text-black-50">
+            <img src="images/icon/offer.png" alt="">
+        </a>
+    </div>
+    <div class="bgSearchMobile deactivate p-2">
+        <form class="searchMobile d-flex w-100 justify-content-center align-items-center my-auto">
+            <input class="w-75" type="search" placeholder="جستجوی کلیدواژه" aria-label="Search">
+            <a class="searchBtn text-white d-flex align-items-center justify-content-center" type="submit">
+                <span class="mb-1">جستجو</span>
+            </a>
+        </form>
     </div>
 </section>
 
 
 <!--NavSlide-->
 <section class="navSlide">
-    <div class="category mb-3">
-        <ul class=" mx-auto mb-0">
+    <div class="categoryMobile p-3 d-lg-none position-absolute deactivate">
+        <ul class="m-0 p-0">
+            <li class="cat-1">
+                <a class="" href="#">
+                    <img src="images/icon/nav-Preschool.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-2">
+                <a class="" href="#">
+                    <img src="images/icon/nav-Soft%20toys.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-3">
+                <a class="disabled" href="#">
+                    <img src="images/icon/nav-Arts-and-crafts.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-4">
+                <a class="disabled" href="#">
+                    <img src="images/icon/nav-Build-It.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-5">
+                <a class="disabled" href="#">
+                    <img src="images/icon/nav-Dolls.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <img src="images/icon/nav-Vehicles.jpg" alt="toys-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="category mb-2 d-none d-lg-block">
+        <ul class="mx-auto mb-0">
             <li class="cat-1 active">
                 <a class="" href="#">
                     <i><img src="images/icon/toys.png" alt="toys-icon"></i>
@@ -194,169 +223,125 @@
 <section class="step2">
     <div class="container">
         <div class="row mb-5" id="banners">
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp">
                 <div class="card">
-                    <img src="images/card/card-1.png" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
+                    <img src="images/card/catgoCard-1.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                 <div class="card">
-                    <img src="images/card/card-2.jpg" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
+                    <img src="images/card/catgoCard-2.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                 <div class="card">
-                    <img src="images/card/card-3.jpg" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
-                        </div>
-                    </div>                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                <div class="card">
-                    <img src="images/card/card-4.jpg" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
-                        </div>
-                    </div>                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp">
-                <div class="card">
-                    <img src="images/card/card-1.png" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
+                    <img src="images/card/catgoCard-3.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                 <div class="card">
-                    <img src="images/card/card-2.jpg" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
+                    <img src="images/card/catgoCard-4.png" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                 <div class="card">
-                    <img src="images/card/card-3.jpg" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
+                    <img src="images/card/catgoCard-5.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
                         </div>
-                    </div>                </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                 <div class="card">
-                    <img src="images/card/card-4.jpg" alt="team-1" class="card-img-top">
-                    <div class="subCard p-1 text-center">
-                        <p class="titleSlideCard mb-0">پرفروش ترین ها</p>
-                        <p class="subP mb-0">برای خرید کلیک کنید</p>
-                    </div>
-                    <div class="card-img-overlay" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
-                        <h4><a href="#">اسباب بازی</a></h4>
-                        <p>عروسک فانتزی</p>
-                        <div class="card-foot mt-3  d-flex justify-content-around">
-                            <a href="#" class="cardBtn d-flex align-items-center btn btn-danger p-1">
-                                <span>
-                                  <i class="fa fa-cart-arrow-down"></i>
-                                اضافه به سبد خرید
-                                </span>
-                            </a>
+                    <img src="images/card/catgoCard-6.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
                         </div>
-                    </div>                </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp">
+                <div class="card">
+                    <img src="images/card/catgoCard-7.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                <div class="card">
+                    <img src="images/card/catgoCard-3.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <div class="card">
+                    <img src="images/card/catgoCard-5.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                <div class="card">
+                    <img src="images/card/catgoCard-1.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                <div class="card">
+                    <img src="images/card/catgoCard-4.png" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                <div class="card">
+                    <img src="images/card/catgoCard-1.jpg" alt="team-1" class="card-img-top">
+                    <div class="card-img-overlay px-0" onmouseover="albumCardHoverIn(this)" onmouseleave="albumCardHoverOut(this)">
+                        <div class="title px-1 py-1">
+                            <a href="#">مشاهده بیشتر</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -364,52 +349,52 @@
 
 <!--Age Category-->
 <section class="ageCategory">
-    <div class="container-fluid">
-        <div class="row my-5">
-            <div class="col-2">
-                <div class="card including d-flex ">
-                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
-                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/0-ta-1-sal.jpg" alt="Age Category image">
-                    </a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card including d-flex ">
-                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
-                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/1-ta-3-sal.jpg" alt="Age Category image">
-                    </a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card including d-flex ">
-                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
-                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/3-ta-5-sal.jpg" alt="Age Category image">
-                    </a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card including d-flex ">
-                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
-                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/5-ta-8-sal.jpg" alt="Age Category image">
-                    </a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card including d-flex ">
-                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
-                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/8-ta-12-sal.jpg" alt="Age Category image">
-                    </a>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="card including d-flex ">
-                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">
-                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/12-sal_51w1-51.jpg" alt="Age Category image">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="container-fluid">-->
+<!--        <div class="row my-5">-->
+<!--            <div class="col-2">-->
+<!--                <div class="card including d-flex ">-->
+<!--                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">-->
+<!--                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/0-ta-1-sal.jpg" alt="Age Category image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--                <div class="card including d-flex ">-->
+<!--                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">-->
+<!--                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/1-ta-3-sal.jpg" alt="Age Category image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--                <div class="card including d-flex ">-->
+<!--                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">-->
+<!--                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/3-ta-5-sal.jpg" alt="Age Category image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--                <div class="card including d-flex ">-->
+<!--                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">-->
+<!--                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/5-ta-8-sal.jpg" alt="Age Category image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--                <div class="card including d-flex ">-->
+<!--                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">-->
+<!--                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/8-ta-12-sal.jpg" alt="Age Category image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--                <div class="card including d-flex ">-->
+<!--                    <a href="#" class="ageCategorylink d-flex justify-content-center" onmouseover="ageIconHoverIn(this)" onmouseleave="ageIconHoverOut(this)">-->
+<!--                        <img class="ageCategoryImg mx-auto" src="images/ageCategory/12-sal_51w1-51.jpg" alt="Age Category image">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </section>
 
 
@@ -632,7 +617,7 @@
             </li>
         </ul>
     </div>
-    <div class="tabImg"></div>
+    <div class="tabImg d-none d-md-block"></div>
     <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <!--Step-4 Album-->
         <section class="step4">
@@ -1338,75 +1323,101 @@
 </div>
 
 
-<footer id="footer" class="text-light text-justify">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <h5>درباره شرکت</h5>
-                <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع.
-
-                </p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5>پیوندهای مفید</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <i class="fa fa-angle-left"></i>
-                        <a href="#">خانه</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-left"></i>
-                        <a href="#">درباره ما</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-left"></i>
-                        <a href="#">خدمات</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-left"></i>
-                        <a href="#">قوانین و مقررات</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-left"></i>
-                        <a href="#">حریم خصوصی</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5>تماس با ما</h5>
-                <p>تهران - خیابان انقلاب - پلاک ۱۲۳۴</p>
-                <p>
-                    <strong>تلفن : </strong><span style="direction: ltr; display: inline-block;">۰۲۱ - ۱۲۳۴۵۶۷۸۹</span>
-                    <br/>
-                    <strong>ایمیل :</strong> info@example.com<br/>
-                </p>
-                <div class="link">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+<!--Footer & contact me-->
+<footer id="footer" class="footer text-light text-justify">
+    <div class="bg-footer">
+        <div class="container-fluid pl-2">
+            <div class="row">
+                <div class="col-4 col-md-4">
+                    <h3 class="mb-1 pb-1 ">عاموتویز</h3>
+                    <p class="mb-5">
+                        مرجع آنلاین اسباب بازی در سراسر ایران
+                    </p>
+                    <h3 class="mb-2">تماس با پشتیبانی</h3>
+                    <h6>09355250000 - 09355250000</h6>
+                    <img src="images/Logo/symbolOfTrust1.png" class="trustSymbol mb-3 mb-lg-2 mt-4 mt-lg-0" alt="symbol Of Trust">
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5>خبرنامه</h5>
-                <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                </p>
-                <form method="post">
-                    <input type="email" name="email" placeholder="ایمیل خود را وارد کنید">
-                    <button type="submit">عضویت</button>
-                </form>
+                <div class="col-8 col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 px-2">
+                            <h6>دسترسی سریع</h6>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">ثبت نام</a>
+                                </li>
+                                <li>
+                                    <a href="#">سوالات متداول</a>
+                                </li>
+                                <li>
+                                    <a href="#">حقوق کاربران</a>
+                                </li>
+                                <li>
+                                    <a href="#">قوانین سایت</a>
+                                </li>
+                                <li>
+                                    <a href="#">قواعد بازپرداخت وجه</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-3 px-2">
+                            <h3 class="">خدمات مشتریان</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">وبلاگ عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">درباره عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">نحوه کار عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری با عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری سازمانی</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-10 col-lg-5 px-2 mb-3 mb-lg-0">
+                            <div class="contact position-relative d-flex flex-column">
+                                <h3 class="title text-center">با ما همراه باشید...</h3>
+                                <div class="triangle"></div>
+                                <div class="link my-2">
+                                    <a href="#">
+                                        <div class="link pic2" style="width:124px;height:103px;float: right;"></div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="link pic1" style="width:124px;height:103px;float: right;"></div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="link pic4" style="width:124px;height:103px;float: right;"></div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="link pic3" style="width:124px;height:103px;float: right;"></div>
+                                    </a>
+                                </div>
+                                <div class="mailbox mb-4">
+                                    <p class="mt-4">
+                                        عضویت در خبرنامه
+                                    </p>
+                                    <form class="mail" method="post">
+                                        <input class="border-0" type="email" name="email" placeholder="ایمیل خود را وارد کنید">
+                                        <button class="border-0 bg-primary" type="submit">عضویت</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div style="background-color: black;">
-        <p class="text-center p-3 mb-0">کلیه حقوق برای این شرکت محفوظ است.</p>
+    <div class="copyright">
+        <p class="mr-5 p-2 mb-0">از مطالب این وب‌سایت فقط می‌توانید برای مقاصد غیرتجاری و با ذکر منبع استفاده کنید. تمامی حقوق این وب‌سایت به عاموتویز تعلق دارد.</p>
     </div>
 </footer>
+
 
 <a href="#header" id="go-to-top">
     <i class="fa fa-chevron-up"></i>

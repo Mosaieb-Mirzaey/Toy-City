@@ -6,45 +6,6 @@ new SmoothScroll ('a[href*="#header"]', {
     speed: 1000,
 });
 
-// Header mobile Button toggle
-
-let navbarList = document.querySelector(".mainNav ul");
-let navbarBtn = document.querySelector(".mainNav .nav-small button");
-let navBtnIcon = document.querySelector(".toggler .fa");
-
-
-navbarBtn.addEventListener("click" , function (){
-    if (navBtnIcon.classList.contains("fa-bars")){
-        navBtnIcon.classList.remove("fa-bars");
-        navBtnIcon.classList.add("fa-times");
-        navbarList.style.top = "4.1rem"
-
-    }else{
-        navBtnIcon.classList.remove("f-times");
-        navBtnIcon.classList.add("fa-bars");
-        navbarList.style.top = "-8.1rem"
-    }
-})
-
-
-
-
-let searchBox = document.querySelector("#search-box");
-let search = document.querySelector("header .search");
-// let navbarNav = document.querySelector("#navbarNav");
-
-search.addEventListener("click", function (){
-    if (searchBox.classList.contains("deactivate")){
-        // navbarNav.classList.remove("show")
-        searchBox.classList.remove("deactivate");
-        searchBox.classList.add("activate")
-    }else {
-        searchBox.classList.remove("activate");
-        searchBox.classList.add("deactivate");
-        // navbarNav.classList.remove("show")
-    }
-})
-
 
 $(window).on('scroll load' , function () {
     if ($(window).scrollTop() > 250) {
@@ -93,7 +54,7 @@ function ageIconHoverOut(item){
 }
 
 function albumCardHoverIn(item){
-    $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(0.2) rotate(270deg)'})
+    $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(1.1) rotate(4deg)'})
 }
 function albumCardHoverOut(item){
     $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
@@ -112,9 +73,31 @@ $('.sliderTop .owl-nav .owl-next').css({
 //گلوله های پایین اسلایدر
 $(".sliderTop .owl-dots button").html(`<span class="fa fa-circle"></span>`);
 
-// function albumCardHoverIn(item){
-//     $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(0.2) rotate(270deg)'})
-// }
-// function albumCardHoverOut(item){
-//     $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
-// }
+// دکمه جستجو در حالت موبایل
+function mobileSearch(item){
+    let searchBtn = document.querySelector(".bgSearchMobile")
+    if (searchBtn.classList.contains("deactivate")){
+        searchBtn.classList.remove("deactivate");
+        searchBtn.classList.add("activate")
+    }else {
+        searchBtn.classList.remove("activate");
+        searchBtn.classList.add("deactivate");
+    }
+}
+
+// دکمه منوبار در حالت موبایل
+function navbarBtn(item){
+    let navBtn = document.querySelector(".navSlide .categoryMobile");
+
+    if (navBtn.classList.contains("deactivate")){
+        $(item).find("i").removeClass("fa-bars");
+        $(item).find("i").addClass("fa-times")
+        navBtn.classList.remove("deactivate");
+        navBtn.classList.add("activate")
+    }else {
+        $(item).find("i").removeClass("fa-times");
+        $(item).find("i").addClass("fa-bars");
+        navBtn.classList.remove("activate");
+        navBtn.classList.add("deactivate");
+    }
+}

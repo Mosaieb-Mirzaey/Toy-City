@@ -256,7 +256,7 @@ a:hover {
     }
     .navSlide .deactivate {
         transition: 1s;
-        right: -400px;
+        right: -460px;
     }
     .navSlide .activate {
         transition: 1s;
@@ -460,42 +460,14 @@ a:hover {
     .tab-content {
         background: url(../images/Banner/hometabBg.png) no-repeat bottom left #e3f4ff;
     }
-    .tab-content .triangle:before{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: 0px;
-        right: -1rem;
-        border-width: 0 0 39px 16px;
-        border-color: transparent #dd042b #dd042b00;
-    }
     .tab-content .pad{
         padding-left: 20%;
         padding-right: 20%;
     }
-    .tab-content .nav:before{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: -17px;
-        right: 0;
-        border-width: 17px 0 0 21.57rem;
-        border-color: transparent transparent transparent #dd042b;
-    }
-    .tab-content .nav:after{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: -17px;
-        left: -16px;
-        border-width: 0 0 56px 16px;
-        border-color: transparent transparent #dd042b;
-    }
     .tab-content .nav{
-        background-color: #dd042b ;
+        margin-top: -40px;
         z-index: 1;
     }
-
     .tab-content li .active{
         font-family: IRANYekanExtraBold, sans-serif;
         font-size: 0.83rem;
@@ -638,21 +610,16 @@ a:hover {
         border-width: 0 0 29px 8px;
         border-color: transparent #ab0112 transparent;
     }
+    #footer .link {
+        width: 18.8rem;
+        height: 15.8rem;
+    }
+    #footer .link .linkPic{
+        width:47%;
+        height:47%;
+        float: right;
+    }
 
-    #footer .link a .pic1 {
-        opacity: 1;
-        filter: alpha(opacity=100);
-        background: url(../images/icon/faceBook.png) no-repeat;
-    }
-    #footer .link a .pic2 {
-        background: url(../images/icon/twitter.png) no-repeat;
-    }
-    #footer .link a .pic3 {
-        background: url(../images/icon/youtube.png) no-repeat;
-    }
-    #footer .link a .pic4 {
-        background: url(../images/icon/instagram.png) no-repeat;
-    }
 
     #footer .link a .link:hover {
         transform: scale(1.1);

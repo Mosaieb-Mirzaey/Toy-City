@@ -137,17 +137,17 @@ a:hover {
         content: "";
         position: absolute;
         border-style: solid;
-        top: -2px;
-        left: -8px;
-        border-width: 0 0 26px 9px;
+        top: -7px;
+        left: -12px;
+        border-width: 0 0 35px 12px;
         border-color: transparent transparent #ffffff;
     }
     header .mainNav ul .li-1:after{
         content: "";
         position: absolute;
         border-style: solid;
-        top: -1px;
-        right: 0;
+        top: -5px;
+        right: -5px;
         border-width: 5px 0 0 76px;
         border-color: transparent transparent transparent #ffffff;
     }
@@ -280,11 +280,6 @@ a:hover {
 
 /* *** sliderTop *** */
 @media {
-    .sliderTop {
-        position: relative;
-        direction: ltr;
-        height: 40rem;
-    }
     .sliderTop .owl-carousel{
         z-index: 0;
     }
@@ -294,7 +289,7 @@ a:hover {
         color: white;
     }
     .sliderTop .card .card-img-top{
-        height: 68rem;
+        height: 22rem;
     }
     .sliderTop .owl-nav{
         color: white;
@@ -304,7 +299,14 @@ a:hover {
         right: 0;
     }
     .sliderTop .card  .sliderContent{
-        margin: 58% 35%;
+        margin: 42% 10%;
+    }
+    .sliderTop .card .sliderContent .carousel-title{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 1rem;
+    }
+    .sliderTop .card .sliderContent .carousel-text{
+        font-size: 0.9rem;
     }
     .sliderTop .icon-control {
         font-size: 2.2rem;
@@ -320,7 +322,7 @@ a:hover {
         top: -21px;
         left: 0;
         border-style: solid;
-        border-width: 0 0 22px 81px;
+        border-width: 0 0 22px 91px;
         border-color: #79666600 #ffffff00 #ab0112 #ffffff00;
     }
     .sliderTop .owl-nav .owl-next:before{
@@ -349,19 +351,18 @@ a:hover {
 
     .sliderTop .banner-1 {
         background: url('../images/Banner/banner1.png') no-repeat;
-        background-size: 50%;
-        background-position: 10% 60%;
-
+        background-size: 34%;
+        background-position: 5% 85%;
     }
     .sliderTop .banner-2 {
         background: url('../images/Banner/banner2.png') no-repeat;
-        background-size: 50%;
-        background-position: 10% 60%;
+        background-size: 34%;
+        background-position: 5% 85%;
     }
     .sliderTop .banner-3 {
         background: url('../images/Banner/banner3.png') no-repeat;
-        background-size: 50%;
-        background-position: 10% 60%;
+        background-size: 34%;
+        background-position: 5% 85%;
     }
     .sliderTop .btn-carousel{
         font-size: 0.8rem;
@@ -454,121 +455,10 @@ a:hover {
     }
 }
 
-/* step3 */
-@media {
-    .step3 {
-        margin-top:0.5rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        background-color: #ffffff;
-    }
-    .step3 .container{
-        max-width: 1220px;
-    }
-    .step3 .card-bracket{
-        background-color: white;
-        padding:  4px;
-        margin: 0 4px 0 4px;
-        border-radius: 10px;
-    }
-    .step3 .card {
-        font-family: iranyekanwebmedium, sans-serif;
-        position: relative;
-        border-radius: 10px;
-        box-shadow: 0 28px 19px -23px #4c4c4c42;
-        display: flex;
-    }
-
-    .step3 .card-img-top {
-        height: 15rem;
-        border-radius: 10px 10px 0 0;
-        box-shadow: 0 28px 19px -23px #4c4c4c42;
-    }
-    .step3 .card .badge-offer {
-        font-size: 0.8rem;
-        position: absolute;
-        border-radius: 0.3rem;
-        right: 0.4rem;
-        top: 0.4rem;
-    }
-    .step3 .card .badge-check {
-        /*background-color: #ff299f61;*/
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        color: #00b81e;
-        position: absolute;
-        border-radius: 0.3rem;
-        left: 0.4rem;
-        top: 0.4rem;
-    }
-    .step3 .card .card-title{
-        font-family: IRANYekanBold, sans-serif;
-        color: #B7B7B7;
-        font-size: 0.75rem;
-    }
-    .step3 .card .badge-opinion {
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        font-size: 0.8rem;
-        font-weight: 200;
-        color: #ff3a00;
-        position: absolute;
-        border-radius: 0.3rem;
-        left: 0.5rem;
-        top: 0.5rem;
-    }
-    .step3 .card .badge-room, .step3 .card .badge-guest,
-    .step3 .card .badge-aria{
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        font-size: 0.7rem;
-        font-weight: 200;
-        border-radius: 0.3rem;
-    }
-    .step3 .card .card-foot{
-        border-radius: 0.3rem;
-    }
-    .step3 .card .rental{
-        font-size: 0.7rem;
-        font-weight: 200;
-    }
-    .step3 .card .landlord{
-        font-size: 0.8rem;
-        color: #4B4B4B;
-    }
-    .step3 .card .price{
-        font-size: 0.9rem;
-        color: #4B4B4B;
-    }
-    .step3 .card .cardBtn{
-        font-family: iranyekanwebmedium, sans-serif;
-        font-size: 0.72rem;
-        width: 8rem;
-    }
-    .step3 .card .cardBtn i{
-        font-size: 1rem;
-    }
-
-    .step3 .owl-nav {
-        position: absolute;
-        top: 9rem;
-        left: -0.7rem;
-        right: -0.7rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    .step3 .owl-nav .owl-prev span {
-        font-size: 2rem;
-        color: #FF6161;
-    }
-    .step3 .owl-nav .owl-next span {
-        font-size: 2rem;
-        color: #FF6161;
-    }
-}
-
 /*Tab Content*/
 @media {
     .tab-content {
-        background: url(../images/Banner/hometabBg.png) no-repeat bottom left #aee2f8;
-        padding: 30px 0 70px;
+        background: url(../images/Banner/hometabBg.png) no-repeat bottom left #e3f4ff;
     }
     .tab-content .triangle:before{
         content: "";
@@ -623,68 +513,20 @@ a:hover {
 
 /* Step4 Album */
 @media {
-    .step4 {
-        padding: 10px 0;
-    }
-
-    .step4 .card {
-        font-family: iranyekanwebmedium, sans-serif;
-        position: relative;
-        border-radius: 0;
-        box-shadow: 0 28px 19px -23px #4c4c4c42;
-        display: flex;
-    }
-
     .step4 .card-img-top {
         height: 11rem;
-        border-radius: 10px 10px 0 0;
+        border-radius: 50%;
         box-shadow: 0 28px 19px -23px #4c4c4c42;
     }
-    .step4 .card .badge-offer {
-        font-size: 0.8rem;
-        position: absolute;
-        border-radius: 0.3rem;
-        right: 0.4rem;
-        top: 0.4rem;
-    }
-    .step4 .card .badge-check {
-        /*background-color: #ff299f61;*/
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        color: #00b81e;
-        position: absolute;
-        border-radius: 0.3rem;
-        left: 0.4rem;
-        top: 0.4rem;
-    }
     .step4 .card .card-title{
-        margin-top: 2rem;
-        font-family: IRANYekanBold, sans-serif;
+        margin-top: 1rem;
+        font-family: IRANYekanExtraBold, sans-serif;
         color: #B7B7B7;
         font-size: 0.75rem;
     }
-    .step4 .card .badge-opinion {
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        font-size: 0.8rem;
-        font-weight: 200;
-        color: #ff3a00;
-        position: absolute;
-        border-radius: 0.3rem;
-        left: 0.5rem;
-        top: 0.5rem;
-    }
-    .step4 .card .badge-room, .step3 .card .badge-guest,
-    .step4 .card .badge-aria{
-        padding: 0.1rem 0.3rem 0 0.3rem;
-        font-size: 0.7rem;
-        font-weight: 200;
-        border-radius: 0.3rem;
-    }
+    .step4 .card .badge-room,
     .step4 .card .card-foot{
         border-radius: 0.3rem;
-    }
-    .step4 .card .rental{
-        font-size: 0.7rem;
-        font-weight: 200;
     }
     .step4 .card .landlord{
         font-size: 0.8rem;
@@ -704,9 +546,6 @@ a:hover {
     .step4 .card .cardBtn i{
         font-size: 1rem;
     }
-
-
-
 }
 
 
@@ -887,10 +726,21 @@ a:hover {
         font-size: 13px;
     }
     header .mainNav ul .li-1:after {
-        border-width: 5px 0 0 75px;
+        border-width: 5px 0 0 76px;
     }
     header .mainNav ul .li-1:before {
-        border-width: 0 0 27px 9px;
+        border-width: 0 0 35px 12px;
+    }
+
+    .sliderTop .card  .sliderContent{
+        margin: 32% 10%;
+    }
+    .sliderTop .card .sliderContent .carousel-title{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 1.2rem;
+    }
+    .sliderTop .card .sliderContent .carousel-text{
+        font-size: 1rem;
     }
 }
 
@@ -914,11 +764,11 @@ a:hover {
             left: 50px;
         }
         header .mainNav ul .li-1:before{
-            border-width: 0 0 27px 8px;
+            border-width: 0 0 35px 12px;
         }
         header .mainNav ul .li-1:after{
-            top: 0;
-            border-width: 5px 0 0 75px;
+            top: -5px;
+            border-width: 5px 0 0 79px;
         }
         header .mainNav ul .li-3:before{
             border-width: 0 0 33px 8px;
@@ -941,8 +791,19 @@ a:hover {
         width: 27rem;
     }
 
+    .sliderTop .card  .sliderContent{
+        margin: 25% 10%;
+    }
+    .sliderTop .card .sliderContent .carousel-title{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 1.2rem;
+    }
+    .sliderTop .card .sliderContent .carousel-text{
+        font-size: 1rem;
+    }
+
     .tab-content .nav:before{
-        border-width: 17px 0 0 37.57rem;
+        border-width: 17px 0 0 610px;
     }
 
 
@@ -952,6 +813,39 @@ a:hover {
 @media (max-width: 992px){
     .searchNav .suggested img{
         width: 7rem;
+    }
+
+    /*tab-content*/
+    @media {
+        .tab-content {
+            padding: 0 0 70px;
+        }
+        .tab-content .step4{
+            padding: 0;
+        }
+        .tab-content .step4 .card {
+            font-family: iranyekanwebmedium, sans-serif;
+            text-align: center;
+            position: relative;
+            border-radius: 0;
+            margin-bottom: 1.8rem;
+            box-shadow: none;
+            display: flex;
+            background-color: transparent;
+            border: none;
+        }
+        .tab-content .step4 .title{
+            font-family: "IRANYekanExtraBold", sans-serif;
+            background-color: #DD042B;
+            color: white;
+        }
+        .tab-content .step4 .card .card-title {
+            margin-top: 0.3rem;
+        }
+        .tab-content .step4 .suite-info,
+        .tab-content .step4 .card-foot{
+            display: none !important;
+        }
     }
 
 }
@@ -971,7 +865,7 @@ a:hover {
             border-width: 5px 0 0 98px;
         }
         header .mainNav ul .li-1:before {
-            border-width: 0 0 28px 8px;
+            border-width: 0 0 35px 12px;
         }
     }
     /*Search Nav*/
@@ -1071,6 +965,55 @@ a:hover {
             height: 60px;
         }
     }
+
+    /* *** Slider Top *** */
+    @media {
+        .sliderTop {
+            position: relative;
+            direction: ltr;
+            height: 40rem;
+        }
+        .sliderTop .card .card-img-top{
+            height: 68rem;
+        }
+        .sliderTop .banner-1, .sliderTop .banner-2, .sliderTop .banner-3 {
+            background-size: 50%;
+            background-position: 10% 60%;
+        }
+        .sliderTop .card  .sliderContent{
+            margin: 93% 25%;
+        }
+        .sliderTop .card .sliderContent .carousel-title{
+            font-family: "IRANYekanExtraBold", sans-serif;
+            font-size: 1.5rem;
+        }
+        .sliderTop .card .sliderContent .carousel-text{
+            font-size: 1.2rem;
+        }
+    }
+
+    /*tab-content*/
+    @media {
+        .tab-content {
+            padding: 30px 0 70px;
+        }
+        .tab-content .step4 {
+            padding: 10px 0;
+        }
+        .tab-content .step4 .card {
+            font-family: iranyekanwebmedium, sans-serif;
+            text-align: center;
+            position: relative;
+            border-radius: 0;
+            box-shadow: 0 28px 19px -23px #4c4c4c42;
+            display: flex;
+        }
+        .tab-content .step4 .card-img-top {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -1078,8 +1021,16 @@ a:hover {
     html{
         font-size: 16px;
     }
+    header .mainNav ul .li-1:after {
+        border-width: 5px 0 0 81px
+    }
     header .mainNav ul .li-3:after {
         border-width: 5px 0 0 99px;
     }
+
+    .sliderTop .card  .sliderContent{
+        margin: 75% 33%;
+    }
+
 }
 

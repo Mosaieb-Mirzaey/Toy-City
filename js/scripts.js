@@ -16,20 +16,42 @@ $(window).on('scroll load' , function () {
 });
 
 
-let owl = $('.sliderTop .owl-carousel');
-owl.owlCarousel({
-    autoplay: true,
-    loop: true,
-    nav:true,
-    smartSpeed:3000,
-    autoplayTimeout: 8000,
-    dots: true,
-    items:1,
-});
+// Large size
+function largeFunction(large) {
+    if (large.matches) { // If media query matches
+        //owlCarousel
+        let owl = $('.sliderTop .owl-carousel');
+        owl.owlCarousel({
+            autoplay: true,
+            loop: true,
+            nav:true,
+            smartSpeed:3000,
+            autoplayTimeout: 8000,
+            dots: true,
+            items:1,
+        });
+
+        // تنطیمات آلبوم تب
+        $("#pills-tabContent .tabInLg").addClass("tab-pane");
+    }else {
+        // تنطیمات آلبوم تب
+        $("#pills-tabContent .tabInLg").removeClass("tab-pane");
+    }
+}
+var large = window.matchMedia("(min-width: 992px)")
+largeFunction(large) // Call listener function at run time
+large.addListener(largeFunction) // Attach listener function on state changes
+
+
+
+
+
 
 
 $('.sliderTop .owl-nav').addClass("d-flex justify-content-between");
 
+
+//انیمیشن تیترها در اسلایدر پیج اصلی
 setInterval(function(){
     if ($('.owl-stage').children('.active')){
         window.setTimeout(function (){
@@ -42,10 +64,7 @@ setInterval(function(){
 }, 3000);
 
 
-$('.sliderTop .owl-prev').html(`<span class="icon-control fa fa-angle-double-left ml-5"></span>`);
-$('.sliderTop .owl-next').html(`<span class="icon-control fa fa-angle-double-right mr-5"></span>`);
-
-
+// انیمیشن رده بندی سن
 function ageIconHoverIn(item){
     $(item).addClass("animate__animated animate__heartBeat")
 }
@@ -53,18 +72,20 @@ function ageIconHoverOut(item){
     $(item).removeClass("animate__animated animate__heartBeat")
 }
 
+//انیمیشن کارت های کتگوری پایین اسلایدر صفحه اصلی
 function albumCardHoverIn(item){
     $(item).prev().css({"top": '20rem', "transition": '0.4s', "transform": 'scale(1.1) rotate(4deg)'})
 }
 function albumCardHoverOut(item){
     $(item).prev().css({"top": '11rem', "transition": '0.4s', "transform": 'scale(1) rotate(0deg)'})
 }
+
+//دکمه های اسلایدر صفحه اصلی
 $('.sliderTop .owl-nav .owl-prev').css({
     "transform":"rotate(180deg)",
     "background-color": "#ab0112",
     "padding": "2rem 1.7rem"
 }).html(`<img src="images/Banner/Chevron.svg" width="40px" alt="arrow slider">`);
-
 $('.sliderTop .owl-nav .owl-next').css({
     "background-color": "#ab0112",
     "padding": "2rem 1.7rem"

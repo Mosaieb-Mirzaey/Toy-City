@@ -563,8 +563,8 @@ a:hover {
     #footer li:first-child {
         padding-top: 0;
     }
-
     #footer li a {
+        font-size: 0.82rem;
         color: #ffffff;
         transition-duration: 0.3s;
     }
@@ -572,10 +572,12 @@ a:hover {
     #footer li a:hover {
         color: #2c6;
     }
-
     #footer li i {
         color: #ffffff;
         padding-left: 3px;
+    }
+    #footer p {
+        font-size: 0.76rem;
     }
     #footer .contact .triangle {
         width: 13rem;
@@ -703,12 +705,6 @@ a:hover {
         width: 15rem;
         height: 12rem;
     }
-    #footer li a {
-        font-size: 0.8rem;
-    }
-    #footer p {
-        font-size: 0.78rem;
-    }
 
 
     #footer .copyright{
@@ -752,7 +748,6 @@ a:hover {
             z-index: 10;
         }
     }
-
     .navSlide .categoryMobile img{
         width: 27rem;
     }
@@ -772,7 +767,12 @@ a:hover {
         border-width: 17px 0 0 610px;
     }
 
-
+    #footer li a {
+        font-size: 0.9rem;
+    }
+    #footer p {
+        font-size: 0.9rem;
+    }
 }
 
 /* large devices (tablets, Max width 992px) */
@@ -979,6 +979,12 @@ a:hover {
         }
     }
 
+    #footer li a {
+        font-size: 0.92rem;
+    }
+    #footer p {
+        font-size: 0.92rem;
+    }
 
 }
 

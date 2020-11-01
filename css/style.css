@@ -577,38 +577,13 @@ a:hover {
         color: #ffffff;
         padding-left: 3px;
     }
+    #footer .contact .triangle {
+        width: 13rem;
+        height: 50px;
+        margin-bottom: -25px;
+    }
     #footer .contact .title{
-        background: #ab0112;
-        width: 160px;
-        position: absolute;
-        right: 41px;
-    }
-    #footer .contact .title:before{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: -10px;
-        right: 0;
-        border-width: 10px 0 0 10rem;
-        border-color: transparent transparent transparent #ab0112;
-    }
-    #footer .contact .title:after{
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: -10px;
-        right: 160px;
-        border-width: 0 7px 41px 0px;
-        border-color: transparent #ab0112 transparent transparent;
-    }
-    #footer .contact .triangle:before {
-        content: "";
-        position: absolute;
-        border-style: solid;
-        top: 0;
-        right: 33px;
-        border-width: 0 0 29px 8px;
-        border-color: transparent #ab0112 transparent;
+        margin-top: -26px;
     }
     #footer .link {
         width: 18.8rem;
@@ -715,6 +690,30 @@ a:hover {
 @media (max-width: 768px) {
     header .navbar-brand img {
         width: 11.4rem;
+    }
+    #footer .contact .triangle {
+        width: 10.5rem;
+        height: 37px;
+        margin-bottom: -20px;
+    }
+    #footer .contact .title{
+        margin-top: -20px;
+    }
+    #footer .link {
+        width: 15rem;
+        height: 12rem;
+    }
+    #footer li a {
+        font-size: 0.8rem;
+    }
+    #footer p {
+        font-size: 0.78rem;
+    }
+
+
+    #footer .copyright{
+        text-align: center;
+        font-size: 0.7rem;
     }
 }
 

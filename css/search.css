@@ -1,0 +1,149 @@
+a{
+    color: white;
+}
+a:hover{
+    color: greenyellow;
+}
+#searchPage .sideBarBox {
+    background-color: #ab0112;
+    color: white;
+}
+#searchPage .sideBarBox h6{
+    font-family: "IRANYekanExtraBold", sans-serif;
+}
+#searchPage .sideBarBox .bgSideIcon{
+    position: relative;
+    z-index: 1;
+    width: 105%;
+    margin-right: -12px;
+}
+#searchPage .sideBarBox .overflows{
+    overflow: hidden;
+}
+#searchPage .sideBarBox .categoryContent{
+    position: relative;
+    margin-top: -840px;
+}
+#searchPage .sideBarBox .title{
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+    margin-top: -38px;
+    cursor: pointer;
+}
+#searchPage .sideBarBox .subCategoryBox .subTitle{
+    margin-top: 1.3rem;
+    font-size: 0.83rem;
+    cursor: pointer;
+}
+#searchPage .sideBarBox .subCategoryBox .subTitle .fa{
+    font-size: 0.6rem;
+}
+#searchPage .sideBarBox .subCategoryBox .subCategoryContent,
+#searchPage .sideBarBox .ageBox .subAgeContent,
+#searchPage .sideBarBox .brandBox .subBrandContent{
+    margin-top: -100%;
+    margin-right: 1.9rem;
+    font-size: 0.75rem;
+}
+#searchPage .sideBarBox .genderBox .subGenderContent{
+    font-size: 0.75rem;
+    margin-right: 1.4rem;
+}
+#searchPage .sideBarBox .checkBox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+#searchPage .sideBarBox label{
+    margin-bottom: 0;
+    margin-right: 0.3rem;
+}
+
+
+
+
+
+/*Filter Sorting*/
+@media {
+    #searchPage .filter-btn-box{
+        font-family: "iranyekanwebmedium", sans-serif;
+        font-size: 0.75rem;
+        width: 100%;
+        border-radius: 10px;
+        right: 0;
+        z-index: 1;
+        padding: 10px;
+    }
+    #searchPage .filter-min{
+        position: absolute;
+        color: white;
+        bottom: -12px;
+        right: -12px;
+    }
+    #searchPage .filter-max{
+        position: absolute;
+        color: white;
+        bottom: -12px;
+        left: -10px;
+    }
+    #searchPage .slider-handle {
+        width: 14px;
+        height: 14px;
+    }
+    #searchPage .slider.slider-horizontal .slider-track {
+        height: 4px;
+    }
+    #searchPage .tooltip-inner{
+        font-family: "iranyekanwebmedium", sans-serif;
+    }
+}
+
+
+
+
+
+
+
+/* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+/* Mobile devices (mobile, Max width 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+}
+
+/* Medium devices (tablets, Max width 768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /*SideBar*/
+    @media {
+
+    }
+
+
+}
+
+/* large devices (tablets, Max width 992px) */
+@media (max-width: 992px){
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+

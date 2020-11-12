@@ -509,11 +509,17 @@ a:hover {
         color: #4B4B4B;
     }
     .step4 .card .cardBtn{
-        font-family: iranyekanwebmedium, sans-serif;
-        background-color: #00a0ee;
+        font-family: iranyekanwebbold, sans-serif;
         color: white;
-        font-size: 0.72rem;
+        font-size: 0.75rem;
         width: 8rem;
+    }
+    .step4 .card .bg-blue{
+        background-color: #00a0ee;
+    }
+    .step4 .card .bg-green{
+        background-color: #65b728;
+        font-size: 0.8rem;
     }
     .step4 .card .cardBtn i{
         font-size: 1rem;

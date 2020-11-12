@@ -4,101 +4,62 @@ a{
 a:hover{
     color: greenyellow;
 }
-#searchPage .sideBarBox {
+
+#searchPage .step4 .card-img-top {
+    width: initial;
+}
+
+/* *********** Filter Mobile Base *********** */
+#searchPage .bgSearchMobile{
+    background-color: white;
+}
+#searchPage .bgSearchMobile .searchMobile{
+    background: #b49759;
+}
+#searchPage .searchMobile input{
+    margin: 5px 5px 5px 0;
+    border: none;
+    height: 2rem;
+}
+#searchPage .searchMobile input:focus{
+    outline: none;
+}
+#searchPage .searchMobile .searchBtn{
+    margin: 5px 0 5px 5px;
+    height: 2rem;
+}
+#searchPage .searchMobile a{
+    font-family: IRANYekanExtraBold, sans-serif;
+    font-size: 1rem;
     background-color: #ab0112;
-    color: white;
+    width: 23%;
 }
-#searchPage .sideBarBox h6{
-    font-family: "IRANYekanExtraBold", sans-serif;
-}
-#searchPage .sideBarBox .bgSideIcon{
-    position: relative;
-    z-index: 1;
-    width: 105%;
-    margin-right: -12px;
-}
-#searchPage .sideBarBox .overflows{
-    overflow: hidden;
-}
-#searchPage .sideBarBox .categoryContent{
-    position: relative;
-    margin-top: -840px;
-}
-#searchPage .sideBarBox .title{
-    position: relative;
-    z-index: 2;
-    font-size: 0.9rem;
-    margin-top: -38px;
-    cursor: pointer;
-}
-#searchPage .sideBarBox .subCategoryBox .subTitle{
-    margin-top: 1.3rem;
-    font-size: 0.83rem;
-    cursor: pointer;
-}
-#searchPage .sideBarBox .subCategoryBox .subTitle .fa{
-    font-size: 0.6rem;
-}
-#searchPage .sideBarBox .subCategoryBox .subCategoryContent,
-#searchPage .sideBarBox .ageBox .subAgeContent,
-#searchPage .sideBarBox .brandBox .subBrandContent{
-    margin-top: -100%;
-    margin-right: 1.9rem;
-    font-size: 0.75rem;
-}
-#searchPage .sideBarBox .genderBox .subGenderContent{
-    font-size: 0.75rem;
-    margin-right: 1.4rem;
-}
-#searchPage .sideBarBox .checkBox{
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-#searchPage .sideBarBox label{
-    margin-bottom: 0;
-    margin-right: 0.3rem;
+#searchPage .searchMobile a i{
+    margin-top: 2px;
 }
 
 
-
-
-
-/*Filter Sorting*/
-@media {
-    #searchPage .filter-btn-box{
-        font-family: "iranyekanwebmedium", sans-serif;
-        font-size: 0.75rem;
-        width: 100%;
-        border-radius: 10px;
-        right: 0;
-        z-index: 1;
-        padding: 10px;
-    }
-    #searchPage .filter-min{
-        position: absolute;
-        color: white;
-        bottom: -12px;
-        right: -12px;
-    }
-    #searchPage .filter-max{
-        position: absolute;
-        color: white;
-        bottom: -12px;
-        left: -10px;
-    }
-    #searchPage .slider-handle {
-        width: 14px;
-        height: 14px;
-    }
-    #searchPage .slider.slider-horizontal .slider-track {
-        height: 4px;
-    }
-    #searchPage .tooltip-inner{
-        font-family: "iranyekanwebmedium", sans-serif;
-    }
+/*Number Count*/
+#searchPage .suite-info .personCount .btnDown{
+    border: 1px solid #331FC8;
+    border-radius: 0 0.25rem 0.25rem 0;
+    width: 3rem;
 }
-
+#searchPage .suite-info .personCount input{
+    border-top: 1px solid #331FC8;
+    border-bottom: 1px solid #331FC8;
+}
+#searchPage .suite-info .personCount input:focus{
+    outline: none;
+    box-shadow: none;
+}
+#searchPage .suite-info .personCount .btnUp{
+    border-radius: 0.25rem 0 0 0.25rem;
+    width: 3rem;
+}
+#searchPage .suite-info {
+    line-height: 0;
+}
 
 
 
@@ -135,15 +96,235 @@ a:hover{
 
 /* large devices (tablets, Max width 992px) */
 @media (max-width: 992px){
+    #searchPage .filterNav .filteringMobile{
+        font-family: iranyekanwebmedium, sans-serif;
+        font-size: 0.9rem;
+        color: white;
+    }
+    #searchPage .filterNav .mainFilterBtn{
+        background-color: #ab0112;
+        border-radius: 0.2rem;
+    }
+    #searchPage .filterNav .filterList{
+        height: 0;
+        overflow: hidden;
+        border-radius: 0.2rem;
+        background-color: #ab0112;
+        color: #666;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    #searchPage .filterNav .titleBranchMob{
+        font-family: IRANYekanExtraBold, sans-serif;
+        font-size: 1.1rem;
+    }
+    #searchPage .filterNav .subFilterBtn{
+        font-family: IRANYekanExtraBold, sans-serif;
+        font-size: 0.9rem;
+    }
+    #searchPage .filterNav .categoryList{
+        background-color: #ecfaff;
+        height: 0;
+        overflow: hidden;
+    }
+    #searchPage .subFilterBtn{
+        background-color: #ffffff;
+        border-top: 1px solid #e2e2e2;
+        border-bottom: 1px solid #e2e2e2;
+        border-radius: 0.2rem;
+    }
+    #searchPage .filterNav .overflowsMobile{
+        border-radius: 0.2rem;
+        height: 0;
+        overflow: hidden;
+    }
+    #searchPage .filterNav .checkBoxMobile:hover{
+        border-color: #6bcffd;
+    }
+    #searchPage .filterNav .checkBoxMobile{
+        display: flex;
+        padding: 3px 0;
+        align-items: center;
+        border: 1px solid #f3f3f3;
+        border-radius: 0.3rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        background-color: white;
+    }
+
+    /*Checkbox Style*/
+    @media {
+        #searchPage .filterNav .checkBoxMobile input[type='checkbox'] {
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeSpeed;
+            width: 13px;
+            height: 13px;
+            margin: 0;
+            margin-right: 1px;
+            display: block;
+            float: left;
+            position: relative;
+            cursor: pointer;
+        }
+        #searchPage .filterNav .checkBoxMobile input[type='checkbox']:after {
+            content: "";
+            vertical-align: middle;
+            text-align: center;
+            line-height: 13px;
+            position: absolute;
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            left: 0;
+            top: 0;
+            background: #ffffff;
+        }
+        #searchPage .filterNav .checkBoxMobile input[type=checkbox]:checked:after {
+            content: '\2714';
+            background: #fcfcfc !important;
+            color: #86003a !important;
+        }
+    }
+
+    #searchPage .filterNav .checkBoxMobile label{
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+
+
+
 
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    #searchPage .step4 .card-img-top {
+        width: 100%;
+    }
+
+    #searchPage .sideBarBox {
+        background-color: #ab0112;
+        color: white;
+    }
+    #searchPage .sideBarBox h6{
+        font-family: "IRANYekanExtraBold", sans-serif;
+    }
+    #searchPage .sideBarBox .bgSideIcon{
+        position: relative;
+        z-index: 1;
+        width: 105%;
+        margin-right: -12px;
+    }
+    #searchPage .sideBarBox .overflows{
+        overflow: hidden;
+    }
+    #searchPage .sideBarBox .categoryContent{
+        position: relative;
+        margin-top: -840px;
+    }
+    #searchPage .sideBarBox .title{
+        position: relative;
+        z-index: 2;
+        font-size: 0.9rem;
+        margin-top: -42px;
+        cursor: pointer;
+    }
+    #searchPage .sideBarBox .subCategoryBox .subTitle{
+        margin-top: 1.3rem;
+        font-size: 0.83rem;
+        cursor: pointer;
+    }
+    #searchPage .sideBarBox .subCategoryBox .subTitle .fa{
+        font-size: 0.6rem;
+    }
+    #searchPage .sideBarBox .subCategoryBox .subCategoryContent,
+    #searchPage .sideBarBox .ageBox .subAgeContent,
+    #searchPage .sideBarBox .brandBox .subBrandContent{
+        margin-top: -100%;
+        margin-right: 1.9rem;
+        font-size: 0.75rem;
+    }
+    #searchPage .sideBarBox .genderBox .subGenderContent{
+        font-size: 0.75rem;
+        margin-right: 1.4rem;
+    }
+    #searchPage .sideBarBox .checkBox{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    #searchPage .sideBarBox label{
+        margin-bottom: 0;
+        margin-right: 0.3rem;
+    }
+    #searchPage .SideBarBottomTriangle{
+        margin-top: -5px;
+    }
+
+    /*Filter Price Sorting*/
+    @media {
+        #searchPage .filter-btn-box{
+            font-family: "iranyekanwebmedium", sans-serif;
+            font-size: 0.75rem;
+            width: 100%;
+            border-radius: 10px;
+            right: 0;
+            z-index: 1;
+            padding: 10px;
+        }
+        #searchPage .filter-min{
+            position: absolute;
+            color: white;
+            bottom: -12px;
+            right: -12px;
+        }
+        #searchPage .filter-max{
+            position: absolute;
+            color: white;
+            bottom: -12px;
+            left: -10px;
+        }
+        #searchPage .slider-handle {
+            width: 14px;
+            height: 14px;
+        }
+        #searchPage .slider.slider-horizontal .slider-track {
+            height: 4px;
+        }
+        #searchPage .tooltip-inner{
+            font-family: "iranyekanwebmedium", sans-serif;
+        }
+    }
+
+
+    /*Number Count*/
+    @media {
+        #searchPage .suite-info .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #searchPage .suite-info .form-control {
+            height: 24px;
+            line-height: 1;
+        }
+        #searchPage .suite-info .btn {
+            padding: 0;
+        }
+        #searchPage .suite-info .personCount .btnDown{
+            width: 2rem;
+        }
+        #searchPage .suite-info .personCount .btnUp{
+            width: 2rem;
+        }
+    }
 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    #searchPage .suite-info .form-control {
+        height: 26px;
+    }
 }
 

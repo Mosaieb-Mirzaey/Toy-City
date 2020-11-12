@@ -163,10 +163,339 @@
 
 <!--Article-->
 <section id="searchPage">
+
+    <!--  Mobile  -->
+    <div class="filterNav px-3 py-4 d-lg-none">
+        <div class="filteringMobile p-2 position-relative">
+            <div class="mainFilterBtn false px-3  d-flex w-100 justify-content-between align-items-center my-auto" onclick="collapseMobile1(this)">
+                <p class="my-2 titleBranchMob">فیلتر کردن دسته بندی ها</p>
+                <img src="../images/icon/chervon.svg" alt="arrow-right">
+            </div>
+            <div class="filterList px-2 position-relative my-1">
+                <div class="py-2">
+                    <div class="categoryMobile">
+                        <div class="subFilterBtn false px-3 d-flex w-100 justify-content-between align-items-center my-auto" onclick="collapseMobile1(this)">
+                            <p class="titleBranchMob my-1">دسته بندی کالا</p>
+                            <img src="../images/icon/chervonBlack.svg" style="width: 1.5rem" alt="arrow-right" >
+                        </div>
+                        <div class="categoryList mt-1">
+                            <div class="subBoxMobile">
+                                <div class="subFilterBtn false px-3 d-flex w-100 align-items-center my-auto" onclick="collapseMobile2(this)">
+                                    <span class="pl-3 fa fa-plus"></span>
+                                    <p class="my-1">اسباب بازی</p>
+                                </div>
+                                <div class="overflowsMobile my-1 bg-white px-2 position-relative">
+                                    <div class="subCategoryContentMobile py-1">
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="toysMob1" type="checkbox" name="toysMob1" value="1">
+                                            <label class="label w-100" for="toysMob1">ماشین</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="toysMob2" type="checkbox" name="toysMob2" value="2">
+                                            <label class="label w-100" for="toysMob2">پازل و لوگو</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="toysMob3" type="checkbox" name="toysMob3" value="3">
+                                            <label class="label w-100" for="toysMob3">ساختنی</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subBoxMobile">
+                                <div class="subFilterBtn false px-3 d-flex w-100 align-items-center my-auto" onclick="collapseMobile2(this)">
+                                    <span class="pl-3 fa fa-plus"></span>
+                                    <p class="my-1">عروسک</p>
+                                </div>
+                                <div class="overflowsMobile my-1 bg-white px-2 position-relative">
+                                    <div class="subCategoryContentMobile py-1">
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="dollMob1" type="checkbox" name="dollMob1" value="1">
+                                            <label class="label w-100" for="dollMob1">عروسک فانتزی</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="dollMob2" type="checkbox" name="dollMob2" value="2">
+                                            <label class="label w-100" for="dollMob2">فیگور</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="dollMob3" type="checkbox" name="dollMob3" value="3">
+                                            <label class="label w-100" for="dollMob3">برندها</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subBoxMobile">
+                                <div class="subFilterBtn false px-3 d-flex w-100 align-items-center my-auto" onclick="collapseMobile2(this)">
+                                    <span class="pl-3 fa fa-plus"></span>
+                                    <p class="my-1">سیسمونی</p>
+                                </div>
+                                <div class="overflowsMobile my-1 bg-white px-2 position-relative">
+                                    <div class="subCategoryContentMobile py-1">
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="BabyServiceMob1" type="checkbox" name="BabyServiceMob1" value="1">
+                                            <label class="label w-100" for="BabyServiceMob1">لوازم نوزاد</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="BabyServiceMob2" type="checkbox" name="BabyServiceMob2" value="2">
+                                            <label class="label w-100" for="BabyServiceMob2">سیسمونی اتاق نوزاد</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="BabyServiceMob3" type="checkbox" name="BabyServiceMob3" value="3">
+                                            <label class="label w-100" for="BabyServiceMob3">سرگرمی نوزاد</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subBoxMobile">
+                                <div class="subFilterBtn false px-3 d-flex w-100 align-items-center my-auto" onclick="collapseMobile2(this)">
+                                    <span class="pl-3 fa fa-plus"></span>
+                                    <p class="my-1">تولد</p>
+                                </div>
+                                <div class="overflowsMobile my-1 bg-white px-2 position-relative">
+                                    <div class="subCategoryContentMobile py-1">
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="birthdayMob1" type="checkbox" name="birthdayMob1" value="1">
+                                            <label class="label w-100" for="birthdayMob1">وسایل تولد</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="birthdayMob2" type="checkbox" name="birthdayMob2" value="2">
+                                            <label class="label w-100" for="birthdayMob2">تم تولد</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="birthdayMob3" type="checkbox" name="birthdayMob3" value="3">
+                                            <label class="label w-100" for="birthdayMob3">هدیه تولد</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subBoxMobile">
+                                <div class="subFilterBtn false px-3 d-flex w-100 align-items-center my-auto" onclick="collapseMobile2(this)">
+                                    <span class="pl-3 fa fa-plus"></span>
+                                    <p class="my-1">لوازم التحریر</p>
+                                </div>
+                                <div class="overflowsMobile my-1 bg-white px-2 position-relative">
+                                    <div class="subCategoryContentMobile py-1">
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="StationeryMob1" type="checkbox" name="StationeryMob1" value="1">
+                                            <label class="label w-100" for="StationeryMob1">نوشت افزار</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="StationeryMob2" type="checkbox" name="StationeryMob2" value="2">
+                                            <label class="label w-100" for="StationeryMob2">دفتر و کلاسور</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="StationeryMob3" type="checkbox" name="StationeryMob3" value="3">
+                                            <label class="label w-100" for="StationeryMob3">وسایل فانتزی</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subBoxMobile">
+                                <div class="subFilterBtn false px-3 d-flex w-100 align-items-center my-auto" onclick="collapseMobile2(this)">
+                                    <span class="pl-3 fa fa-plus"></span>
+                                    <p class="my-1">کتاب</p>
+                                </div>
+                                <div class="overflowsMobile my-1 bg-white px-2 position-relative">
+                                    <div class="subCategoryContentMobile py-1">
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="bookMob1" type="checkbox" name="bookMob1" value="1">
+                                            <label class="label w-100" for="bookMob1">کتاب داستان</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="bookMob2" type="checkbox" name="bookMob2" value="2">
+                                            <label class="label w-100" for="bookMob2">کتاب آموزشی</label>
+                                        </div>
+                                        <div class="checkBoxMobile">
+                                            <input class="tikMobile" id="bookMob3" type="checkbox" name="bookMob3" value="3">
+                                            <label class="label w-100" for="bookMob3">رمان</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ageMobile py-1">
+                        <div class="subFilterBtn false px-3 d-flex w-100 justify-content-between align-items-center my-auto" onclick="collapseMobile1(this)">
+                            <p class="titleBranchMob my-1">دسته بندی براساس سن</p>
+                            <img src="../images/icon/chervonBlack.svg" style="width: 1.5rem" alt="arrow-right" >
+                        </div>
+                        <div class="categoryList mt-1">
+                            <div class="subBoxMobile">
+                                <div class="subAgeContentMobile p-2 py-1">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="ageMob1" type="checkbox" name="ageMob1" value="1">
+                                                <label class="label w-100" for="ageMob1">تا 1 سال</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="ageMob2" type="checkbox" name="ageMob2" value="2">
+                                                <label class="label w-100" for="ageMob2">1 تا 3 سال</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="ageMob3" type="checkbox" name="ageMob3" value="3">
+                                                <label class="label w-100" for="ageMob3">3 تا 5 سال</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="ageMob4" type="checkbox" name="ageMob4" value="3">
+                                                <label class="label w-100" for="ageMob4">5 تا 8 سال</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="ageMob5" type="checkbox" name="ageMob5" value="3">
+                                                <label class="label w-100" for="ageMob5">8 تا 12 سال</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="ageMob6" type="checkbox" name="ageMob6" value="3">
+                                                <label class="label w-100" for="ageMob6">بالای 12 سال</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priceMobile">
+                        <div class="subFilterBtn false px-3 d-flex w-100 justify-content-between align-items-center my-auto" onclick="collapseMobile1(this)">
+                            <p class="titleBranchMob my-1">محدوده قیمت مورد نظر</p>
+                            <img src="../images/icon/chervonBlack.svg" style="width: 1.5rem" alt="arrow-right" >
+                        </div>
+                        <div class="categoryList mt-1">
+                            <div class="subBoxMobile">
+                                <div class="subPriceContentMobile p-2 py-1">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="priceMob1" type="checkbox" name="priceMob1" value="1">
+                                                <label class="label w-100" for="priceMob1">تا 50 هزار تومان</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="priceMob2" type="checkbox" name="priceMob2" value="2">
+                                                <label class="label w-100" for="priceMob2">50 تا 100 هزار تومان</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="priceMob3" type="checkbox" name="priceMob3" value="3">
+                                                <label class="label w-100" for="priceMob3">100 تا 200 هزار تومان</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="priceMob4" type="checkbox" name="priceMob4" value="3">
+                                                <label class="label w-100" for="priceMob4">200 تا 400 هزار تومان</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="priceMob5" type="checkbox" name="priceMob5" value="3">
+                                                <label class="label w-100" for="priceMob5">400 تا 600 هزار تومان</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="priceMob6" type="checkbox" name="priceMob6" value="3">
+                                                <label class="label w-100" for="priceMob6">600 تومان به بالا</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brandMobile py-1">
+                        <div class="subFilterBtn false px-3 d-flex w-100 justify-content-between align-items-center my-auto" onclick="collapseMobile1(this)">
+                            <p class="titleBranchMob my-1">برند</p>
+                            <img src="../images/icon/chervonBlack.svg" style="width: 1.5rem" alt="arrow-right" >
+                        </div>
+                        <div class="categoryList mt-1">
+                            <div class="subBoxMobile">
+                                <div class="subBrandContentMobile p-2 py-1">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="BrandMob1" type="checkbox" name="BrandMob1" value="1">
+                                                <label class="label w-100" for="BrandMob1">برندهای ایرانی</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="BrandMob2" type="checkbox" name="BrandMob2" value="2">
+                                                <label class="label w-100" for="BrandMob2">برندهای خارجی</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="BrandMob3" type="checkbox" name="BrandMob3" value="3">
+                                                <label class="label w-100" for="BrandMob3">دیزینی</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="checkBoxMobile">
+                                                <input class="tikMobile" id="BrandMob4" type="checkbox" name="BrandMob4" value="3">
+                                                <label class="label w-100" for="BrandMob4">هملیز</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genderMobile">
+                        <div class="subFilterBtn false px-3 d-flex w-100 justify-content-between align-items-center my-auto" onclick="collapseMobile1(this)">
+                            <p class="titleBranchMob my-1">کاربرد</p>
+                            <img src="../images/icon/chervonBlack.svg" style="width: 1.5rem" alt="arrow-right" >
+                        </div>
+                        <div class="categoryList mt-1">
+                            <div class="subBoxMobile">
+                                <div class="subGenderContentMobile p-2 py-1">
+                                    <div class="checkBoxMobile">
+                                        <input class="tikMobile" id="genderMob1" type="checkbox" name="genderMob1" value="1">
+                                        <label class="label w-100" for="genderMob1">دخترانه</label>
+                                    </div>
+                                    <div class="checkBoxMobile">
+                                        <input class="tikMobile" id="genderMob2" type="checkbox" name="genderMob2" value="2">
+                                        <label class="label w-100" for="genderMob2">پسرانه</label>
+                                    </div>
+                                    <div class="checkBoxMobile">
+                                        <input class="tikMobile" id="genderMob3" type="checkbox" name="genderMob3" value="3">
+                                        <label class="label w-100" for="genderMob3">همه</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sideBarBox mt-4">
+<!--            <div class="border-bottom w-100">-->
+<!--                <h6 class="pt-3 px-2">دسته بندی ها</h6>-->
+<!--                <div class="ageBox">-->
+<!--                    <a class="title mr-3 d-flex justify-content-between" onclick="Collapse1(this)">-->
+<!--                        <span>دسته بندی بر اساس سن</span>-->
+<!--                        <span class="pl-3 fa fa-plus"></span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+
+    <!--  desktop  -->
     <div class="container px-5">
         <div class="row">
-            <div class="col-3">
-                <div class="sideBarBox my-4">
+            <div class="col-3 d-none d-lg-block">
+                <div class="sideBarBox mt-4">
                     <div class="border-bottom w-100">
                         <h6 class="pt-3 px-2">دسته بندی ها</h6>
                         <div class="categoryBox">
@@ -438,17 +767,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="SideBarBottomTriangle">
+                    <img class="w-100" src="../images/icon/search-sideBar-bottom.png" alt="search-sideBar-bottom">
+                </div>
             </div>
-            <div class="col-9 step4">
-                <div class="row mx-auto px-lg-5 mt-lg-5">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg px-1">
+            <div class="col-12 col-lg-9 step4">
+                <div class="row mx-auto px-lg-5 mt-5">
+                    <div class="col-12 col-md-6 col-lg-3 px-1">
                         <div class="card">
                             <img class="card-img-top mx-auto" src="../images/card/album-1.jpg" alt="Card image cap">
                             <div class="card-body position-relative py-2 px-1">
                                 <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
                                 <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
-                                    <div class="badge-light badge-room ml-1 py-1 text-primary">
-                                        <span class="text-danger">جشنواره پاییزی</span>
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
                                     </div>
                                 </div>
 
@@ -458,24 +790,29 @@
                                 </div>
 
                                 <div class="card-foot mt-3 d-flex justify-content-around">
-                                    <a href="#" class="cardBtn d-flex align-items-center btn p-1">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
                                             <span>
-                                              <i class="fa fa-cart-arrow-down"></i>
-                                            اضافه به سبد خرید
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
                                             </span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg px-1">
+                    <div class="col-12 col-md-6 col-lg-3 px-1">
                         <div class="card">
                             <img class="card-img-top mx-auto" src="../images/card/album-2.jpg" alt="Card image cap">
                             <div class="card-body position-relative py-2 px-1">
                                 <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
                                 <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
-                                    <div class="badge-light badge-room ml-1 py-1 text-primary">
-                                        <span class="text-danger">جشنواره پاییزی</span>
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
                                     </div>
                                 </div>
 
@@ -485,24 +822,29 @@
                                 </div>
 
                                 <div class="card-foot mt-3 d-flex justify-content-around">
-                                    <a href="#" class="cardBtn d-flex align-items-center btn p-1">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
                                             <span>
-                                              <i class="fa fa-cart-arrow-down"></i>
-                                            اضافه به سبد خرید
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
                                             </span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg px-1">
+                    <div class="col-12 col-md-6 col-lg-3 px-1">
                         <div class="card">
                             <img class="card-img-top mx-auto" src="../images/card/album-3.jpg" alt="Card image cap">
                             <div class="card-body position-relative py-2 px-1">
                                 <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
                                 <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
-                                    <div class="badge-light badge-room ml-1 py-1 text-primary">
-                                        <span class="text-danger">جشنواره پاییزی</span>
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
                                     </div>
                                 </div>
 
@@ -512,24 +854,29 @@
                                 </div>
 
                                 <div class="card-foot mt-3 d-flex justify-content-around">
-                                    <a href="#" class="cardBtn d-flex align-items-center btn p-1">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
                                             <span>
-                                              <i class="fa fa-cart-arrow-down"></i>
-                                            اضافه به سبد خرید
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
                                             </span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg px-1">
+                    <div class="col-12 col-md-6 col-lg-3 px-1">
                         <div class="card">
                             <img class="card-img-top mx-auto" src="../images/card/album-4.jpg" alt="Card image cap">
                             <div class="card-body position-relative py-2 px-1">
                                 <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
                                 <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
-                                    <div class="badge-light badge-room ml-1 py-1 text-primary">
-                                        <span class="text-danger">جشنواره پاییزی</span>
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
                                     </div>
                                 </div>
 
@@ -539,10 +886,15 @@
                                 </div>
 
                                 <div class="card-foot mt-3 d-flex justify-content-around">
-                                    <a href="#" class="cardBtn d-flex align-items-center btn p-1">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
                                             <span>
-                                              <i class="fa fa-cart-arrow-down"></i>
-                                            اضافه به سبد خرید
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
                                             </span>
                                     </a>
                                 </div>
@@ -553,6 +905,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 
@@ -695,6 +1048,7 @@
 <script src="../js/smooth-scroll.min.js"></script>
 <script src="../js/isotope.pkgd.min.js"></script>
 <script src="../js/wow.min.js"></script>
+<script src="../js/bootstrap-number-input.js"></script>
 <script src="../js/main-slider.js"></script>
 <script src="../js/scripts.js"></script>
 <script src="../js/search.js"></script>

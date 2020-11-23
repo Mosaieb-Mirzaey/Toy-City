@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mosaieb Mirzaey">
+    <title>Toy City</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="../css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <style>
+
+    </style>
+</head>
+
+
+<body class="mx-auto">
+<!-- header -->
+<header id="header" class="position-relative">
+    <nav class="d-inline-block mainNav text-white">
+        <div class="d-inline-block ml-auto">
+            <a class="navbar-brand mr-auto d-none d-lg-inline-block" href="#">
+                <img src="../images/Logo/Logo-FA-EN.png" width="140px" alt="">
+            </a>
+        </div>
+        <ul class="mr-md-auto d-inline-block position-absolute">
+            <li class="li-1">
+                <i class="fa fa-cart-arrow-down"></i>
+                <a class="navLink text-dark" href="#">سبد خرید</a>
+            </li>
+            <li class="li-2">
+                <i class="fa fa-heart"></i>
+                <a class=" navLink" href="#">علاقه مندی ها</a>
+            </li>
+            <li class="li-3">
+                <i class="fa fa-sign-in"></i>
+                <a class=" navLink" href="#">ورود / عضویت</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="searchNav position-relative">
+    <div class="mainNav d-flex justify-content-between align-items-center px-4 position-relative">
+        <div class="toggleParent p-2 d-lg-none" onclick="navbarBtn(this)">
+            <span class="toggle"><i class="fa fa-bars text-white"></i></span>
+        </div>
+        <form class="d-none d-lg-flex justify-content-center my-auto">
+            <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
+            <a class="my-2 my-sm-0 px-3 position-relative" type="submit">
+                <i class="fa fa-search text-white position-absolute"></i>
+            </a>
+        </form>
+        <div class="d-inline-block">
+            <a class="navbar-brand mr-auto d-inline-block d-lg-none" href="#">
+                <img src="../images/Logo/Logo-mobile.png" width="110px" alt="">
+            </a>
+        </div>
+        <a class="searchToggle my-2 my-sm-0 px-3 d-lg-none" type="submit">
+            <i class="fa fa-search text-white position-absolute" onclick="mobileSearch(this)"></i>
+        </a>
+        <a href="#" class="suggested my-auto d-flex align-items-center text-black-50">
+            <img src="../images/icon/offer-small.png" alt="">
+        </a>
+    </div>
+    <div class="bgSearchMobile deactivate p-2">
+        <form class="searchMobile d-flex w-100 justify-content-center align-items-center my-auto">
+            <input class="w-75" type="search" placeholder="جستجوی کلیدواژه" aria-label="Search">
+            <a class="searchBtn text-white d-flex align-items-center justify-content-center" type="submit">
+                <span class="mb-1">جستجو</span>
+            </a>
+        </form>
+    </div>
+</section>
+
+
+<!--NavSlide-->
+<section class="navSlide">
+    <div class="categoryMobile p-3 d-lg-none position-absolute deactivate">
+        <ul class="m-0 p-0">
+            <li class="cat-1">
+                <a class="" href="#">
+                    <img src="../images/icon/nav-Preschool.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-2">
+                <a class="" href="#">
+                    <img src="../images/icon/nav-Soft%20toys.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-3">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Arts-and-crafts.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-4">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Build-It.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-5">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Dolls.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Vehicles.jpg" alt="toys-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="category mb-2 d-none d-lg-block">
+        <ul class="mx-auto mb-0">
+            <li class="cat-1 active">
+                <a class="" href="#">
+                    <i><img src="../images/icon/toys.png" alt="toys-icon"></i>
+                    اسباب بازی
+                </a>
+            </li>
+            <li class="cat-2 bg-success">
+                <a class="" href="#">
+                    <i><img src="../images/icon/Dolls.png" alt="toys-icon"></i>
+                    عروسک
+                </a>
+            </li>
+            <li class="cat-3 bg-secondary">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/babyStroller.png" alt="toys-icon"></i>
+                    سیسمونی
+                </a>
+            </li>
+            <li class="cat-4 bg-danger">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/birthday.png" alt="toys-icon"></i>
+                    تولد
+                </a>
+            </li>
+            <li class="cat-5 bg-info">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/stationery.png" alt="toys-icon"></i>
+                    لوازم تحریر
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/book.png" alt="toys-icon"></i>
+                    کتاب و فرهنگ
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!--Article-->
+<section id="productPage" class="pt-2">
+
+    <!--General Information-->
+    <section Id="generalInfo" class="mb-4">
+        <div class="container my-5">
+            <div class="addressBar d-none d-lg-block">
+                <div class="row my-2 mx-lg-5">
+                    <div class="col-9 px-0 position-relative">
+                        <img src="../images/icon/addressBar.png" alt="" class="w-100 addressBarImg">
+                        <p class="textAddressBar">
+                            <a href="">خانه</a>
+                            <span><img src="../images/icon/chervon.svg" alt="chevron" style="transform: rotate(90deg)"></span>
+                            <a href="">مشاهده لیست محصولات</a>
+                            <span><img src="../images/icon/chervon.svg" alt="chevron" style="transform: rotate(90deg)"></span>
+                            <span style="color: #666">اسکوتر فراری جم شو</span>
+                    </div>
+                    <div class="col-2 px-0 position-relative">
+                        <img src="../images/icon/backToList.png" alt="" class="w-100 addressBarImg">
+                        <p class="textAddressBar" onmouseenter="addressBarHoverIn(this)" onmouseleave="addressBarHoverOut(this)">
+                            <a class="mr-2 linkBtn" href="">برگشت به لیست</a>
+                            <span><img src="../images/icon/chervon.svg" alt="chevron" style="transform: rotate(90deg)"></span>
+                        </p>
+                    </div>
+                    <div class="col-1 px-0 position-relative">
+                        <img src="../images/icon/basket.png" data-address=this alt="" class="w-100 addressBarImg">
+                        <p class="textAddressBar" onmouseenter="addressBarHoverIn(this)" onmouseleave="addressBarHoverOut(this)">
+                            <a href="" class="linkBtn">سبد خرید</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="title mt-2 pb-4 d-flex flex-column align-items-center d-lg-none">
+                <h4>اسکوتر فراری جم شو</h4>
+                <div class="badge d-flex align-items-center p-1 mb-2">
+                    <span class="houseCod">#321836</span>
+                </div>
+            </div>
+            <div class="row flex-column flex-lg-row mx-xl-5">
+                <div class="col-12 col-lg-6 px-md-5 px-lg-1">
+                    <div class="p-0 position-relative">
+                        <div class="owl-carousel owl-theme owl-loaded">
+                            <div class="owl-stage-outer">
+                                <div class="owl-stage">
+                                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                                        <div class="card" data-animation-in="">
+                                            <img class="card-img-top" src="../images/product/ferrari-foldable-led-twist-scooter-red-1.jpg" data-hash="rentSlider-1" height="450" alt="Card image cap">
+                                            <div class="card-img-overlay banner-2 d-flex">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                                        <div class="card" data-animation-in="">
+                                            <img class="card-img-top" src="../images/product/ferrari-foldable-led-twist-scooter-red-2.jpg" data-hash="rentSlider-2" height="450" alt="Card image cap">
+                                            <div class="card-img-overlay banner-2 d-flex">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                                        <div class="card" data-animation-in="">
+                                            <img class="card-img-top" src="../images/product/ferrari-foldable-led-twist-scooter-red-3.jpg" data-hash="rentSlider-3" height="450" alt="Card image cap">
+                                            <div class="card-img-overlay banner-2 d-flex">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl-item animated owl-animated-in owl-animated-out">
+                                        <div class="card" data-animation-in="">
+                                            <img class="card-img-top" src="../images/product/ferrari-foldable-led-twist-scooter-red-4.jpg" data-hash="rentSlider-3" height="450" alt="Card image cap">
+                                            <div class="card-img-overlay banner-2 d-flex">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 px-4 px-md-2 d-100">
+                    <div class="bgCard p-3 mb-3 mb-lg-0">
+                        <div class="title mt-2 pb-4 justify-content-between d-none d-lg-flex">
+                            <h4>اسکوتر فراری جم شو</h4>
+                            <div class="badge d-flex align-items-center p-1 mb-2">
+                                <span class="houseCod">#321836</span>
+                            </div>
+                        </div>
+                        <div class="Color py-3 border-top border-bottom">
+                            <div class="w-100">
+                                <div class="d-sm-flex justify-content-between align-items-center">
+                                    <p class="selectColor mb-sm-0">
+                                        <i class="fa fa-adjust text-dark"></i>
+                                        انتخاب رنگ :
+                                    </p>
+                                    <div class="colorOption position-relative">
+                                        <label class="js-circle-variant-color c-ui-variant c-ui-variant--color">
+                                            <span class="c-ui-variant__shape" style="background-color: blue"></span>
+                                            <input class="js-variant-selector" type="radio" value="4" name="color" >
+                                            <span class="c-ui-variant__check">آبی</span>
+                                        </label>
+                                        <label class="js-circle-variant-color c-ui-variant c-ui-variant--color">
+                                            <span class="c-ui-variant__shape" style="background-color: red"></span>
+                                            <input class="js-variant-selector" type="radio" value="4" name="color" >
+                                            <span class="c-ui-variant__check">قرمز</span>
+                                        </label>
+                                        <label class="js-circle-variant-color c-ui-variant c-ui-variant--color">
+                                            <span class="c-ui-variant__shape" style="background-color: green"></span>
+                                            <input class="js-variant-selector" type="radio" value="4" name="color" >
+                                            <span class="c-ui-variant__check">سبز</span>
+                                        </label>
+                                        <label class="js-circle-variant-color c-ui-variant c-ui-variant--color">
+                                            <span class="c-ui-variant__shape" style="background-color: deeppink"></span>
+                                            <input class="js-variant-selector" type="radio" value="4" name="color" >
+                                            <span class="c-ui-variant__check">صورتی</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details py-4">
+                            <p class="detailsHeader">ویژگی های کالا : </p>
+                            <div class="row mr-1">
+                                <div class="col-6">
+                                    <div class="mx-auto">
+                                        <p class="mb-0 text-dark">
+                                            <span>ابعاد : </span>
+                                            <span>25 * 25</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mx-auto">
+                                        <p class="mb-0 text-dark">
+                                            <span>سبک بازی : </span>
+                                            <span>مافیا</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mx-auto mt-3">
+                                        <p class="mb-0 text-dark">
+                                            <span>وزن : </span>
+                                            <span>250 گرم</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mx-auto mt-3">
+                                        <p class="mb-0 text-dark">
+                                            <span>رده سنی : </span>
+                                            <span>14 سال به بالا</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price py-2">
+                            <div class="priceBox d-flex justify-content-around align-items-center">
+                               <small><s><span>550,000</span> تومان</s></small>
+                               <p class="mb-0 py-2"><span>500,000</span> تومان</p>
+                            </div>
+                        </div>
+                        <div class="service pt-3">
+                            <div class="service--body row">
+                                <div class="service-col col-3">
+                                    <div class="service-item d-flex flex-column align-items-center">
+                                        <img src="../images/icon/expressPost.png" alt="">
+                                        <p class="text-center">
+                                            امکان تحویل
+                                            <br>
+                                            اکسپرس
+                                        </p>
+                                    </div>
+                                </div >
+                                <div class="service-col col-3">
+                                    <div class="service-item d-flex flex-column align-items-center">
+                                        <img src="../images/icon/support.png" alt="">
+                                        <p class="text-center">
+                                            7 روز هفته
+                                            <br>
+                                            24 ساعته
+                                        </p>
+                                    </div>
+                                </div >
+                                <div class="service-col col-3">
+                                    <div class="service-item d-flex flex-column align-items-center">
+                                        <img src="../images/icon/payInPlace.png" alt="">
+                                        <p class="text-center">
+                                            امکان پرداخت
+                                            <br>
+                                            در محل
+                                        </p>
+                                    </div>
+                                </div >
+                                <div class="service-col col-3">
+                                    <div class="service-item d-flex flex-column align-items-center">
+                                        <img src="../images/icon/Warranty.png" alt="">
+                                        <p class="text-center">
+                                            ضمانت
+                                            <br>
+                                            اصل بودن کالا
+                                        </p>
+                                    </div>
+                                </div >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop mt-2 py-2 px-3 d-flex justify-content-center">
+                        <button class="shopBtn btn btn-success text-center p-2 w-100">
+                            افزودن به سبد خرید
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Tab Product  -->
+    <section id="tabProduct" class="my-3">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="active position-relative">
+                    <a class="p-2 m-2" data-toggle="pill" href="#presentation" onclick="tabProduct(this)">معرفی محصول</a>
+                    <img src="../images/icon/tabProduct.png" alt="tabProductIcon">
+                </li>
+                <li class="position-relative"><a class="p-2 m-2 " data-toggle="pill" href="#ProductSpecs" onclick="tabProduct(this)">مشخصات کالا</a></li>
+                <li class="position-relative"><a class="p-2 m-2 " data-toggle="pill" href="#UserComments" onclick="tabProduct(this)">نظرات کاربران</a></li>
+            </ul>
+            <div class="row">
+                <div class="tab-content col-12 col-lg-9">
+                    <div id="presentation" class="tab-pane fade in active show px-4">
+                        <p class="descriptionTitle">معرفی محصول:</p>
+                        <p class="descriptionContent text-justify">
+                            اسکوتر کودک تاشو دارای طرحی کودکانه با رنگ شاد است و این اسکوتر برای کودکان بالای سه سال قابل‌
+                            استفاده است. ابعاد مناسب و قابل حمل این اسکوتر و همچنین قابلیت تاشو بودن آن باعث می شود شما
+                            بتوانید این اسکوتر را به‌ راحتی جابه‌جا شود و با خود به سفر، پارک، پیاده روی ببرید. ارتفاع فرمان
+                            این اسکوتر قابل‌ تنظیم است و شما میتوانید با توجه به قد کودک خود آن را پایین تر و یا بالا تر
+                            ببرید.همچنین جنس دستگیره‌ های آن از فوم است؛ به همین دلیل دست کودک هنگام گرفتن آن لیز نمی‌خورد و
+                            اذیت نمیشود و احساس راحتی میکنید. چرخ‌های این اسکوتر از پلاستیک ژله‌‌ای است که با چراغ های رنگی
+                            داخلی قابل روشن شدن در هنگام حرکت است و مقاومت بالای آن اجازه‌ی استفاده در مدت‌ زمان طولانی‌ تری
+                            را می‌دهد و انعطاف‌پذیری بیشتری نیز خواهد داشت.این اسکوتر دارای کمک فنر نیز است.
+                        </p>
+                    </div>
+                    <div id="ProductSpecs" class="tab-pane fade px-4">
+                        <p class="descriptionTitle">مشخصات:</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="tabText">ابعاد:</p>
+                            </div>
+                            <div class="col-9">
+                                <p class="tabText">159.1x74.1x9 سانتی‌متر</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="tabText">وزن:</p>
+                            </div>
+                            <div class="col-9">
+                                <p class="tabText">1850 گرم</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="tabText">ویژگی های خاص:</p>
+                            </div>
+                            <div class="col-9">
+                                <p class="tabText">مجهز به ترمز , دارای کمک فنر</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="tabText">ساختار بدنه:</p>
+                            </div>
+                            <div class="col-9">
+                                <p class="tabText">اسکلت بدنه فلزی + روکش و دسته ها از جنس پلاستیک</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="UserComments" class="tab-pane fade px-4">
+                        <p class="descriptionTitle">نظرات کاربران:</p>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="opinion">
+                                    <p class="userOpinion mb-1">بهروز مهرعلی تبار</p>
+                                    <small class="badge badge-light">خریدار</small>
+                                    <p class="CommentOption my-2">در تاریخ 3 آذر 1399</p>
+                                    <span class="advice">
+                                        <span class="fa fa-thumbs-o-up"></span>
+                                        خرید این محصول را توصیه می‌کنم
+                                    </span>
+                                    <p class="CommentOption">رنگ:
+                                        <span class="shopColor fa fa-circle mr-2" style="color: blue"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <p class="CommentOption">
+                                    پسر ۷ سالم عاشقش شده
+                                    <br>
+                                    کیفیت خوبی داره
+                                </p>
+                                <div class="CommentOption">
+                                    <span class="d-inline-block mb-2" style="color: green">نقاط قوت:</span>
+                                    <ul>
+                                        <li>قابل حمل بودن</li>
+                                        <li>قابل جمع شدن</li>
+                                        <li>قیمت مناسب</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-lg-3">
+                    <img src="../images/Banner/productBanner.png" alt="product Banner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Other Product  -->
+    <section class="otherProduct">
+        <!--  desktop  -->
+        <div class="container px-5 mt-5">
+            <div class="step4">
+                <h5>محصولات مرتبط</h5>
+                <div class="row mx-auto px-lg-5 mt-1 pb-3">
+                    <div class="col-12 col-sm-6 col-lg-3 my-2 px-1">
+                        <div class="card">
+                            <img class="card-img-top mx-auto" src="../images/card/album-1.jpg" alt="Card image cap">
+                            <div class="card-body position-relative py-2 px-1">
+                                <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
+                                <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
+                                    </div>
+                                </div>
+
+                                <div class="price pr-2">
+                                    <small class="text-danger"><s>800,000 تومان قبل</s></small>
+                                    <h6 class="landlord m-0 p-0">500,000 تومان الان</h6>
+                                </div>
+
+                                <div class="card-foot mt-3 d-flex justify-content-around">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
+                                            <span>
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 my-2 px-1">
+                        <div class="card">
+                            <img class="card-img-top mx-auto" src="../images/card/album-2.jpg" alt="Card image cap">
+                            <div class="card-body position-relative py-2 px-1">
+                                <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
+                                <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
+                                    </div>
+                                </div>
+
+                                <div class="price pr-2">
+                                    <small class="text-danger"><s>800,000 تومان قبل</s></small>
+                                    <h6 class="landlord m-0 p-0">500,000 تومان الان</h6>
+                                </div>
+
+                                <div class="card-foot mt-3 d-flex justify-content-around">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
+                                            <span>
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 my-2 px-1">
+                        <div class="card">
+                            <img class="card-img-top mx-auto" src="../images/card/album-3.jpg" alt="Card image cap">
+                            <div class="card-body position-relative py-2 px-1">
+                                <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
+                                <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
+                                    </div>
+                                </div>
+
+                                <div class="price pr-2">
+                                    <small class="text-danger"><s>800,000 تومان قبل</s></small>
+                                    <h6 class="landlord m-0 p-0">500,000 تومان الان</h6>
+                                </div>
+
+                                <div class="card-foot mt-3 d-flex justify-content-around">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
+                                            <span>
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 my-2 px-1">
+                        <div class="card">
+                            <img class="card-img-top mx-auto" src="../images/card/album-4.jpg" alt="Card image cap">
+                            <div class="card-body position-relative py-2 px-1">
+                                <h6 class="card-title text-dark mr-2">سگ رباتیک لوسی</h6>
+                                <div class="suite-info mb-3 mt-2 d-flex justify-content-center">
+                                    <div class="form-group personCount my-1 px-lg-1">
+                                        <input class="colorful form-control"  value="1" min="1" max="10" />
+                                    </div>
+                                </div>
+
+                                <div class="price pr-2">
+                                    <small class="text-danger"><s>800,000 تومان قبل</s></small>
+                                    <h6 class="landlord m-0 p-0">500,000 تومان الان</h6>
+                                </div>
+
+                                <div class="card-foot mt-3 d-flex justify-content-around">
+                                    <a href="#" class="cardBtn bg-blue d-flex align-items-center justify-content-around btn ml-1 p-1">
+                                            <span>
+                                                <i class="fa fa-cart-arrow-down"></i>
+                                                <i class="fa fa-plus" style="font-size: 10px"></i>
+                                            </span>
+                                    </a>
+                                    <a href="#" class="cardBtn bg-green btn mr-1 p-1">
+                                            <span>
+                                                جزییات
+                                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+
+<!--Footer & contact me-->
+<footer id="footer" class="footer text-light text-justify">
+    <div class="bg-footer">
+        <div class="container-fluid pl-2">
+            <div class="row">
+                <div class="col-12 d-lg-none px-2 mb-3 mb-lg-0">
+                    <div class="contact position-relative d-flex flex-column align-items-center">
+                        <div class="triangle position-relative">
+                            <img class="titleTriangle w-100 h-100" src="../images/Banner/footer-Titel.png" alt="">
+                            <div class="title w-100 h-100 d-flex justify-content-center">
+                                <h3 class="mb-0">با ما همراه باشید...</h3>
+                            </div>
+                        </div>
+                        <div class="link my-2">
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/twitter.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/faceBook.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/instagram.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <h3 class="mb-1 pb-1 ">عاموتویز</h3>
+                    <p class="mb-5">
+                        فروشگاه آنلاین اسباب بازی
+                    </p>
+                    <h3 class="mb-2">تماس با ما</h3>
+                    <h6>09355250000 - 09355250000</h6>
+                    <img src="../images/Logo/symbolOfTrust1.png" class="trustSymbol mb-lg-2 mt-4 mt-lg-0 d-none d-lg-block" alt="symbol Of Trust">
+                </div>
+                <div class="col-8 col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 px-2">
+                            <h3>دسترسی سریع</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">ثبت نام</a>
+                                </li>
+                                <li>
+                                    <a href="#">سوالات متداول</a>
+                                </li>
+                                <li>
+                                    <a href="#">حقوق کاربران</a>
+                                </li>
+                                <li>
+                                    <a href="#">قوانین سایت</a>
+                                </li>
+                                <li>
+                                    <a href="#">قواعد بازپرداخت وجه</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-3 px-2">
+                            <h3 class="">خدمات مشتریان</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">وبلاگ عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">درباره عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">نحوه کار عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری با عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری سازمانی</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-5 px-2 mb-3 mb-lg-0">
+                            <div class="contact position-relative d-none d-lg-flex flex-column align-items-center">
+                                <div class="triangle position-relative">
+                                    <img class="titleTriangle w-100 h-100" src="../images/Banner/footer-Titel.png" alt="">
+                                    <div class="title w-100 h-100 d-flex justify-content-center">
+                                        <h3 class="mb-0">با ما همراه باشید...</h3>
+                                    </div>
+                                </div>
+                                <div class="link my-2">
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/twitter.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/faceBook.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/instagram.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/youtube.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="mailbox mb-4">
+                                    <p class="mt-4">
+                                        عضویت در خبرنامه
+                                    </p>
+                                    <form class="mail" method="post">
+                                        <input class="border-0" type="email" name="email" placeholder="ایمیل خود را وارد کنید">
+                                        <button class="border-0 bg-primary" type="submit">عضویت</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="mr-md-5 p-2 mb-0">از مطالب این وب‌سایت فقط می‌توانید برای مقاصد غیرتجاری و با ذکر منبع استفاده کنید. تمامی حقوق این وب‌سایت به عاموتویز تعلق دارد.</p>
+    </div>
+</footer>
+
+
+<a href="#header" id="go-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+
+<script src="../js/jquery-3.5.1.slim.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-slider.min.js"></script>
+<script src="../js/lightbox.min.js"></script>
+<script src="../js/smooth-scroll.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/main-slider.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/product.js"></script>
+

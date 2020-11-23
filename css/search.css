@@ -39,27 +39,6 @@ a:hover{
 }
 
 
-/*Number Count*/
-#searchPage .suite-info .personCount .btnDown{
-    border: 1px solid #331FC8;
-    border-radius: 0 0.25rem 0.25rem 0;
-    width: 3rem;
-}
-#searchPage .suite-info .personCount input{
-    border-top: 1px solid #331FC8;
-    border-bottom: 1px solid #331FC8;
-}
-#searchPage .suite-info .personCount input:focus{
-    outline: none;
-    box-shadow: none;
-}
-#searchPage .suite-info .personCount .btnUp{
-    border-radius: 0.25rem 0 0 0.25rem;
-    width: 3rem;
-}
-#searchPage .suite-info {
-    line-height: 0;
-}
 
 
 
@@ -293,29 +272,6 @@ a:hover{
         }
         #searchPage .tooltip-inner{
             font-family: "iranyekanwebmedium", sans-serif;
-        }
-    }
-
-
-    /*Number Count*/
-    @media {
-        #searchPage .suite-info .input-group {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #searchPage .suite-info .form-control {
-            height: 24px;
-            line-height: 1;
-        }
-        #searchPage .suite-info .btn {
-            padding: 0;
-        }
-        #searchPage .suite-info .personCount .btnDown{
-            width: 2rem;
-        }
-        #searchPage .suite-info .personCount .btnUp{
-            width: 2rem;
         }
     }
 

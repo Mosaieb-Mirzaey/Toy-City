@@ -457,7 +457,7 @@ a:hover {
 
 /*Tab Content*/
 @media {
-    .tab-content {
+    .home .tab-content {
         background: url(../images/Banner/hometabBg.png) no-repeat bottom left #e3f4ff;
     }
     .tab-content .pad{
@@ -524,6 +524,30 @@ a:hover {
     .step4 .card .cardBtn i{
         font-size: 1rem;
     }
+
+
+    /*Number Count*/
+    .suite-info .personCount .btnDown{
+        border: 1px solid #331FC8;
+        border-radius: 0 0.25rem 0.25rem 0;
+        width: 3rem;
+    }
+    .suite-info .personCount input{
+        border-top: 1px solid #331FC8;
+        border-bottom: 1px solid #331FC8;
+    }
+    .suite-info .personCount input:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .suite-info .personCount .btnUp{
+        border-radius: 0.25rem 0 0 0.25rem;
+        width: 3rem;
+    }
+    .suite-info {
+        line-height: 0;
+    }
+
 }
 
 
@@ -966,7 +990,7 @@ a:hover {
 
     /*tab-content*/
     @media {
-        .tab-content {
+        .home .tab-content {
             padding: 30px 0 70px;
         }
         .tab-content .step4 {
@@ -984,6 +1008,29 @@ a:hover {
             border-radius: 10px 10px 0 0;
         }
     }
+
+    /*Number Count*/
+    @media {
+        .suite-info .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .suite-info .form-control {
+            height: 24px;
+            line-height: 1;
+        }
+        .suite-info .btn {
+            padding: 0;
+        }
+        .suite-info .personCount .btnDown{
+            width: 2rem;
+        }
+        .suite-info .personCount .btnUp{
+            width: 2rem;
+        }
+    }
+
 
     #footer li a {
         font-size: 0.92rem;
@@ -1008,6 +1055,11 @@ a:hover {
 
     .sliderTop .card  .sliderContent{
         margin: 75% 33%;
+    }
+
+    .suite-info .form-control {
+        height: 26px;
+        line-height: 1;
     }
 
 }

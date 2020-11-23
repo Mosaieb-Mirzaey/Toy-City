@@ -1,0 +1,298 @@
+a{
+    color: #666;
+}
+a:hover{
+    font-size: 0.81rem;
+}
+
+/*<--General Information-->*/
+@media {
+    #productPage{
+        background-color: #edf8fa;
+    }
+    #productPage .addressBar .addressBarImg{
+        height: 35px;
+    }
+    #productPage .addressBar .textAddressBar{
+        margin-right: 16px;
+        margin-top: -29px;
+    }
+    #productPage .addressBar .textAddressBar .linkBtn{
+        font-size: 0.77rem;
+    }
+    #productPage .owl-prev:focus, .owl-next:focus{
+        outline: none;
+    }
+    #productPage #generalInfo{
+        font-family: iranyekanwebbold, sans-serif;
+        font-size: 0.7rem;
+    }
+    #productPage #generalInfo .title h4{
+        color: #424242;
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 1rem;
+    }
+    #productPage #generalInfo .title .houseCod{
+        line-height: unset;
+        font-size: 0.8rem;
+    }
+    #productPage #generalInfo .cityInfo .weather{
+        font-size: 0.7rem;
+    }
+
+    #productPage #generalInfo .cityInfo a:hover,
+    #productPage #generalInfo .cityInfo .active {
+        color: #FF6161;
+    }
+    #productPage #generalInfo .detailsHeader{
+        font-size: 0.9rem;
+    }
+    #productPage #generalInfo .owl-carousel .card{
+        border-radius: 0;
+        border: none;
+    }
+    #productPage #generalInfo .owl-carousel .card-img-top{
+        width: 100%;
+        border-radius: 0;
+    }
+    #productPage #generalInfo .owl-nav {
+        position: absolute;
+        top: 11rem;
+        left: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: space-between;
+        z-index: 0;
+    }
+    #productPage #generalInfo .owl-nav span{
+        font-size: 4rem;
+        color: #331FC8;
+    }
+
+    #productPage #generalInfo .owl-dots {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+        width: 100%;
+    }
+    #productPage #generalInfo .owl-dots button {
+        margin-left: 0.15rem;
+        margin-right: 0.15rem;
+        font-size: 0.5rem;
+        color: #c8c8c8;
+    }
+    #productPage #generalInfo .owl-dots button:focus{
+        outline: none;
+    }
+    #productPage #generalInfo .owl-dots .active {
+        color: #331FC8;
+        box-shadow: 0 0 5px 2px rgba(100,28,255,1);
+    }
+    #productPage #generalInfo .owl-dots img{
+        width: 5rem;
+    }
+    #productPage #generalInfo .renter .avatar{
+        width: 3.3rem;
+    }
+    #productPage #generalInfo .selectColor{
+        font-size: 0.9rem;
+    }
+    #productPage #generalInfo .colorOption label{
+        margin-bottom: 0;
+    }
+    .c-ui-variant {
+        display: inline-block;
+        position: relative;
+    }
+    .c-ui-variant--color .c-ui-variant__shape {
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        border-radius: 8px;
+        background: #ccc;
+        border: 1px solid #ccc;
+        content: "";
+    }
+    .c-ui-variant input[type=radio] {
+        visibility: hidden;
+        position: absolute;
+    }
+    [type=radio] {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    input[type=radio]:checked+.c-ui-variant__check {
+        border-color: #00bfd6;
+    }
+    .c-ui-variant--color .c-ui-variant__check {
+        padding-right: 30px;
+    }
+    .c-ui-variant__check {
+        cursor: pointer;
+        border: 1px solid #dedede;
+        border-radius: 8px;
+        color: #6f6f6f;
+        padding: 5px 16px;
+        font-size: 13px;
+        line-height: 1.692;
+        display: block;
+    }
+    #productPage #generalInfo .priceBox{
+        background-color: #e41e39;
+        color: white;
+        font-size: 1.1rem;
+    }
+    #productPage #generalInfo .service-item img{
+        height: 40px;
+        width: 40px;
+    }
+    #productPage #generalInfo .bgCard{
+        font-size: 0.8rem;
+    }
+    #productPage #generalInfo .shopBtn{
+        border-radius: 0;
+    }
+}
+
+
+/*<--Tab Product-->*/
+@media {
+    #productPage #tabProduct .nav{
+      margin-bottom: 1rem;
+    }
+    #productPage #tabProduct .nav .active a{
+        color: white;
+    }
+    #productPage #tabProduct .nav li a{
+        font-family: iranyekanwebbold, sans-serif;
+        position: relative;
+        z-index: 1;
+    }
+    #productPage #tabProduct .nav li a:hover{
+        color: black;
+    }
+    #productPage #tabProduct .nav li img{
+        width: 7rem;
+        position: absolute;
+        top: -12px;
+        right: 0;
+        z-index: 0;
+    }
+    #productPage #tabProduct .tab-pane{
+        position: relative;
+        background-color: white;
+        padding: 20px;
+    }
+    #productPage #tabProduct .tab-pane:before{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background:url("../images/icon/productTopIcon.png") no-repeat 0 0;
+        top: 0px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    #productPage #tabProduct .tab-pane:after{
+        content: "";
+        width: 100%;
+        height: 60px;
+        background:url("../images/icon/productSubIcon.png") no-repeat 0 0;
+        bottom: -35px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    #productPage #tabProduct .descriptionTitle{
+        font-family: IRANYekanExtraBold, sans-serif;
+        font-size: 1rem;
+        color: #565656;
+    }
+    #productPage #tabProduct .descriptionContent{
+        font-family: iranyekanwebbold, sans-serif;
+        font-size: 0.85rem;
+        color: #565656;
+        line-height: 27px;
+    }
+    #productPage #tabProduct .tabText{
+        background-color: #fafafa;
+        padding: 10px;
+    }
+    #productPage #tabProduct #UserComments .userOpinion{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 0.85rem;
+        color: #707070;
+    }
+    #productPage #tabProduct #UserComments .opinion .badge{
+        color: #707070;
+        font-size: 0.7rem;
+        font-family: IRANYekanLight, sans-serif;
+    }
+    #productPage #tabProduct #UserComments .CommentOption{
+        color: #707070;
+        font-size: 0.8rem;
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+    #productPage #tabProduct #UserComments .opinion .advice{
+        display: block;
+        width: fit-content;
+        font-family: IRANYekanLight, sans-serif;
+        font-size: 0.8rem;
+        background-color: #f1feff;
+        border: 1px solid #c2f2f7;
+        color: #1599a9;
+        padding: 7px 10px 7px 12px;
+        margin: 5px 2px 15px 2px;
+    }
+}
+
+/*--Other Product--*/
+@media {
+    #productPage .step4 .card-img-top {
+        width: initial;
+    }
+}
+
+/* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+/* Mobile devices (mobile, Max width 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+}
+
+/* Medium devices (tablets, Max width 768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* large devices (tablets, Max width 992px) */
+@media (max-width: 992px){
+    #tabProduct .nav a {
+        font-size: 0.83rem;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

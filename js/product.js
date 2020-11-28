@@ -135,3 +135,4 @@ function tabProduct(item) {
     $(`<img src="../images/icon/tabProduct.png" alt="tabProductIcon">`).insertAfter(item)
     $(item).css({"color": "white"});
 }
+

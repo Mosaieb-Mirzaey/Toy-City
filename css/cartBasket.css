@@ -1,0 +1,265 @@
+a{
+    color: white;
+}
+a:hover{
+    color: greenyellow;
+}
+#article{
+    background-color: #edf8fa;
+}
+#cartBasket #article .list{
+    background-color: #ffffff;
+}
+
+/********Cart Strip********/
+@media {
+    #cartBasket #article .cartStrip .line-icon{
+        position: absolute;
+        top: -30px;
+        display: block;
+        color: #7474ff;
+        background: #ffffff;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid #e5e5e9;
+        box-shadow: 0 0 0 2px #ffffff;
+    }
+    #cartBasket #article .cartStrip .line-iconEnd{
+        position: absolute;
+        bottom: -0.7rem;
+        right: -7px;
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid #e5e5e9;
+        box-shadow: 0 0 0 2px #ffffff;
+    }
+    #cartBasket #article .cartStrip h6{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        color: #424242;
+    }
+    #cartBasket #article .cartStrip p,
+    #cartBasket #article .cartStrip ul li{
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+    #cartBasket #article .cartStrip:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 3px;
+        background: #ffffff;
+        top: -0.8rem;
+        bottom: 9px;
+        margin-left: 26px;
+        right: -1px;
+    }
+    #cartBasket #article .cartStrip .titleIcon{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 0.65rem;
+        display: block;
+        color: #7474ff;
+        background: #ffffff;
+        border-radius: 10%;
+        padding: 3px;
+        text-align: center;
+        border: 1px solid #e5e5e9;
+        box-shadow: 0 0 0 2px #ffffff;
+    }
+}
+
+/********basket List********/
+@media {
+    #cartBasket #article .transportPrice{
+        font-family: iranyekanwebmedium, sans-serif;
+        font-size: 0.85rem;
+        color: #707070;
+    }
+    #cartBasket #article .transportPrice i{
+        font-size: 1.1rem;
+        color: #ab0112;
+    }
+    #cartBasket #article .itemListCart .listCartImg img{
+        width: 100%;
+    }
+    #cartBasket #article .itemListCart .listTitle{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 0.85rem;
+        color: #707070;
+    }
+    #cartBasket #article .itemListCart .itemContent .offKala{
+        font-family: iranyekanwebmedium, sans-serif;
+        font-size: 0.8rem;
+    }
+    #cartBasket #article .itemListCart .itemContent .listOption{
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+    #cartBasket #article .itemListCart .itemContent .listOption .price{
+        font-family: iranyekanwebbold, sans-serif;
+        color: #181818;
+        font-size: 1rem;
+    }
+    #cartBasket #article .itemListCart .itemContent .numKala{
+        height: 30px;
+        width: 130px;
+    }
+    #cartBasket #article .itemListCart .itemContent .numKala input{
+       height: 30px;
+    }
+    #cartBasket #article .itemListCart .itemContent .numKala .input-group-btn button{
+        border-radius: 0;
+        line-height: 1;
+    }
+    #cartBasket #article .itemListCart .itemContent .badge{
+        color: #707070;
+        font-size: 0.7rem;
+        font-family: IRANYekanLight, sans-serif;
+    }
+    #cartBasket #article .itemListCart .itemContent .removeKala{
+        background-color: transparent;
+        color: #777;
+        font-size: 0.85rem;
+        border: 1px solid #7777;
+    }
+    #cartBasket #article .itemListCart .itemContent .removeKala:hover{
+        color: #ab0112;
+        border-color: #ab0112;
+    }
+    #cartBasket #article .itemListCart .itemContent .removeKala:focus{
+        outline: none;
+    }
+    #cartBasket #article .itemListCart .CommentOption{
+        color: #707070;
+        font-size: 0.8rem;
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+    #cartBasket #article .itemListCart:before{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background:url("../images/icon/productTopIcon.png") no-repeat 0 0;
+        top: 0px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    #cartBasket #article .itemListCart:after{
+        content: "";
+        width: 100%;
+        height: 60px;
+        background:url("../images/icon/productSubIcon.png") no-repeat 0 0;
+        bottom: -35px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+}
+
+/******** Reserve Card ********/
+@media {
+    #cartBasket #article .bgCard{
+        background-color: #ffffff;
+        font-family: iranyekanwebbold, sans-serif;
+    }
+    #cartBasket #article .reserve .bgTitle{
+        margin-top: -75px;
+        height: 64px;
+    }
+    #cartBasket #article .reserve .price{
+        color: #777;
+        font-size: 0.85rem;
+    }
+    #cartBasket #article .reserve .title{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        color: white;
+        margin-top: -68px;
+    }
+    #cartBasket #article .reserve .cost{
+        margin-top: 8px;
+        font-size: 0.85rem;
+    }
+    #cartBasket #article .reserve .transportPrice{
+        color: #777;
+        font-size: 0.8rem;
+    }
+    #cartBasket #article .reserve .transportPrice i{
+        font-size: 0.95rem;
+        color: rgba(217, 0, 22, 0.8);
+    }
+
+    #cartBasket #article .reserveBtn button{
+        border-radius: 0;
+        font-size: 0.9rem;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    #cartBasket #article .attention{
+        font-size: 0.8rem;
+        color: #777777;
+    }
+
+}
+
+/* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+/* Mobile devices (mobile, Max width 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, Max width 768px) */
+@media (max-width: 768px) {
+    /******** cartStrip ********/
+    #cartBasket #article .cartStrip .line-icon {
+        right: -1.4rem;
+        width: 26px;
+        height: 26px;
+        line-height: 27px;
+    }
+    #cartBasket #article .cartStrip .titleIcon{
+        right: -24px;
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /******** cartStrip ********/
+    #cartBasket #article .cartStrip .line-icon{
+        right: -1rem;
+        width: 30px;
+        height: 30px;
+        line-height: 32px;
+    }
+    #cartBasket #article .cartStrip .titleIcon{
+        right: -26px;
+        width: 19px;
+        height: 19px;
+        line-height: 14px;
+    }
+}
+
+/* large devices (tablets, Max width 992px) */
+@media (max-width: 992px){
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+

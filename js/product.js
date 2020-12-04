@@ -136,3 +136,17 @@ function tabProduct(item) {
     $(item).css({"color": "white"});
 }
 
+lightbox.option({
+    'resizeDuration': 500,
+    'albumLabel': 'تصویر %1 از %2',
+});
+
+var evt = new Event(),
+    m = new Magnifier(evt);
+
+m.attach({
+    thumb: '.thumb',
+    mode: 'inside',
+    zoom: 2,
+    zoomable: true
+});

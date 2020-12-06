@@ -8,22 +8,22 @@ a:hover{
     background-color: #edf8fa;
 }
 
-#register input[type=submit] {
+#address input[type=submit] {
     outline: none;
 }
 
-#register input[type=submit]:hover {
+#address input[type=submit]:hover {
     opacity: .9;
 }
 
-#register input[type=email], input[type=password] {
+#address input[type=email], input[type=password] {
     text-align: right;
 }
 
 
 /********Cart Strip********/
 @media {
-    #register #article .cartStrip .line-icon{
+    #address #article .cartStrip .line-icon{
         position: absolute;
         top: -30px;
         display: block;
@@ -34,7 +34,7 @@ a:hover{
         border: 1px solid #e5e5e9;
         box-shadow: 0 0 0 2px #ffffff;
     }
-    #register #article .cartStrip .line-iconEnd{
+    #address #article .cartStrip .line-iconEnd{
         position: absolute;
         bottom: -0.7rem;
         right: -7px;
@@ -46,17 +46,17 @@ a:hover{
         border: 1px solid #e5e5e9;
         box-shadow: 0 0 0 2px #ffffff;
     }
-    #register #article .cartStrip h6{
+    #address #article .cartStrip h6{
         font-family: "IRANYekanExtraBold", sans-serif;
         color: #424242;
         font-size: 1.2rem;
     }
-    #register #article .cartStrip p,
-    #register #article .cartStrip ul li{
+    #address #article .cartStrip p,
+    #address #article .cartStrip ul li{
         font-size: 0.9rem;
         margin-bottom: 0;
     }
-    #register #article .cartStrip:before {
+    #address #article .cartStrip:before {
         content: '';
         position: absolute;
         display: block;
@@ -67,7 +67,7 @@ a:hover{
         margin-left: 26px;
         right: -1px;
     }
-    #register #article .cartStrip .titleIcon{
+    #address #article .cartStrip .titleIcon{
         font-size: 0.85rem;
         position: absolute;
         top: 0.65rem;
@@ -82,37 +82,14 @@ a:hover{
     }
 }
 
-/*<--Register Tab Pane-->*/
+/*<--address Tab Pane-->*/
 @media {
-    #register .registerOption .nav{
-        margin-bottom: 0.8rem;
-    }
-    #register .registerOption .nav .active a{
-        color: white;
-    }
-    #register .registerOption .nav li a{
-        font-family: iranyekanwebbold, sans-serif;
-        font-size: 0.93rem;
-        position: relative;
-        z-index: 1;
-        color: gray;
-    }
-    #register .registerOption .nav li a:hover{
-        color: black;
-    }
-    #register .registerOption .nav li img{
-        width: 7rem;
-        position: absolute;
-        top: -15px;
-        right: 0;
-        z-index: 0;
-    }
-    #register .registerOption .tab-pane{
+    #address .addressOption .tab-pane{
         position: relative;
         background-color: white;
-        padding: 20px 5px;
+        padding: 4px;
     }
-    #register .registerOption .tab-pane:before{
+    #address .addressOption .tab-pane:before{
         content: "";
         width: 100%;
         height: 30px;
@@ -122,7 +99,7 @@ a:hover{
         position: absolute;
         display: inline-block;
     }
-    #register .registerOption .tab-pane:after{
+    #address .addressOption .tab-pane:after{
         content: "";
         width: 100%;
         height: 60px;
@@ -134,176 +111,91 @@ a:hover{
     }
 }
 
-/********Register Form********/
+/********address Form********/
 @media {
-    #register .registerOption {
+    #address .addressOption {
         border-top-right-radius: 10% 50%;
         border-bottom-right-radius: 10% 50%;
     }
-    #register .register-form {
+    #address .address-form {
         width: 100%;
-        padding: 10% 5%;
-        margin-top: 10%;
+        padding: 5px 2%;
+        margin-top: 15px;
     }
-    #register .itemListCart .form-control{
+    #address .itemListCart .form-control{
         border-radius: 0;
         font-size: 0.75rem;
     }
-    #register .itemListCart .form-control::placeholder{
+    #address .itemListCart .form-control::placeholder{
         color: #606060;
         font-size: 0.75rem;
     }
-    #register .register-form label{
+    #address .address-form label{
         display: block;
     }
-    #register .gender{
-        border: 1px solid #ced4da;
+    #address .itemListCart .btnAddAddress{
+        margin-top: 27px;
     }
-    #register .btnRegister {
-        float: left;
-        margin-top: 10%;
+    #address .itemListCart .btnAddAddress button{
+        font-family: IRANYekanExtraBold, sans-serif;
+        font-size: 0.8rem;
+        color: white;
         border: none;
-        border-radius: 0;
-        padding: 2%;
-        background: #ab0112;
-        color: #fff;
-        font-weight: 600;
-        width: 50%;
-        cursor: pointer;
+        background-color: #ab0112;
+        padding: 5px 15px;
     }
-
-    #register .nav-tabs {
-        margin-top: 3%;
-        border: none;
-        background: #ab0112;
-        width: 28%;
+    #address .itemListCart .btnAddAddress button:hover{
+        font-size: 0.8rem;
+        color: white;
+        background-color: #c82333;
     }
-
-    #register .nav-tabs .nav-link {
-        padding: 2%;
-        height: 34px;
-        font-weight: 600;
-        color: #fff;
-    }
-
-    #register .nav-tabs .nav-link:hover {
-        border: none;
-    }
-
-    #register .nav-tabs .nav-link.active {
-        color: #0062cc;
-        border: 2px solid #0062cc;
-    }
-
-    #register .register-heading {
-        text-align: center;
-        margin-top: 8%;
-        margin-bottom: -15%;
-        color: #495057;
-    }
-
 }
 
-/********Login Form********/
-@media {
-    #register #loginAccount .global-container{
-        height:100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #register #loginAccount .forgetPassword{
-        font-size: 0.7rem;
-        color: #777;
-        font-family: IRANYekanLight, sans-serif;
-    }
-    #register #loginAccount form{
-        padding-top: 10px;
-        font-size: 14px;
-        margin-top: 30px;
-    }
-
-    #register #loginAccount .card-title{
-        font-family: iranyekanwebmedium, sans-serif;
-        font-weight:400;
-        color: #777;
-    }
-
-    #register #loginAccount .btn{
-        font-size: 14px;
-        margin-top:20px;
-        border-radius: 0;
-    }
-    #register #loginAccount .login-form{
-        width:25rem;
-        margin:20px;
-    }
-    #register #loginAccount .login-form .card-body{
-        padding: 2rem;
-    }
-
-    #register #loginAccount .sign-up{
-        padding:20px 0 0;
-        color: #777;
-        font-size: 0.75rem;
-    }
-    #register #loginAccount .sign-up a{
-        color: #ab0112;
-        font-size: 0.75rem;
-    }
-
-    #register #loginAccount .alert{
-        margin-bottom:-30px;
-        font-size: 13px;
-        margin-top:20px;
-    }
-}
 /******** Reserve Card ********/
 @media {
-    #register #article .bgCard{
+    #address #article .bgCard{
         background-color: #ffffff;
         font-family: iranyekanwebbold, sans-serif;
     }
-    #register #article .reserve .bgTitle{
+    #address #article .reserve .bgTitle{
         margin-top: -75px;
         height: 52px;
     }
-    #register #article .reserve .costOfRent{
+    #address #article .reserve .costOfRent{
         font-size: 1.3rem;
     }
-    #register #article .reserve .costOfRent h6{
+    #address #article .reserve .costOfRent h6{
         font-size: 1.3rem;
     }
-    #register #article .reserve .price{
+    #address #article .reserve .price{
         color: #777;
         font-size: 0.85rem;
     }
-    #register #article .reserve .title{
+    #address #article .reserve .title{
         font-family: "IRANYekanExtraBold", sans-serif;
         color: white;
         margin-top: -58px;
     }
-    #register #article .reserve .cost{
+    #address #article .reserve .cost{
         margin-top: 8px;
         font-size: 0.85rem;
     }
-    #register #article .reserve .transportPrice{
+    #address #article .reserve .transportPrice{
         color: #777;
         font-size: 0.8rem;
     }
-    #register #article .reserve .transportPrice i{
+    #address #article .reserve .transportPrice i{
         font-size: 0.95rem;
         color: rgba(217, 0, 22, 0.8);
     }
 
-    #register #article .reserveBtn button{
+    #address #article .reserveBtn button{
         border-radius: 0;
         font-size: 0.9rem;
         padding-top: 12px;
         padding-bottom: 12px;
     }
-    #register #article .attention{
+    #address #article .attention{
         font-size: 0.8rem;
         color: #777777;
     }
@@ -320,10 +212,10 @@ a:hover{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    #register #article .reserve .title {
+    #address #article .reserve .title {
         margin-top: -63px;
     }
-    #register #article .reserve .bgTitle{
+    #address #article .reserve .bgTitle{
         height: 59px;
     }
 }
@@ -331,19 +223,19 @@ a:hover{
 /* Medium devices (tablets, Max width 768px) */
 @media (max-width: 768px) {
     /******** cartStrip ********/
-    #register #article .cartStrip .line-icon {
+    #address #article .cartStrip .line-icon {
         right: -1rem;
         width: 26px;
         height: 26px;
         line-height: 27px;
     }
-    #register #article .cartStrip .titleIcon{
+    #address #article .cartStrip .titleIcon{
         right: -25px;
         width: 16px;
         height: 16px;
         line-height: 10px;
     }
-    #register .registerOption {
+    #address .addressOption {
         border-radius: 10px;
     }
 }
@@ -351,75 +243,75 @@ a:hover{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /******** cartStrip ********/
-    #register #article .cartStrip .line-icon{
+    #address #article .cartStrip .line-icon{
         right: -1rem;
         width: 30px;
         height: 30px;
         line-height: 32px;
     }
-    #register #article .cartStrip .titleIcon{
+    #address #article .cartStrip .titleIcon{
         right: -26px;
         width: 19px;
         height: 19px;
         line-height: 10px;
     }
-    #register #article .cartStrip .titleIcon i{
+    #address #article .cartStrip .titleIcon i{
         font-size: 0.7rem;
     }
-    #register #article .reserve .bgTitle{
+    #address #article .reserve .bgTitle{
         height: 65px;
     }
 }
 
 /* large devices (tablets, Max width 992px) */
 @media (max-width: 992px){
-    #register .tab-content {
+    #address .tab-content {
         padding: 0 0 50px;
     }
 
-    #register #article .reserve .price{
+    #address #article .reserve .price{
         font-size: 1.1rem;
     }
-    #register #article .reserve .cost{
+    #address #article .reserve .cost{
         font-size: 1.1rem;
     }
-    #register #article .reserve .transportPrice{
+    #address #article .reserve .transportPrice{
         font-size: 1rem;
     }
-    #register #article .reserve .transportPrice i{
+    #address #article .reserve .transportPrice i{
         font-size: 1.3rem;
     }
-    #register #article .reserveBtn button{
+    #address #article .reserveBtn button{
         font-size: 1.3rem;
     }
-    #register #article .attention{
+    #address #article .attention{
         font-size: 1rem;
     }
 
-    .registerOption .nav a {
+    .addressOption .nav a {
         font-size: 0.83rem;
     }
 
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #register #article .itemListCart .numKala{
+    #address #article .itemListCart .numKala{
         height: 28px;
     }
-    #register #article .itemListCart .numKala .input-group{
+    #address #article .itemListCart .numKala .input-group{
         height: 28px;
     }
-    #register #article .reserve .bgTitle {
+    #address #article .reserve .bgTitle {
         height: 50px;
     }
-    #register #article .reserve .title {
+    #address #article .reserve .title {
         margin-top: -68px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #register #article .reserve .bgTitle {
+    #address #article .reserve .bgTitle {
         height: 64px;
     }
 }

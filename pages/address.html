@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mosaieb Mirzaey">
+    <title>address</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="../css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link rel="stylesheet" href="../css/persian-datepicker.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/address.css">
+
+    <style>
+
+    </style>
+</head>
+
+
+<body id="address" class="mx-auto">
+<!-- header -->
+<header id="header" class="position-relative">
+    <nav class="d-inline-block mainNav text-white">
+        <div class="d-inline-block ml-auto">
+            <a class="navbar-brand mr-auto d-none d-lg-inline-block" href="#">
+                <img src="../images/Logo/Logo-FA-EN.png" width="140px" alt="">
+            </a>
+        </div>
+        <ul class="mr-md-auto d-inline-block position-absolute">
+            <li class="li-1">
+                <i class="fa fa-cart-arrow-down"></i>
+                <a class="navLink text-dark" href="#">سبد خرید</a>
+            </li>
+            <li class="li-2">
+                <i class="fa fa-heart"></i>
+                <a class=" navLink" href="#">علاقه مندی ها</a>
+            </li>
+            <li class="li-3">
+                <i class="fa fa-sign-in"></i>
+                <a class=" navLink" href="#">ورود / عضویت</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="searchNav position-relative">
+    <div class="mainNav d-flex justify-content-between align-items-center px-4 position-relative">
+        <div class="toggleParent p-2 d-lg-none" onclick="navbarBtn(this)">
+            <span class="toggle"><i class="fa fa-bars text-white"></i></span>
+        </div>
+        <form class="d-none d-lg-flex justify-content-center my-auto">
+            <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
+            <a class="my-2 my-sm-0 px-3 position-relative" type="submit">
+                <i class="fa fa-search text-white position-absolute"></i>
+            </a>
+        </form>
+        <div class="d-inline-block">
+            <a class="navbar-brand mr-auto d-inline-block d-lg-none" href="#">
+                <img src="../images/Logo/Logo-mobile.png" width="110px" alt="">
+            </a>
+        </div>
+        <a class="searchToggle my-2 my-sm-0 px-3 d-lg-none" type="submit">
+            <i class="fa fa-search text-white position-absolute" onclick="mobileSearch(this)"></i>
+        </a>
+        <a href="#" class="suggested my-auto d-flex align-items-center text-black-50">
+            <img src="../images/icon/offer-small.png" alt="">
+        </a>
+    </div>
+    <div class="bgSearchMobile deactivate p-2">
+        <form class="searchMobile d-flex w-100 justify-content-center align-items-center my-auto">
+            <input class="w-75" type="search" placeholder="جستجوی کلیدواژه" aria-label="Search">
+            <a class="searchBtn text-white d-flex align-items-center justify-content-center" type="submit">
+                <span class="mb-1">جستجو</span>
+            </a>
+        </form>
+    </div>
+</section>
+
+<!--NavSlide-->
+<section class="navSlide">
+    <div class="categoryMobile p-3 d-lg-none position-absolute deactivate">
+        <ul class="m-0 p-0">
+            <li class="cat-1">
+                <a class="" href="#">
+                    <img src="../images/icon/nav-Preschool.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-2">
+                <a class="" href="#">
+                    <img src="../images/icon/nav-Soft%20toys.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-3">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Arts-and-crafts.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-4">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Build-It.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-5">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Dolls.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Vehicles.jpg" alt="toys-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="category mb-2 d-none d-lg-block">
+        <ul class="mx-auto mb-0">
+            <li class="cat-1 active">
+                <a class="" href="#">
+                    <i><img src="../images/icon/toys.png" alt="toys-icon"></i>
+                    اسباب بازی
+                </a>
+            </li>
+            <li class="cat-2 bg-success">
+                <a class="" href="#">
+                    <i><img src="../images/icon/Dolls.png" alt="toys-icon"></i>
+                    عروسک
+                </a>
+            </li>
+            <li class="cat-3 bg-secondary">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/babyStroller.png" alt="toys-icon"></i>
+                    سیسمونی
+                </a>
+            </li>
+            <li class="cat-4 bg-danger">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/birthday.png" alt="toys-icon"></i>
+                    تولد
+                </a>
+            </li>
+            <li class="cat-5 bg-info">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/stationery.png" alt="toys-icon"></i>
+                    لوازم تحریر
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/book.png" alt="toys-icon"></i>
+                    کتاب و فرهنگ
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!--Article-->
+<section Id="article">
+    <div class="container-fluid pr-5 px-xl-5">
+        <div class="row">
+            <div class="col-12 col-lg-8 cartStrip position-relative mt-5 mb-2 my-md-5">
+                <div class="line-icon"><i class="fa fa-caret-down"></i></div>
+                <div class="rulesCard px-2 py-2 mt-3 mr-1 mb-2 position-relative">
+                    <div class="titleIcon"><i class="fa fa-user-plus"></i></div>
+                    <div class="">
+                        <h6 class="mb-1">آدرس</h6>
+                        <div class="row">
+                            <div class="col-12 list px-1 px-xl-2 mb-2">
+                                <div class="itemListCart tab-pane pb-3">
+                                    <div class="addressOption px-3 pt-1 pb-3">
+                                       <div class="tab-content tab-pane" id="myTabContent">
+                                          <form id="addressForm" method="post">
+                                              <div class="row address-form mx-auto">
+                                                  <div class="col-12 col-md-12">
+                                                      <div class="addressTip mb-4">
+                                                          <label class="radio inline m-1 mx-2">
+                                                              <input type="radio" name="address" value="آدرس ثبت نامی" checked>
+                                                              <span> ( آدرسی که در موقع ثبت نام ثبت شده است ) </span>
+                                                          </label>
+                                                          <label class="radio inline m-1 mx-2">
+                                                              <input type="radio" name="address" value="آدرس جدید">
+                                                              <span> آدرس جدید </span>
+                                                          </label>
+                                                      </div>
+                                                      <div class="form-group ir-select d-flex justify-content-start">
+                                                          <label class="ml-3">
+                                                              * انتخاب استان
+                                                              <select class="form-control ir-province"></select>
+                                                          </label>
+                                                          <label>
+                                                              * انتخاب شهر
+                                                              <select class="form-control ir-city">
+                                                                  <option>انتخاب شهر</option>
+                                                              </select>
+                                                          </label>
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label for="addressText" class="mb-0">* آدرس</label>
+                                                          <textarea id="addressText" class="form-control" rows="3" cols="50"
+                                                             onfocus="addressTextOnfocus(this)"
+                                                             onblur="addressTextBlur(this)">آدرس خود را وارد کنید</textarea>
+                                                      </div>
+                                                      <div class="d-flex justify-content-start">
+                                                          <div class="form-group ml-3">
+                                                              <label>
+                                                                  * کد پستی
+                                                                  <input type="tel" class="form-control postalCod" placeholder="* کد پستی" onfocus="placeholderOnfocus(this)"
+                                                                         onblur="placeholderBlur(this)" value="" />
+                                                              </label>
+                                                          </div>
+                                                          <div class="form-group ml-3">
+                                                              <label>
+                                                                  تلفن ثابت
+                                                                  <input type="tel" class="form-control telLineNum" placeholder="تلفن ثابت" onfocus="placeholderOnfocus(this)"
+                                                                         onblur="placeholderBlur(this)" value="" />
+                                                              </label>
+                                                          </div>
+                                                          <div class="form-group mr-auto btnAddAddress">
+                                                              <button type="submit" >
+                                                                  <span class="fa fa-plus"></span>
+                                                                  <span> افزودن آدرس</span>
+                                                              </button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </form>
+                                           <div class="my-4">
+                                               <p class="newAddressInsert mr-4 py-3"></p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line-iconEnd"></div>
+            </div>
+            <div class="col-12 col-lg-4 pt-1 pt-lg-5">
+                <div class="bgCard reserve p-3 mt-5 mb-3 position-relative d-flex flex-column">
+                    <div class="text-center">
+                        <img class="bgTitle" src="../images/Banner/footer-Titel.png" alt="">
+                        <h6 class="title p-3">فرآیند خرید</h6>
+                    </div>
+                    <div class="price pl-1 mt-2 border-bottom">
+                        <div class="d-flex align-items-center justify-content-between pb-2">
+                            <span>قیمت کالاها <span>(2)</span></span>
+                            <span><span class="priceAllValue">69000</span> <small>تومان</small></span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between pt-2">
+                            <span class="">تخفیف کالاها</span>
+                            <span class="landlord m-0 p-0 text-danger">19,100 (28%) <small>تومان</small></span>
+                        </div>
+                    </div>
+                    <div class="cost d-flex justify-content-between mb-2">
+                        <p>جمع</p>
+                        <p class=""><span class="value">49,900</span> تومان</p>
+                    </div>
+                    <div class="cost mt-3 border-bottom">
+                        <p>
+                            هزینه ارسال
+                            <span class="fa fa-question-circle cursor-pointer" data-toggle="tooltip" data-placement="top"
+                                  title="هزینه ای که جهت ارسال پستی مرسوله به مبلغ کل اضافه میشود">
+                            </span>
+                        </p>
+                        <div class="transportPrice d-flex justify-content-between">
+                            <span> <i class="fa fa-truck"></i> ارسال عادی</span>
+                            <span><span class="postValue">15,000</span> تومان</span>
+                        </div>
+                    </div>
+                    <div class="costOfRent d-flex flex-column justify-content-between mt-5 border-bottom">
+                        <p>مبلغ قابل پرداخت</p>
+                        <h6 class="text-danger mr-auto"><span class="value">64,900</span> تومان</h6>
+                    </div>
+                    <div class="reserveBtn d-flex align-items-center justify-content-center mt-3 pb-3 border-bottom">
+                        <button class="btn btn-danger d-flex align-items-center justify-content-center w-75 pr-3">
+                            ادامه فرآیند خرید
+                            <span class="fa fa-angle-left d-inline-block px-2"></span>
+                        </button>
+                    </div>
+                    <div class="attention d-flex mt-3">
+                        <p class="mx-auto my-0"><i class="fa fa-exclamation"></i> کالاهای موجود در سبد شما ثبت و رزرو نشده‌اند، برای ثبت سفارش مراحل بعدی را تکمیل کنید.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer & contact me-->
+<footer id="footer" class="footer text-light text-justify">
+    <div class="bg-footer">
+        <div class="container-fluid pl-2">
+            <div class="row">
+                <div class="col-12 d-lg-none px-2 mb-3 mb-lg-0">
+                    <div class="contact position-relative d-flex flex-column align-items-center">
+                        <div class="triangle position-relative">
+                            <img class="titleTriangle w-100 h-100" src="../images/Banner/footer-Titel.png" alt="">
+                            <div class="title w-100 h-100 d-flex justify-content-center">
+                                <h3 class="mb-0">با ما همراه باشید...</h3>
+                            </div>
+                        </div>
+                        <div class="link my-2">
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/twitter.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/faceBook.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/instagram.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <h3 class="mb-1 pb-1 ">عاموتویز</h3>
+                    <p class="mb-5">
+                        فروشگاه آنلاین اسباب بازی
+                    </p>
+                    <h3 class="mb-2">تماس با ما</h3>
+                    <h6>09355250000 - 09355250000</h6>
+                    <img src="../images/Logo/symbolOfTrust1.png" class="trustSymbol mb-lg-2 mt-4 mt-lg-0 d-none d-lg-block" alt="symbol Of Trust">
+                </div>
+                <div class="col-8 col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 px-2">
+                            <h3>دسترسی سریع</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">ثبت نام</a>
+                                </li>
+                                <li>
+                                    <a href="#">سوالات متداول</a>
+                                </li>
+                                <li>
+                                    <a href="#">حقوق کاربران</a>
+                                </li>
+                                <li>
+                                    <a href="#">قوانین سایت</a>
+                                </li>
+                                <li>
+                                    <a href="#">قواعد بازپرداخت وجه</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-3 px-2">
+                            <h3 class="">خدمات مشتریان</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">وبلاگ عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">درباره عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">نحوه کار عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری با عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری سازمانی</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-5 px-2 mb-3 mb-lg-0">
+                            <div class="contact position-relative d-none d-lg-flex flex-column align-items-center">
+                                <div class="triangle position-relative">
+                                    <img class="titleTriangle w-100 h-100" src="../images/Banner/footer-Titel.png" alt="">
+                                    <div class="title w-100 h-100 d-flex justify-content-center">
+                                        <h3 class="mb-0">با ما همراه باشید...</h3>
+                                    </div>
+                                </div>
+                                <div class="link my-2">
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/twitter.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/faceBook.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/instagram.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/youtube.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="mailbox mb-4">
+                                    <p class="mt-4">
+                                        عضویت در خبرنامه
+                                    </p>
+                                    <form class="mail" method="post">
+                                        <input class="border-0" type="email" name="email" placeholder="ایمیل خود را وارد کنید">
+                                        <button class="border-0 bg-primary" type="submit">عضویت</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="mr-md-5 p-2 mb-0">از مطالب این وب‌سایت فقط می‌توانید برای مقاصد غیرتجاری و با ذکر منبع استفاده کنید. تمامی حقوق این وب‌سایت به عاموتویز تعلق دارد.</p>
+    </div>
+</footer>
+
+
+<a href="#header" id="go-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+
+<script src="../js/jquery-3.5.1.slim.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-slider.min.js"></script>
+<script src="../js/lightbox.min.js"></script>
+<script src="../js/smooth-scroll.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/waypoints.min.js"></script>
+<script src="../js/counterup.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/main-slider.js"></script>
+<script src="../js/ir-city-select.min.js"></script>
+<script src="../js/persian-date.js"></script>
+<script src="../js/persian-datepicker.js"></script>
+<script src="../js/scripts.js"></script>
+<script>
+    let placeholder;
+    function placeholderOnfocus(item){
+        placeholder = $(item).attr("placeholder");
+        $(item).attr("placeholder" , "")
+    }
+    function placeholderBlur(item){
+        $(item).attr("placeholder" , placeholder)
+    }
+    let addressText;
+    function addressTextOnfocus(item){
+        addressText = $(item).html();
+        $(item).html(``)
+    }
+    function addressTextBlur(item){
+        $(item).html(`آدرس خود را وارد کنید`)
+    }
+
+    // Add new Address
+    $('#addressForm').submit(function(event) {
+        event.preventDefault();
+        $('#address .newAddressInsert').html(`
+            <span>${$('.ir-province').val()} </span>،
+            <span>${$('.ir-city').val()} </span>،
+            <span>${$('#addressText').val()} </span>،
+            <span>${$('.postalCod').val()} </span>،
+            <span>${$('.telLineNum').val()} </span>،
+        `)
+    })
+
+
+
+</script>
+
+

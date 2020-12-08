@@ -84,12 +84,12 @@ a:hover{
 
 /*<--address Tab Pane-->*/
 @media {
-    #address .addressOption .tab-pane{
+    #address .cardStyle{
         position: relative;
         background-color: white;
         padding: 4px;
     }
-    #address .addressOption .tab-pane:before{
+    #address .cardStyle:before{
         content: "";
         width: 100%;
         height: 30px;
@@ -99,7 +99,7 @@ a:hover{
         position: absolute;
         display: inline-block;
     }
-    #address .addressOption .tab-pane:after{
+    #address .cardStyle:after{
         content: "";
         width: 100%;
         height: 60px;
@@ -150,6 +150,64 @@ a:hover{
         background-color: #c82333;
     }
 }
+
+/********* Sending Box Date **********/
+@media {
+    #address #article .cartStrip .titleIconSending {
+        font-size: 0.85rem;
+        position: absolute;
+        top: 36.5rem;
+        display: block;
+        color: #7474ff;
+        background: #ffffff;
+        border-radius: 10%;
+        padding: 1px;
+        text-align: center;
+        border: 1px solid #e5e5e9;
+        box-shadow: 0 0 0 2px #ffffff;
+    }
+    #address #article .sendSection{
+        font-family: "iranyekanwebmedium", sans-serif;
+    }
+    #address #article .sendSection .calendarDaySend{
+        padding: 5px;
+        border: 1px solid #ab0112;
+    }
+    #address #article .sendSection .calendarDaySend .clockSend{
+        font-size: 0.8rem;
+        border-bottom: 1px solid #e0e0e2;
+    }
+    #address #article .sendSection .radioDisabled{
+        color: #c0c2c5;
+        touch-action: none!important;
+        pointer-events: none!important;
+    }
+    #address #article .addressClockNav{
+        border-top: 1px solid #ab0112;
+        border-right: 1px solid #ab0112;
+        border-left: 1px solid #ab0112;
+    }
+    #address #article .addressClockTab{
+        background-color: #edf8fa;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -2px !important;
+    }
+    #address #article .tabLink{
+        display: flex;
+        align-items: center;
+    }
+    #address #article .addressClockTab .active{
+        background-color: #ffffff;
+        border-top: 4px solid #ab0112;
+    }
+    #address #article .tabLink span{
+        color: black;
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+}
+
+
 
 /******** Reserve Card ********/
 @media {
@@ -260,6 +318,12 @@ a:hover{
     }
     #address #article .reserve .bgTitle{
         height: 65px;
+    }
+    #address #article .cartStrip .titleIconSending{
+        right: -26px;
+        width: 19px;
+        height: 19px;
+        line-height: 15px;
     }
 }
 

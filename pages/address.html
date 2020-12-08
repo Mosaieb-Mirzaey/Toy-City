@@ -172,10 +172,10 @@
                     <div class="">
                         <h6 class="mb-1">آدرس</h6>
                         <div class="row">
-                            <div class="col-12 list px-1 px-xl-2 mb-2">
+                            <div class="col-12 list px-1 px-xl-2 mb-5">
                                 <div class="itemListCart tab-pane pb-3">
                                     <div class="addressOption px-3 pt-1 pb-3">
-                                       <div class="tab-content tab-pane" id="myTabContent">
+                                       <div class="tab-content cardStyle" id="myTabContent">
                                           <form id="addressForm" method="post">
                                               <div class="row address-form mx-auto">
                                                   <div class="col-12 col-md-12">
@@ -241,6 +241,178 @@
                             </div>
                         </div>
                     </div>
+                    <div class="titleIconSending"><i class="fa fa-truck"></i></div>
+                    <div class="sendSection">
+                        <h6 class="mb-1">ارسال</h6>
+                        <div class="row">
+                            <div class="col-12 list px-1 px-xl-2 mb-4">
+                                <div class="itemListCart tab-pane cardStyle pb-3">
+                                    <div class="addressOption px-3 pt-1 pb-3">
+                                        <div class="tab-content tab-pane px-4 py-4">
+                                            <p class="mb-2">تهران (بالای 150 هزار تومان رایگان)</p>
+                                            <div class="addressTip mb-2 d-flex flex-column">
+                                                <label class="radio inline m-1 mx-2">
+                                                    <input type="radio" name="sendBox" value="ارسال در اولین فرصت" checked>
+                                                    <span>ارسال در اولین فرصت</span>
+                                                </label>
+                                                <label class="radio inline m-1 mx-2">
+                                                    <input type="radio" name="sendBox" value="ارسال تا قبل ساعت 16 همان روز">
+                                                    <span>ارسال تا قبل ساعت 16 همان روز</span>
+                                                </label>
+                                                <label class="radio inline m-1 mx-2">
+                                                    <input type="radio" name="sendBox" value="ارسال تا قبل ساعت 16 همان روز">
+                                                    <span>ارسال بعد ساعت 16 روز بعد</span>
+                                                </label>
+                                                <p class="mb-1 mt-4"><i class="mr-3 ml-2 fa fa-info text-danger"></i><small>ارسال پنجشنبه ها تا قبل از ساعت 13، جمعه ها و روزهای تعطیل در اولین روز کاری</small></p>
+                                                <label class="radio inline m-1 mx-2">
+                                                    <input type="radio" name="sendBox" class="deactivate" value="ارسال تا قبل ساعت 16 همان روز">
+                                                    <span>انتخاب روز</span>
+                                                </label>
+                                            </div>
+                                            <div class="container-fluid p-0 mt-5">
+                                                <ul class="nav nav-tabs addressClockNav pr-0">
+                                                    <li class="addressClockTab active position-relative w-25">
+                                                        <a class="active tabLink p-1 d-flex flex-column w-100" data-toggle="tab" href="#day1">
+                                                            <span class="dayWeek">چهارشنبه</span>
+                                                            <span class="dateMonth">27 آذر</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="addressClockTab position-relative w-25">
+                                                        <a class="tabLink p-1 d-flex flex-column w-100" data-toggle="tab" href="#day2">
+                                                            <span class="dayWeek">پنجشنبه</span>
+                                                            <span class="dateMonth">28 آذر</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="addressClockTab position-relative w-25">
+                                                        <a class="tabLink p-1 d-flex flex-column w-100" data-toggle="tab" href="#day3">
+                                                            <span class="dayWeek">شنبه</span>
+                                                            <span class="dateMonth">30 آذر</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="addressClockTab position-relative w-25">
+                                                        <a class="tabLink p-1 d-flex flex-column w-100" data-toggle="tab" href="#day4">
+                                                            <span class="dayWeek">یک شنبه</span>
+                                                            <span class="dateMonth">01 دی</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <!-- Tab 1 -->
+                                                    <div class="tab-pane show active" id="day1" role="tabpanel" aria-labelledby="home-tab1">
+                                                        <div class="calendarDaySend mb-3">
+                                                            <label class="clockSend radioDisabled d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="9 تا 12">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">9 تا 12</span>
+                                                                </span>
+                                                                <span class="badge badge-light mr-2">تکمیل</span>
+                                                            </label>
+                                                            <label class="clockSend d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="14 تا 17">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">14 تا 17</span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="clockSend border-0 d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="18 تا 21">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">18 تا 21</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Tab 2 -->
+                                                    <div class="tab-pane" id="day2" role="tabpanel" aria-labelledby="home-tab2">
+                                                        <div class="calendarDaySend mb-3">
+                                                            <label class="clockSend d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="9 تا 12">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">9 تا 12</span>
+                                                                </span>
+                                                                <span class="badge badge-light mr-2">تکمیل</span>
+                                                            </label>
+                                                            <label class="clockSend d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="14 تا 17">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">14 تا 17</span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="clockSend border-0 d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="18 تا 21">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">18 تا 21</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Tab 3 -->
+                                                    <div class="tab-pane" id="day3" role="tabpanel" aria-labelledby="home-tab3">
+                                                        <div class="calendarDaySend mb-3">
+                                                            <label class="clockSend radioDisabled d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="9 تا 12">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">9 تا 12</span>
+                                                                </span>
+                                                                <span class="badge badge-light mr-2">تکمیل</span>
+                                                            </label>
+                                                            <label class="clockSend d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="14 تا 17">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">14 تا 17</span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="clockSend border-0 d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="18 تا 21">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">18 تا 21</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Tab 4 -->
+                                                    <div class="tab-pane" id="day4" role="tabpanel" aria-labelledby="home-tab4">
+                                                        <div class="calendarDaySend mb-3">
+                                                            <label class="clockSend radioDisabled d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="9 تا 12">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">9 تا 12</span>
+                                                                </span>
+                                                                <span class="badge badge-light mr-2">تکمیل</span>
+                                                            </label>
+                                                            <label class="clockSend d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="14 تا 17">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">14 تا 17</span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="clockSend border-0 d-flex align-items-center radio inline py-2 my-1 mx-2">
+                                                                <input type="radio" name="sendClock" value="18 تا 21">
+                                                                <span class="mr-1">
+                                                                    <span>ساعت: </span>
+                                                                    <span class="">18 تا 21</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="line-iconEnd"></div>
             </div>
@@ -291,6 +463,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

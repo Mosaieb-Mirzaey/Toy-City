@@ -8,6 +8,10 @@ a:hover{
     background-color: #edf8fa;
 }
 
+footer,.bg-footer{
+    position: relative;
+    z-index: 4;
+}
 #address input[type=submit] {
     outline: none;
 }
@@ -166,7 +170,9 @@ a:hover{
         border: 1px solid #e5e5e9;
         box-shadow: 0 0 0 2px #ffffff;
     }
-    #address #article .sendSection{
+    #address #article .sendSection,
+    #address #article .reviewSection,
+    #address #article .factorSection{
         font-family: "iranyekanwebmedium", sans-serif;
     }
     #address #article .sendSection .calendarDaySend{
@@ -205,15 +211,49 @@ a:hover{
         color: black;
         font-family: iranyekanwebmedium, sans-serif;
     }
+    #address #article .cartStrip .titleIconSending {
+        right: -34px;
+        width: 19px;
+        height: 19px;
+        line-height: 15px;
+        top: 0;
+    }
+    #address #article .header-Review{
+        color: #424242;
+        font-family: "IRANYekanExtraBold", sans-serif;
+    }
+    #address .reviewSection .addressOption .border{
+        border: 1px solid #ab0112!important;
+    }
 }
 
 
+/*********** Factor print ************/
+@media {
+    #address .factorSection .addressOption .border{
+        border: 1px solid #ab0112!important;
+    }
+    #address #article .factorSection .labelRight{
+        transform-origin: center;
+        transform: rotate(-90deg);
+        margin-right: -35px;
+        background-color: #bfbfbf;
+        font-family: IRANYekanExtraBold ,sans-serif;
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+    #address #article .factorSection .detail{
+        font-family: iranyekanwebbold, sans-serif;
+    }
+
+}
 
 /******** Reserve Card ********/
 @media {
     #address #article .bgCard{
         background-color: #ffffff;
         font-family: iranyekanwebbold, sans-serif;
+        z-index: 3;
     }
     #address #article .reserve .bgTitle{
         margin-top: -75px;
@@ -260,6 +300,15 @@ a:hover{
 
 }
 
+/******** image background left side ********/
+@media {
+    #address .img-Strip{
+        position: fixed;
+        bottom: -165px;
+        left: 8rem;
+        /*z-index: 0;*/
+    }
+}
 
 /* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
 
@@ -325,12 +374,15 @@ a:hover{
         height: 19px;
         line-height: 15px;
     }
+    #address #article .cartStrip .titleIconSending {
+        right: -36px;
+    }
 }
 
 /* large devices (tablets, Max width 992px) */
 @media (max-width: 992px){
     #address .tab-content {
-        padding: 0 0 50px;
+        padding: 0 0 0.5rem;
     }
 
     #address #article .reserve .price{

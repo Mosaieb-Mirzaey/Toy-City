@@ -169,6 +169,7 @@
                 <div class="line-icon"><i class="fa fa-caret-down"></i></div>
                 <div class="rulesCard px-2 py-2 mt-3 mr-1 mb-2 position-relative">
                     <div class="titleIcon"><i class="fa fa-user-plus"></i></div>
+<!--                    آدرس-->
                     <div class="">
                         <h6 class="mb-1">آدرس</h6>
                         <div class="row">
@@ -178,13 +179,13 @@
                                        <div class="tab-content cardStyle" id="myTabContent">
                                           <form id="addressForm" method="post">
                                               <div class="row address-form mx-auto">
-                                                  <div class="col-12 col-md-12">
-                                                      <div class="addressTip mb-4">
+                                                  <div class="col-12 col-md-12 p-1 p-sm-3">
+                                                      <div class="addressTip mt-4 mt-lg-0 mb-4">
                                                           <label class="radio inline m-1 mx-2">
                                                               <input type="radio" name="address" value="آدرس ثبت نامی" checked>
                                                               <span> ( آدرسی که در موقع ثبت نام ثبت شده است ) </span>
                                                           </label>
-                                                          <label class="radio inline m-1 mx-2">
+                                                          <label class="radio inline m-2 m-md-1 mx-2">
                                                               <input type="radio" name="address" value="آدرس جدید">
                                                               <span> آدرس جدید </span>
                                                           </label>
@@ -207,7 +208,7 @@
                                                              onfocus="addressTextOnfocus(this)"
                                                              onblur="addressTextBlur(this)">آدرس خود را وارد کنید</textarea>
                                                       </div>
-                                                      <div class="d-flex justify-content-start">
+                                                      <div class="d-block d-sm-flex justify-content-start align-items-center">
                                                           <div class="form-group ml-3">
                                                               <label>
                                                                   * کد پستی
@@ -222,7 +223,7 @@
                                                                          onblur="placeholderBlur(this)" value="" />
                                                               </label>
                                                           </div>
-                                                          <div class="form-group mr-auto btnAddAddress">
+                                                          <div class="form-group mr-auto mt-2 btnAddAddress">
                                                               <button type="submit" >
                                                                   <span class="fa fa-plus"></span>
                                                                   <span> افزودن آدرس</span>
@@ -241,11 +242,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="titleIconSending"><i class="fa fa-truck"></i></div>
-                    <div class="sendSection">
+<!--                    ارسال-->
+                    <div class="sendSection position-relative mb-5">
+                        <div class="titleIconSending"><i class="fa fa-truck"></i></div>
                         <h6 class="mb-1">ارسال</h6>
                         <div class="row">
-                            <div class="col-12 list px-1 px-xl-2 mb-4">
+                            <div class="col-12 list px-3 px-xl-2 mb-4">
                                 <div class="itemListCart tab-pane cardStyle pb-3">
                                     <div class="addressOption px-3 pt-1 pb-3">
                                         <div class="tab-content tab-pane px-4 py-4">
@@ -407,6 +409,104 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <p>شهرستان</p>
+                                            <label class="radio inline m-1 mx-2">
+                                                <input type="radio" name="sendBox" class="deactivate" value="ارسال تا قبل ساعت 16 همان روز">
+                                                <span>ارسال با تیباکس ( هزینه 40,000 تومان )</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    بازبینی-->
+                    <div class="reviewSection position-relative mb-5">
+                        <div class="titleIconSending"><i class="fa fa-sliders"></i></div>
+                        <h6 class="mb-1">بازبینی</h6>
+                        <div class="row">
+                            <div class="col-12 list px-3 px-xl-2 mb-4">
+                                <div class="itemListCart tab-pane cardStyle pb-3">
+                                    <div class="addressOption px-3 pt-1 pb-3">
+                                        <div class="tab-content tab-pane px-4 py-4">
+                                            <p class="mb-2 header-Review">مشخصات محصول</p>
+                                            <div class="border p-3">
+                                                <div class="tip mb-2 d-flex flex-column">
+                                                    <p class="mb-1 mt-1"><i class="mr-2 ml-2 fa fa-info text-danger"></i><small>تعداد <span class="value">2</span> مرسوله</small></p>
+                                                </div>
+                                                <div class="kala mr-3 border-bottom p-2">
+                                                    <p><i class="fa fa-check-square-o ml-2 text-danger"></i>اسکوتر فراری جم شو</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <p>رنگ : <i class="fa fa-circle" style="color: red"></i></p>
+                                                            <p>50,000 تومان</p>
+                                                        </div>
+                                                        <img src="../images/product/icon-ferrari-foldable-led-twist-scooter-red-1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="kala mr-3 border-bottom p-2">
+                                                    <p><i class="fa fa-check-square-o ml-2 text-danger"></i>عروسک سخن گو</p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <p>رنگ : <i class="fa fa-circle" style="color: blue"></i></p>
+                                                            <p>20,000 تومان</p>
+                                                        </div>
+                                                        <img src="../images/product/aroosak.jpg" alt="aroosak">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content tab-pane px-4 py-4">
+                                            <p class="mb-2 header-Review">آدرس</p>
+                                            <div class="tip mb-2 d-flex flex-column border p-3">
+                                                <p class="mb-1 mt-1"><i class="mr-2 ml-2 fa fa-exclamation-circle text-danger"></i> پرواز جنوبی، بلوار گلایول شرقی، نبش کوچه پنجم، پلاک 80 واحد 1</p>
+                                                <p class="mb-1 mt-1"><i class="mr-2 ml-2 fa fa-location-arrow text-danger"></i> کد پستی: <span class="value">6717713645</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content tab-pane px-4 py-4">
+                                            <p class="mb-2 header-Review">طریقه ی ارسال</p>
+                                            <div class="tip mb-2 d-flex flex-column border p-3">
+                                                <p class="mb-1 mt-1"><i class="mr-2 ml-2 fa fa-cubes text-danger"></i>ارسال با <span class="value">تیباکس</span></p>
+                                                <p class="mb-1 mt-1"><i class="mr-2 ml-2 fa fa-calendar text-danger"></i> زمان: <span class="value">دوشنبه 27 آذر</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    صدور فاکتور-->
+                    <div class="factorSection position-relative">
+                        <div class="titleIconSending"><i class="fa fa-credit-card"></i></div>
+                        <h6 class="mb-1">صدور فاکتور و انجام مراحل</h6>
+                        <div class="row">
+                            <div class="col-12 list px-3 px-xl-2 mb-4">
+                                <div class="itemListCart tab-pane cardStyle pb-3">
+                                    <div class="addressOption px-3 pt-1 pb-3">
+                                        <div class="tab-content tab-pane px-4 py-4">
+                                            <p class="mb-3 header-Review">فاکتور</p>
+                                            <div class="tip mb-2 d-flex flex-column p-2">
+                                                <div class="d-flex justify-content-start align-items-center border mb-2">
+                                                    <div class="labelRight py-2 px-2">
+                                                        <span>فروشنده</span>
+                                                    </div>
+                                                    <div class="detail d-flex flex-column">
+                                                        <p class="mt-2 mb-2">فروشنده: <small>فروشگاه عاموتویز</small></p>
+                                                        <p class="mb-2">نشانی: <small>تهران، خیابان شریعتی، کوچه قناری، پلاک 85</small></p>
+                                                        <p class="mb-2">شماره ثبت: <small>27478</small></p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-center border">
+                                                    <div class="labelRight py-2 px-2">
+                                                        <span>مشتری</span>
+                                                    </div>
+                                                    <div class="detail d-flex flex-column">
+                                                        <p class="mt-2 mb-2">خریدار: <small>مصیب میرزایی</small></p>
+                                                        <p class="mb-2">نشانی: <small>کرمانشاه، پرواز جنوبی، گلایول شرقی، نبش کوچه پنجم، کد پستی: 6717713645</small></p>
+                                                        <p class="mb-2">شماره تماس: <small>09355253482</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -463,11 +563,12 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="img-Strip d-none d-lg-flex pl-3">
+            <img class="mr-auto" src="../images/Banner/productBanner.png" alt="">
         </div>
     </div>
 </section>
-
 <!--Footer & contact me-->
 <footer id="footer" class="footer text-light text-justify">
     <div class="bg-footer">

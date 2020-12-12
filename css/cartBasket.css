@@ -4,16 +4,16 @@ a{
 a:hover{
     color: greenyellow;
 }
-#article{
+.basket{
     background-color: #edf8fa;
 }
-#cartBasket #article .list{
+#address .basket .list{
     background-color: #ffffff;
 }
 
 /********Cart Strip********/
 @media {
-    #cartBasket #article .cartStrip .line-icon{
+    #address .basket .cartStrip .line-icon{
         position: absolute;
         top: -30px;
         display: block;
@@ -24,7 +24,7 @@ a:hover{
         border: 1px solid #e5e5e9;
         box-shadow: 0 0 0 2px #ffffff;
     }
-    #cartBasket #article .cartStrip .line-iconEnd{
+    #address .basket .cartStrip .line-iconEnd{
         position: absolute;
         bottom: -0.7rem;
         right: -7px;
@@ -36,17 +36,17 @@ a:hover{
         border: 1px solid #e5e5e9;
         box-shadow: 0 0 0 2px #ffffff;
     }
-    #cartBasket #article .cartStrip h6{
+    #address .basket .cartStrip h6{
         font-family: "IRANYekanExtraBold", sans-serif;
         color: #424242;
         font-size: 1.2rem;
     }
-    #cartBasket #article .cartStrip p,
-    #cartBasket #article .cartStrip ul li{
+    #address .basket .cartStrip p,
+    #address .basket .cartStrip ul li{
         font-size: 0.9rem;
         margin-bottom: 0;
     }
-    #cartBasket #article .cartStrip:before {
+    #address .basket .cartStrip:before {
         content: '';
         position: absolute;
         display: block;
@@ -57,95 +57,95 @@ a:hover{
         margin-left: 26px;
         right: -1px;
     }
-    #cartBasket #article .cartStrip .titleIcon{
-        font-size: 0.9rem;
-        position: absolute;
-        top: 0.65rem;
-        display: block;
-        color: #7474ff;
-        background: #ffffff;
-        border-radius: 10%;
-        padding: 3px;
-        text-align: center;
-        border: 1px solid #e5e5e9;
-        box-shadow: 0 0 0 2px #ffffff;
-    }
+    /*#address .basket .cartStrip .titleIcon{*/
+    /*    font-size: 0.9rem;*/
+    /*    position: absolute;*/
+    /*    top: 0.65rem;*/
+    /*    display: block;*/
+    /*    color: #7474ff;*/
+    /*    background: #ffffff;*/
+    /*    border-radius: 10%;*/
+    /*    padding: 3px;*/
+    /*    text-align: center;*/
+    /*    border: 1px solid #e5e5e9;*/
+    /*    box-shadow: 0 0 0 2px #ffffff;*/
+    /*}*/
 }
 
 /********basket List********/
 @media {
-    #cartBasket #article .transportPrice{
+    #address .basket .transportPrice{
         font-family: iranyekanwebmedium, sans-serif;
         font-size: 0.85rem;
         color: #707070;
     }
-    #cartBasket #article .transportPrice i{
+    #address .basket .transportPrice i{
         font-size: 1.1rem;
         color: #ab0112;
     }
-    #cartBasket #article .itemListCart .listCartImg img{
+    #address .basket .itemListCart .listCartImg img{
         width: 100%;
     }
-    #cartBasket #article .itemListCart .listTitle{
+    #address .basket .itemListCart .listTitle{
         font-family: "IRANYekanExtraBold", sans-serif;
         font-size: 0.95rem;
         color: #707070;
     }
-    #cartBasket #article .itemListCart .itemContent .offKala{
+    #address .basket .itemListCart .itemContent .offKala{
         font-family: iranyekanwebmedium, sans-serif;
         font-size: 1.1rem;
     }
-    #cartBasket #article .itemListCart .itemContent .listOption{
+    #address .basket .itemListCart .itemContent .listOption{
         font-family: iranyekanwebmedium, sans-serif;
     }
-    #cartBasket #article .itemListCart .itemContent .listOption .price{
+    #address .basket .itemListCart .itemContent .listOption .price{
         font-family: iranyekanwebbold, sans-serif;
         color: #181818;
         font-size: 1.4rem;
     }
-    #cartBasket #article .itemListCart .numKala{
+    #address .basket .itemListCart .numKala{
         height: 25px;
         width: 130px;
     }
-    #cartBasket #article .itemListCart .numKala input{
+    #address .basket .itemListCart .numKala input{
        height: 100%;
     }
-    #cartBasket #article .itemListCart .numKala .input-group{
+    #address .basket .itemListCart .numKala .input-group{
         height: 25px;
     }
-    #cartBasket #article .itemListCart .numKala .input-group-btn{
+    #address .basket .itemListCart .numKala .input-group-btn{
         display: inline-block;
         height: 100%;
     }
-    #cartBasket #article .itemListCart .numKala .input-group-btn button{
+    #address .basket .itemListCart .numKala .input-group-btn button{
         border-radius: 0;
         line-height: 1;
         height: 100%;
     }
-    #cartBasket #article .itemListCart .badge{
+    #address .basket .itemListCart .badge{
         color: #707070;
         font-size: 0.85rem;
         font-family: IRANYekanLight, sans-serif;
     }
-    #cartBasket #article .itemListCart .removeKala{
+    #address .basket .itemListCart .removeKala{
         background-color: transparent;
         color: #777;
         font-size: 0.95rem;
         border: 1px solid #7777;
     }
-    #cartBasket #article .itemListCart .itemContent .removeKala:hover{
+    #address .basket .itemListCart .itemContent .removeKala:hover{
         color: #ab0112;
         border-color: #ab0112;
     }
-    #cartBasket #article .itemListCart .itemContent .removeKala:focus{
+    #address .basket .itemListCart .itemContent .removeKala:focus{
         outline: none;
     }
-    #cartBasket #article .itemListCart .CommentOption{
+    #address .basket .itemListCart .CommentOption{
         color: #707070;
         font-size: 0.9rem;
         font-family: iranyekanwebmedium, sans-serif;
     }
-    #cartBasket #article .itemListCart:before{
+    #address .basket .itemListCart:before{
         content: "";
         width: 100%;
         height: 30px;
@@ -155,7 +155,7 @@ a:hover{
         position: absolute;
         display: inline-block;
     }
-    #cartBasket #article .itemListCart:after{
+    #address .basket .itemListCart:after{
         content: "";
         width: 100%;
         height: 60px;
@@ -169,49 +169,49 @@ a:hover{
 
 /******** Reserve Card ********/
 @media {
-    #cartBasket #article .bgCard{
+    #address .basket .bgCard{
         background-color: #ffffff;
         font-family: iranyekanwebbold, sans-serif;
     }
-    #cartBasket #article .reserve .bgTitle{
+    #address .basket .reserve .bgTitle{
         margin-top: -75px;
         height: 52px;
     }
-    #cartBasket #article .reserve .costOfRent{
+    #address .basket .reserve .costOfRent{
         font-size: 1.3rem;
     }
-    #cartBasket #article .reserve .costOfRent h6{
+    #address .basket .reserve .costOfRent h6{
         font-size: 1.3rem;
     }
-    #cartBasket #article .reserve .price{
+    #address .basket .reserve .price{
         color: #777;
         font-size: 0.85rem;
     }
-    #cartBasket #article .reserve .title{
+    #address .basket .reserve .title{
         font-family: "IRANYekanExtraBold", sans-serif;
         color: white;
         margin-top: -58px;
     }
-    #cartBasket #article .reserve .cost{
+    #address .basket .reserve .cost{
         margin-top: 8px;
         font-size: 0.85rem;
     }
-    #cartBasket #article .reserve .transportPrice{
+    #address .basket .reserve .transportPrice{
         color: #777;
         font-size: 0.8rem;
     }
-    #cartBasket #article .reserve .transportPrice i{
+    #address .basket .reserve .transportPrice i{
         font-size: 0.95rem;
         color: rgba(217, 0, 22, 0.8);
     }
 
-    #cartBasket #article .reserveBtn button{
+    #address .basket .reserveBtn button{
         border-radius: 0;
         font-size: 0.9rem;
         padding-top: 12px;
         padding-bottom: 12px;
     }
-    #cartBasket #article .attention{
+    #address .basket .attention{
         font-size: 0.8rem;
         color: #777777;
     }
@@ -227,10 +227,10 @@ a:hover{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    #cartBasket #article .reserve .title {
+    #address .basket .reserve .title {
         margin-top: -63px;
     }
-    #cartBasket #article .reserve .bgTitle{
+    #address .basket .reserve .bgTitle{
         height: 59px;
     }
 }
@@ -238,35 +238,35 @@ a:hover{
 /* Medium devices (tablets, Max width 768px) */
 @media (max-width: 768px) {
     /******** cartStrip ********/
-    #cartBasket #article .cartStrip .line-icon {
+    #address .basket .cartStrip .line-icon {
         right: -1rem;
         width: 26px;
         height: 26px;
         line-height: 27px;
     }
-    #cartBasket #article .cartStrip .titleIcon{
+    #address .basket .cartStrip .titleIcon{
         right: -25px;
         width: 16px;
         height: 16px;
         line-height: 10px;
     }
     /******** itemListCart ********/
-    #cartBasket #article .itemListCart .listTitle{
+    #address .basket .itemListCart .listTitle{
         font-size: 1.2rem;
     }
-    #cartBasket #article .itemListCart .itemContent .offKala{
+    #address .basket .itemListCart .itemContent .offKala{
         font-size: 1.1rem;
     }
-    #cartBasket #article .itemListCart .itemContent .listOption .price{
+    #address .basket .itemListCart .itemContent .listOption .price{
         font-size: 1.4rem;
     }
-    #cartBasket #article .itemListCart .badge{
+    #address .basket .itemListCart .badge{
         font-size: 0.9rem;
     }
-    #cartBasket #article .itemListCart .removeKala{
+    #address .basket .itemListCart .removeKala{
         font-size: 1rem;
     }
-    #cartBasket #article .itemListCart .CommentOption{
+    #address .basket .itemListCart .CommentOption{
         font-size: 1rem;
     }
 }
@@ -274,64 +274,64 @@ a:hover{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /******** cartStrip ********/
-    #cartBasket #article .cartStrip .line-icon{
+    #address .basket .cartStrip .line-icon{
         right: -1rem;
         width: 30px;
         height: 30px;
         line-height: 32px;
     }
-    #cartBasket #article .cartStrip .titleIcon{
+    #address .basket .cartStrip .titleIcon{
         right: -26px;
         width: 19px;
         height: 19px;
         line-height: 14px;
     }
-    #cartBasket #article .reserve .bgTitle{
+    #address .basket .reserve .bgTitle{
         height: 65px;
     }
 }
 
 /* large devices (tablets, Max width 992px) */
 @media (max-width: 992px){
-    #cartBasket #article .reserve .price{
+    #address .basket .reserve .price{
         font-size: 1.1rem;
     }
-    #cartBasket #article .reserve .cost{
+    #address .basket .reserve .cost{
         font-size: 1.1rem;
     }
-    #cartBasket #article .reserve .transportPrice{
+    #address .basket .reserve .transportPrice{
         font-size: 1rem;
     }
-    #cartBasket #article .reserve .transportPrice i{
+    #address .basket .reserve .transportPrice i{
         font-size: 1.3rem;
     }
-    #cartBasket #article .reserveBtn button{
+    #address .basket .reserveBtn button{
         font-size: 1.3rem;
     }
-    #cartBasket #article .attention{
+    #address .basket .attention{
         font-size: 1rem;
     }
 
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #cartBasket #article .itemListCart .numKala{
+    #address .basket .itemListCart .numKala{
         height: 28px;
     }
-    #cartBasket #article .itemListCart .numKala .input-group{
+    #address .basket .itemListCart .numKala .input-group{
         height: 28px;
     }
-    #cartBasket #article .reserve .bgTitle {
+    #address .basket .reserve .bgTitle {
         height: 50px;
     }
-    #cartBasket #article .reserve .title {
+    #address .basket .reserve .title {
         margin-top: -68px;
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #cartBasket #article .reserve .bgTitle {
+    #address .basket .reserve .bgTitle {
         height: 64px;
     }
 }

@@ -24,6 +24,127 @@ footer,.bg-footer{
     text-align: right;
 }
 
+.basket{
+    background-color: #edf8fa;
+}
+#address .basket .list{
+    background-color: #ffffff;
+}
+
+/********Cart Strip********/
+
+/********basket List********/
+@media {
+    #address .basket .transportPrice{
+        font-family: iranyekanwebmedium, sans-serif;
+        font-size: 0.85rem;
+        color: #707070;
+    }
+    #address .basket .transportPrice i{
+        font-size: 1.1rem;
+        color: #ab0112;
+    }
+    #address .basket .itemListCart .listCartImg img{
+        width: 100%;
+    }
+    #address .basket .itemListCart .listTitle{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 0.95rem;
+        color: #707070;
+    }
+    #address .basket .itemListCart .itemContent .offKala{
+        font-family: iranyekanwebmedium, sans-serif;
+        font-size: 1.1rem;
+    }
+    #address .basket .itemListCart .itemContent .listOption{
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+    #address .basket .itemListCart .itemContent .listOption .price{
+        font-family: iranyekanwebbold, sans-serif;
+        color: #181818;
+        font-size: 1.4rem;
+    }
+    #address .basket .itemListCart .numKala{
+        height: 25px;
+        width: 130px;
+    }
+    #address .basket .itemListCart .numKala input{
+        height: 100%;
+    }
+    #address .basket .itemListCart .numKala .input-group{
+        height: 25px;
+    }
+    #address .basket .itemListCart .numKala .input-group-btn{
+        display: inline-block;
+        height: 100%;
+    }
+    #address .basket .itemListCart .numKala .input-group-btn button{
+        border-radius: 0;
+        line-height: 1;
+        height: 100%;
+    }
+    #address .basket .itemListCart .badge{
+        color: #707070;
+        font-size: 0.85rem;
+        font-family: IRANYekanLight, sans-serif;
+    }
+    #address .basket .itemListCart .removeKala{
+        background-color: transparent;
+        color: #777;
+        font-size: 0.95rem;
+        border: 1px solid #7777;
+    }
+    #address .basket .itemListCart .itemContent .removeKala:hover{
+        color: #ab0112;
+        border-color: #ab0112;
+    }
+    #address .basket .itemListCart .itemContent .removeKala:focus{
+        outline: none;
+    }
+    #address .basket .itemListCart .CommentOption{
+        color: #707070;
+        font-size: 0.9rem;
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+    #address .basket .itemListCart:before{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background:url("../images/icon/productTopIcon.png") no-repeat 0 0;
+        top: 0;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    #address .basket .itemListCart:after{
+        content: "";
+        width: 100%;
+        height: 60px;
+        background:url("../images/icon/productSubIcon.png") no-repeat 0 0;
+        bottom: -35px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    #address #article .cartStrip .titleIconBasket {
+        font-size: 0.85rem;
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        top: 0.7rem;
+        right: -35px;
+        display: block;
+        color: #7474ff;
+        background: #ffffff;
+        border-radius: 10%;
+        padding: 1px;
+        text-align: center;
+        border: 1px solid #e5e5e9;
+        box-shadow: 0 0 0 2px #ffffff;
+    }
+}
+
+
 
 /********Cart Strip********/
 @media {
@@ -74,7 +195,7 @@ footer,.bg-footer{
     #address #article .cartStrip .titleIcon{
         font-size: 0.85rem;
         position: absolute;
-        top: 0.65rem;
+        top: 0;
         display: block;
         color: #7474ff;
         background: #ffffff;
@@ -245,7 +366,13 @@ footer,.bg-footer{
     #address #article .factorSection .detail{
         font-family: iranyekanwebbold, sans-serif;
     }
-
+    #address #article .feedBackFactor{
+        color: #212529;
+    }
+    #address #article .feedBackFactor:hover{
+        color: #212529;
+        font-size: 0.85rem;
+    }
 }
 
 /******** Reserve Card ********/
@@ -325,6 +452,15 @@ footer,.bg-footer{
     #address #article .reserve .bgTitle{
         height: 59px;
     }
+    #address .basket .reserve .title {
+        margin-top: -63px;
+    }
+    #address .basket .reserve .bgTitle{
+        height: 59px;
+    }
+    #address #article .cartStrip .titleIconBasket {
+        right: -32px;
+    }
 }
 
 /* Medium devices (tablets, Max width 768px) */
@@ -337,13 +473,32 @@ footer,.bg-footer{
         line-height: 27px;
     }
     #address #article .cartStrip .titleIcon{
-        right: -25px;
+        right: -31px;
         width: 16px;
         height: 16px;
         line-height: 10px;
     }
     #address .addressOption {
         border-radius: 10px;
+    }
+    /******** itemListCart ********/
+    #address .basket .itemListCart .listTitle{
+        font-size: 1.2rem;
+    }
+    #address .basket .itemListCart .itemContent .offKala{
+        font-size: 1.1rem;
+    }
+    #address .basket .itemListCart .itemContent .listOption .price{
+        font-size: 1.4rem;
+    }
+    #address .basket .itemListCart .badge{
+        font-size: 0.9rem;
+    }
+    #address .basket .itemListCart .removeKala{
+        font-size: 1rem;
+    }
+    #address .basket .itemListCart .CommentOption{
+        font-size: 1rem;
     }
 }
 
@@ -357,7 +512,7 @@ footer,.bg-footer{
         line-height: 32px;
     }
     #address #article .cartStrip .titleIcon{
-        right: -26px;
+        right: -35px;
         width: 19px;
         height: 19px;
         line-height: 10px;
@@ -403,11 +558,9 @@ footer,.bg-footer{
     #address #article .attention{
         font-size: 1rem;
     }
-
     .addressOption .nav a {
         font-size: 0.83rem;
     }
-
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -423,12 +576,24 @@ footer,.bg-footer{
     #address #article .reserve .title {
         margin-top: -68px;
     }
+    #address .basket .itemListCart .numKala{
+        height: 28px;
+    }
+    #address .basket .itemListCart .numKala .input-group{
+        height: 28px;
+    }
+    #address #article .cartStrip .titleIconBasket {
+        right: -38px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #address #article .reserve .bgTitle {
         height: 64px;
+    }
+    #address #article .cartStrip .titleIconBasket {
+        right: -40px;
     }
 }
 

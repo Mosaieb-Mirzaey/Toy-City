@@ -1,338 +1,338 @@
-a{
-    color: white;
-}
-a:hover{
-    color: greenyellow;
-}
-.basket{
-    background-color: #edf8fa;
-}
-#address .basket .list{
-    background-color: #ffffff;
-}
+/*a{*/
+/*    color: white;*/
+/*}*/
+/*a:hover{*/
+/*    color: greenyellow;*/
+/*}*/
+/* {*/
+/*    background-color: #edf8fa;*/
+/*}*/
+/*  .list{*/
+/*    background-color: #ffffff;*/
+/*}*/
 
-/********Cart Strip********/
-@media {
-    #address .basket .cartStrip .line-icon{
-        position: absolute;
-        top: -30px;
-        display: block;
-        color: #7474ff;
-        background: #ffffff;
-        border-radius: 50%;
-        text-align: center;
-        border: 1px solid #e5e5e9;
-        box-shadow: 0 0 0 2px #ffffff;
-    }
-    #address .basket .cartStrip .line-iconEnd{
-        position: absolute;
-        bottom: -0.7rem;
-        right: -7px;
-        display: block;
-        width: 15px;
-        height: 15px;
-        background-color: white;
-        border-radius: 50%;
-        border: 1px solid #e5e5e9;
-        box-shadow: 0 0 0 2px #ffffff;
-    }
-    #address .basket .cartStrip h6{
-        font-family: "IRANYekanExtraBold", sans-serif;
-        color: #424242;
-        font-size: 1.2rem;
-    }
-    #address .basket .cartStrip p,
-    #address .basket .cartStrip ul li{
-        font-size: 0.9rem;
-        margin-bottom: 0;
-    }
-    #address .basket .cartStrip:before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 3px;
-        background: #ffffff;
-        top: -0.8rem;
-        bottom: 9px;
-        margin-left: 26px;
-        right: -1px;
-    }
-    /*#address .basket .cartStrip .titleIcon{*/
-    /*    font-size: 0.9rem;*/
-    /*    position: absolute;*/
-    /*    top: 0.65rem;*/
-    /*    display: block;*/
-    /*    color: #7474ff;*/
-    /*    background: #ffffff;*/
-    /*    border-radius: 10%;*/
-    /*    padding: 3px;*/
-    /*    text-align: center;*/
-    /*    border: 1px solid #e5e5e9;*/
-    /*    box-shadow: 0 0 0 2px #ffffff;*/
-    /*}*/
-}
+/*!********Cart Strip********!*/
+/*@media {*/
+/*      .cartStrip .line-icon{*/
+/*        position: absolute;*/
+/*        top: -30px;*/
+/*        display: block;*/
+/*        color: #7474ff;*/
+/*        background: #ffffff;*/
+/*        border-radius: 50%;*/
+/*        text-align: center;*/
+/*        border: 1px solid #e5e5e9;*/
+/*        box-shadow: 0 0 0 2px #ffffff;*/
+/*    }*/
+/*      .cartStrip .line-iconEnd{*/
+/*        position: absolute;*/
+/*        bottom: -0.7rem;*/
+/*        right: -7px;*/
+/*        display: block;*/
+/*        width: 15px;*/
+/*        height: 15px;*/
+/*        background-color: white;*/
+/*        border-radius: 50%;*/
+/*        border: 1px solid #e5e5e9;*/
+/*        box-shadow: 0 0 0 2px #ffffff;*/
+/*    }*/
+/*      .cartStrip h6{*/
+/*        font-family: "IRANYekanExtraBold", sans-serif;*/
+/*        color: #424242;*/
+/*        font-size: 1.2rem;*/
+/*    }*/
+/*      .cartStrip p,*/
+/*      .cartStrip ul li{*/
+/*        font-size: 0.9rem;*/
+/*        margin-bottom: 0;*/
+/*    }*/
+/*      .cartStrip:before {*/
+/*        content: '';*/
+/*        position: absolute;*/
+/*        display: block;*/
+/*        width: 3px;*/
+/*        background: #ffffff;*/
+/*        top: -0.8rem;*/
+/*        bottom: 9px;*/
+/*        margin-left: 26px;*/
+/*        right: -1px;*/
+/*    }*/
+/*      .cartStrip .titleIcon{*/
+/*        font-size: 0.9rem;*/
+/*        position: absolute;*/
+/*        top: 0.65rem;*/
+/*        display: block;*/
+/*        color: #7474ff;*/
+/*        background: #ffffff;*/
+/*        border-radius: 10%;*/
+/*        padding: 3px;*/
+/*        text-align: center;*/
+/*        border: 1px solid #e5e5e9;*/
+/*        box-shadow: 0 0 0 2px #ffffff;*/
+/*    }*/
+/*}*/
 
-/********basket List********/
-@media {
-    #address .basket .transportPrice{
-        font-family: iranyekanwebmedium, sans-serif;
-        font-size: 0.85rem;
-        color: #707070;
-    }
-    #address .basket .transportPrice i{
-        font-size: 1.1rem;
-        color: #ab0112;
-    }
-    #address .basket .itemListCart .listCartImg img{
-        width: 100%;
-    }
-    #address .basket .itemListCart .listTitle{
-        font-family: "IRANYekanExtraBold", sans-serif;
-        font-size: 0.95rem;
-        color: #707070;
-    }
-    #address .basket .itemListCart .itemContent .offKala{
-        font-family: iranyekanwebmedium, sans-serif;
-        font-size: 1.1rem;
-    }
-    #address .basket .itemListCart .itemContent .listOption{
-        font-family: iranyekanwebmedium, sans-serif;
-    }
-    #address .basket .itemListCart .itemContent .listOption .price{
-        font-family: iranyekanwebbold, sans-serif;
-        color: #181818;
-        font-size: 1.4rem;
-    }
-    #address .basket .itemListCart .numKala{
-        height: 25px;
-        width: 130px;
-    }
-    #address .basket .itemListCart .numKala input{
-       height: 100%;
-    }
-    #address .basket .itemListCart .numKala .input-group{
-        height: 25px;
-    }
-    #address .basket .itemListCart .numKala .input-group-btn{
-        display: inline-block;
-        height: 100%;
-    }
-    #address .basket .itemListCart .numKala .input-group-btn button{
-        border-radius: 0;
-        line-height: 1;
-        height: 100%;
-    }
-    #address .basket .itemListCart .badge{
-        color: #707070;
-        font-size: 0.85rem;
-        font-family: IRANYekanLight, sans-serif;
-    }
-    #address .basket .itemListCart .removeKala{
-        background-color: transparent;
-        color: #777;
-        font-size: 0.95rem;
-        border: 1px solid #7777;
-    }
-    #address .basket .itemListCart .itemContent .removeKala:hover{
-        color: #ab0112;
-        border-color: #ab0112;
-    }
-    #address .basket .itemListCart .itemContent .removeKala:focus{
-        outline: none;
-    }
-    #address .basket .itemListCart .CommentOption{
-        color: #707070;
-        font-size: 0.9rem;
-        font-family: iranyekanwebmedium, sans-serif;
-    }
-    #address .basket .itemListCart:before{
-        content: "";
-        width: 100%;
-        height: 30px;
-        background:url("../images/icon/productTopIcon.png") no-repeat 0 0;
-        top: 0;
-        right: 0;
-        position: absolute;
-        display: inline-block;
-    }
-    #address .basket .itemListCart:after{
-        content: "";
-        width: 100%;
-        height: 60px;
-        background:url("../images/icon/productSubIcon.png") no-repeat 0 0;
-        bottom: -35px;
-        right: 0;
-        position: absolute;
-        display: inline-block;
-    }
-}
+/*!********basket List********!*/
+/*@media {*/
+/*      .transportPrice{*/
+/*        font-family: iranyekanwebmedium, sans-serif;*/
+/*        font-size: 0.85rem;*/
+/*        color: #707070;*/
+/*    }*/
+/*      .transportPrice i{*/
+/*        font-size: 1.1rem;*/
+/*        color: #ab0112;*/
+/*    }*/
+/*      .itemListCart .listCartImg img{*/
+/*        width: 100%;*/
+/*    }*/
+/*      .itemListCart .listTitle{*/
+/*        font-family: "IRANYekanExtraBold", sans-serif;*/
+/*        font-size: 0.95rem;*/
+/*        color: #707070;*/
+/*    }*/
+/*      .itemListCart .itemContent .offKala{*/
+/*        font-family: iranyekanwebmedium, sans-serif;*/
+/*        font-size: 1.1rem;*/
+/*    }*/
+/*      .itemListCart .itemContent .listOption{*/
+/*        font-family: iranyekanwebmedium, sans-serif;*/
+/*    }*/
+/*      .itemListCart .itemContent .listOption .price{*/
+/*        font-family: iranyekanwebbold, sans-serif;*/
+/*        color: #181818;*/
+/*        font-size: 1.4rem;*/
+/*    }*/
+/*      .itemListCart .numKala{*/
+/*        height: 25px;*/
+/*        width: 130px;*/
+/*    }*/
+/*      .itemListCart .numKala input{*/
+/*       height: 100%;*/
+/*    }*/
+/*      .itemListCart .numKala .input-group{*/
+/*        height: 25px;*/
+/*    }*/
+/*      .itemListCart .numKala .input-group-btn{*/
+/*        display: inline-block;*/
+/*        height: 100%;*/
+/*    }*/
+/*      .itemListCart .numKala .input-group-btn button{*/
+/*        border-radius: 0;*/
+/*        line-height: 1;*/
+/*        height: 100%;*/
+/*    }*/
+/*      .itemListCart .badge{*/
+/*        color: #707070;*/
+/*        font-size: 0.85rem;*/
+/*        font-family: IRANYekanLight, sans-serif;*/
+/*    }*/
+/*      .itemListCart .removeKala{*/
+/*        background-color: transparent;*/
+/*        color: #777;*/
+/*        font-size: 0.95rem;*/
+/*        border: 1px solid #7777;*/
+/*    }*/
+/*      .itemListCart .itemContent .removeKala:hover{*/
+/*        color: #ab0112;*/
+/*        border-color: #ab0112;*/
+/*    }*/
+/*      .itemListCart .itemContent .removeKala:focus{*/
+/*        outline: none;*/
+/*    }*/
+/*      .itemListCart .CommentOption{*/
+/*        color: #707070;*/
+/*        font-size: 0.9rem;*/
+/*        font-family: iranyekanwebmedium, sans-serif;*/
+/*    }*/
+/*      .itemListCart:before{*/
+/*        content: "";*/
+/*        width: 100%;*/
+/*        height: 30px;*/
+/*        background:url("../images/icon/productTopIcon.png") no-repeat 0 0;*/
+/*        top: 0;*/
+/*        right: 0;*/
+/*        position: absolute;*/
+/*        display: inline-block;*/
+/*    }*/
+/*      .itemListCart:after{*/
+/*        content: "";*/
+/*        width: 100%;*/
+/*        height: 60px;*/
+/*        background:url("../images/icon/productSubIcon.png") no-repeat 0 0;*/
+/*        bottom: -35px;*/
+/*        right: 0;*/
+/*        position: absolute;*/
+/*        display: inline-block;*/
+/*    }*/
+/*}*/
 
-/******** Reserve Card ********/
-@media {
-    #address .basket .bgCard{
-        background-color: #ffffff;
-        font-family: iranyekanwebbold, sans-serif;
-    }
-    #address .basket .reserve .bgTitle{
-        margin-top: -75px;
-        height: 52px;
-    }
-    #address .basket .reserve .costOfRent{
-        font-size: 1.3rem;
-    }
-    #address .basket .reserve .costOfRent h6{
-        font-size: 1.3rem;
-    }
-    #address .basket .reserve .price{
-        color: #777;
-        font-size: 0.85rem;
-    }
-    #address .basket .reserve .title{
-        font-family: "IRANYekanExtraBold", sans-serif;
-        color: white;
-        margin-top: -58px;
-    }
-    #address .basket .reserve .cost{
-        margin-top: 8px;
-        font-size: 0.85rem;
-    }
-    #address .basket .reserve .transportPrice{
-        color: #777;
-        font-size: 0.8rem;
-    }
-    #address .basket .reserve .transportPrice i{
-        font-size: 0.95rem;
-        color: rgba(217, 0, 22, 0.8);
-    }
+/*!******** Reserve Card ********!*/
+/*@media {*/
+/*      .bgCard{*/
+/*        background-color: #ffffff;*/
+/*        font-family: iranyekanwebbold, sans-serif;*/
+/*    }*/
+/*      .reserve .bgTitle{*/
+/*        margin-top: -75px;*/
+/*        height: 52px;*/
+/*    }*/
+/*      .reserve .costOfRent{*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+/*      .reserve .costOfRent h6{*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+/*      .reserve .price{*/
+/*        color: #777;*/
+/*        font-size: 0.85rem;*/
+/*    }*/
+/*      .reserve .title{*/
+/*        font-family: "IRANYekanExtraBold", sans-serif;*/
+/*        color: white;*/
+/*        margin-top: -58px;*/
+/*    }*/
+/*      .reserve .cost{*/
+/*        margin-top: 8px;*/
+/*        font-size: 0.85rem;*/
+/*    }*/
+/*      .reserve .transportPrice{*/
+/*        color: #777;*/
+/*        font-size: 0.8rem;*/
+/*    }*/
+/*      .reserve .transportPrice i{*/
+/*        font-size: 0.95rem;*/
+/*        color: rgba(217, 0, 22, 0.8);*/
+/*    }*/
 
-    #address .basket .reserveBtn button{
-        border-radius: 0;
-        font-size: 0.9rem;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-    #address .basket .attention{
-        font-size: 0.8rem;
-        color: #777777;
-    }
+/*      .reserveBtn button{*/
+/*        border-radius: 0;*/
+/*        font-size: 0.9rem;*/
+/*        padding-top: 12px;*/
+/*        padding-bottom: 12px;*/
+/*    }*/
+/*      .attention{*/
+/*        font-size: 0.8rem;*/
+/*        color: #777777;*/
+/*    }*/
 
-}
+/*}*/
 
-/* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+/*!* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* *!*/
 
-/* Mobile devices (mobile, Max width 576px) */
-@media (max-width: 576px) {
+/*!* Mobile devices (mobile, Max width 576px) *!*/
+/*@media (max-width: 576px) {*/
 
-}
+/*}*/
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    #address .basket .reserve .title {
-        margin-top: -63px;
-    }
-    #address .basket .reserve .bgTitle{
-        height: 59px;
-    }
-}
+/*!* Small devices (landscape phones, 576px and up) *!*/
+/*@media (min-width: 576px) {*/
+/*      .reserve .title {*/
+/*        margin-top: -63px;*/
+/*    }*/
+/*      .reserve .bgTitle{*/
+/*        height: 59px;*/
+/*    }*/
+/*}*/
 
-/* Medium devices (tablets, Max width 768px) */
-@media (max-width: 768px) {
-    /******** cartStrip ********/
-    #address .basket .cartStrip .line-icon {
-        right: -1rem;
-        width: 26px;
-        height: 26px;
-        line-height: 27px;
-    }
-    #address .basket .cartStrip .titleIcon{
-        right: -25px;
-        width: 16px;
-        height: 16px;
-        line-height: 10px;
-    }
-    /******** itemListCart ********/
-    #address .basket .itemListCart .listTitle{
-        font-size: 1.2rem;
-    }
-    #address .basket .itemListCart .itemContent .offKala{
-        font-size: 1.1rem;
-    }
-    #address .basket .itemListCart .itemContent .listOption .price{
-        font-size: 1.4rem;
-    }
-    #address .basket .itemListCart .badge{
-        font-size: 0.9rem;
-    }
-    #address .basket .itemListCart .removeKala{
-        font-size: 1rem;
-    }
-    #address .basket .itemListCart .CommentOption{
-        font-size: 1rem;
-    }
-}
+/*!* Medium devices (tablets, Max width 768px) *!*/
+/*@media (max-width: 768px) {*/
+/*    !******** cartStrip ********!*/
+/*      .cartStrip .line-icon {*/
+/*        right: -1rem;*/
+/*        width: 26px;*/
+/*        height: 26px;*/
+/*        line-height: 27px;*/
+/*    }*/
+/*      .cartStrip .titleIcon{*/
+/*        right: -25px;*/
+/*        width: 16px;*/
+/*        height: 16px;*/
+/*        line-height: 10px;*/
+/*    }*/
+/*    !******** itemListCart ********!*/
+/*      .itemListCart .listTitle{*/
+/*        font-size: 1.2rem;*/
+/*    }*/
+/*      .itemListCart .itemContent .offKala{*/
+/*        font-size: 1.1rem;*/
+/*    }*/
+/*      .itemListCart .itemContent .listOption .price{*/
+/*        font-size: 1.4rem;*/
+/*    }*/
+/*      .itemListCart .badge{*/
+/*        font-size: 0.9rem;*/
+/*    }*/
+/*      .itemListCart .removeKala{*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*      .itemListCart .CommentOption{*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*}*/
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    /******** cartStrip ********/
-    #address .basket .cartStrip .line-icon{
-        right: -1rem;
-        width: 30px;
-        height: 30px;
-        line-height: 32px;
-    }
-    #address .basket .cartStrip .titleIcon{
-        right: -26px;
-        width: 19px;
-        height: 19px;
-        line-height: 14px;
-    }
-    #address .basket .reserve .bgTitle{
-        height: 65px;
-    }
-}
+/*!* Medium devices (tablets, 768px and up) *!*/
+/*@media (min-width: 768px) {*/
+/*    !******** cartStrip ********!*/
+/*      .cartStrip .line-icon{*/
+/*        right: -1rem;*/
+/*        width: 30px;*/
+/*        height: 30px;*/
+/*        line-height: 32px;*/
+/*    }*/
+/*      .cartStrip .titleIcon{*/
+/*        right: -26px;*/
+/*        width: 19px;*/
+/*        height: 19px;*/
+/*        line-height: 14px;*/
+/*    }*/
+/*      .reserve .bgTitle{*/
+/*        height: 65px;*/
+/*    }*/
+/*}*/
 
-/* large devices (tablets, Max width 992px) */
-@media (max-width: 992px){
-    #address .basket .reserve .price{
-        font-size: 1.1rem;
-    }
-    #address .basket .reserve .cost{
-        font-size: 1.1rem;
-    }
-    #address .basket .reserve .transportPrice{
-        font-size: 1rem;
-    }
-    #address .basket .reserve .transportPrice i{
-        font-size: 1.3rem;
-    }
-    #address .basket .reserveBtn button{
-        font-size: 1.3rem;
-    }
-    #address .basket .attention{
-        font-size: 1rem;
-    }
+/*!* large devices (tablets, Max width 992px) *!*/
+/*@media (max-width: 992px){*/
+/*      .reserve .price{*/
+/*        font-size: 1.1rem;*/
+/*    }*/
+/*      .reserve .cost{*/
+/*        font-size: 1.1rem;*/
+/*    }*/
+/*      .reserve .transportPrice{*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*      .reserve .transportPrice i{*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+/*      .reserveBtn button{*/
+/*        font-size: 1.3rem;*/
+/*    }*/
+/*      .attention{*/
+/*        font-size: 1rem;*/
+/*    }*/
 
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #address .basket .itemListCart .numKala{
-        height: 28px;
-    }
-    #address .basket .itemListCart .numKala .input-group{
-        height: 28px;
-    }
-    #address .basket .reserve .bgTitle {
-        height: 50px;
-    }
-    #address .basket .reserve .title {
-        margin-top: -68px;
-    }
-}
+/*}*/
+/*!* Large devices (desktops, 992px and up) *!*/
+/*@media (min-width: 992px) {*/
+/*      .itemListCart .numKala{*/
+/*        height: 28px;*/
+/*    }*/
+/*      .itemListCart .numKala .input-group{*/
+/*        height: 28px;*/
+/*    }*/
+/*      .reserve .bgTitle {*/
+/*        height: 50px;*/
+/*    }*/
+/*      .reserve .title {*/
+/*        margin-top: -68px;*/
+/*    }*/
+/*}*/
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    #address .basket .reserve .bgTitle {
-        height: 64px;
-    }
-}
+/*!* Extra large devices (large desktops, 1200px and up) *!*/
+/*@media (min-width: 1200px) {*/
+/*      .reserve .bgTitle {*/
+/*        height: 64px;*/
+/*    }*/
+/*}*/
 

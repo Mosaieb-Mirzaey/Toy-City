@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mosaieb Mirzaey">
+    <title>Toy City</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="../css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+    <link rel="stylesheet" href="../css/magnifier.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comparison.css">
+
+    <style>
+
+    </style>
+</head>
+
+
+<body class="mx-auto">
+<!-- header -->
+<header id="header" class="position-relative">
+    <nav class="d-inline-block mainNav text-white">
+        <div class="d-inline-block ml-auto">
+            <a class="navbar-brand mr-auto d-none d-lg-inline-block" href="#">
+                <img src="../images/Logo/Logo-FA-EN.png" width="140px" alt="">
+            </a>
+        </div>
+        <ul class="mr-md-auto d-inline-block position-absolute">
+            <li class="li-1">
+                <i class="fa fa-cart-arrow-down"></i>
+                <a class="navLink text-dark" href="#">سبد خرید</a>
+            </li>
+            <li class="li-2">
+                <i class="fa fa-heart"></i>
+                <a class=" navLink" href="#">علاقه مندی ها</a>
+            </li>
+            <li class="li-3">
+                <i class="fa fa-sign-in"></i>
+                <a class=" navLink" href="#">ورود / عضویت</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="searchNav position-relative">
+    <div class="mainNav d-flex justify-content-between align-items-center px-4 position-relative">
+        <div class="toggleParent p-2 d-lg-none" onclick="navbarBtn(this)">
+            <span class="toggle"><i class="fa fa-bars text-white"></i></span>
+        </div>
+        <form class="d-none d-lg-flex justify-content-center my-auto">
+            <input class=" mr-2" type="search" placeholder="جستجو در عاموتویز" aria-label="Search">
+            <a class="my-2 my-sm-0 px-3 position-relative" type="submit">
+                <i class="fa fa-search text-white position-absolute"></i>
+            </a>
+        </form>
+        <div class="d-inline-block">
+            <a class="navbar-brand mr-auto d-inline-block d-lg-none" href="#">
+                <img src="../images/Logo/Logo-mobile.png" width="110px" alt="">
+            </a>
+        </div>
+        <a class="searchToggle my-2 my-sm-0 px-3 d-lg-none" type="submit">
+            <i class="fa fa-search text-white position-absolute" onclick="mobileSearch(this)"></i>
+        </a>
+        <a href="#" class="suggested my-auto d-flex align-items-center text-black-50">
+            <img src="../images/icon/offer-small.png" alt="">
+        </a>
+    </div>
+    <div class="bgSearchMobile deactivate p-2">
+        <form class="searchMobile d-flex w-100 justify-content-center align-items-center my-auto">
+            <input class="w-75" type="search" placeholder="جستجوی کلیدواژه" aria-label="Search">
+            <a class="searchBtn text-white d-flex align-items-center justify-content-center" type="submit">
+                <span class="mb-1">جستجو</span>
+            </a>
+        </form>
+    </div>
+</section>
+
+
+<!--NavSlide-->
+<section class="navSlide">
+    <div class="categoryMobile p-3 d-lg-none position-absolute deactivate">
+        <ul class="m-0 p-0">
+            <li class="cat-1">
+                <a class="" href="#">
+                    <img src="../images/icon/nav-Preschool.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-2">
+                <a class="" href="#">
+                    <img src="../images/icon/nav-Soft%20toys.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-3">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Arts-and-crafts.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-4">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Build-It.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-5">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Dolls.jpg" alt="toys-icon">
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <img src="../images/icon/nav-Vehicles.jpg" alt="toys-icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="category mb-2 d-none d-lg-block">
+        <ul class="mx-auto mb-0">
+            <li class="cat-1 active">
+                <a class="" href="#">
+                    <i><img src="../images/icon/toys.png" alt="toys-icon"></i>
+                    اسباب بازی
+                </a>
+            </li>
+            <li class="cat-2 bg-success">
+                <a class="" href="#">
+                    <i><img src="../images/icon/Dolls.png" alt="toys-icon"></i>
+                    عروسک
+                </a>
+            </li>
+            <li class="cat-3 bg-secondary">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/babyStroller.png" alt="toys-icon"></i>
+                    سیسمونی
+                </a>
+            </li>
+            <li class="cat-4 bg-danger">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/birthday.png" alt="toys-icon"></i>
+                    تولد
+                </a>
+            </li>
+            <li class="cat-5 bg-info">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/stationery.png" alt="toys-icon"></i>
+                    لوازم تحریر
+                </a>
+            </li>
+            <li class="cat-6">
+                <a class="disabled" href="#">
+                    <i><img src="../images/icon/book.png" alt="toys-icon"></i>
+                    کتاب و فرهنگ
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--Article-->
+<section id="comparisonPage" class="pt-2">
+
+    <!--General Information-->
+    <section Id="generalInfo" class="mb-4">
+        <div class="container my-5">
+            <div class="addressBar d-none d-lg-block">
+                <div class="row my-2 mx-lg-5">
+                    <div class="col-9 px-0 position-relative">
+                        <img src="../images/icon/addressBar.png" alt="" class="w-100 addressBarImg">
+                        <p class="textAddressBar">
+                            <a href="">خانه</a>
+                            <span><img src="../images/icon/chervon1.svg" alt="chevron" style="transform: rotate(90deg)"></span>
+                            <a href="">صفحه مقایسه محصولات</a>
+                            <span><img src="../images/icon/chervon1.svg" alt="chevron" style="transform: rotate(90deg)"></span>
+                            <a style="color: #666">لیست مقایسه اسکوتر</a>
+                    </div>
+                    <div class="col-2 px-0 position-relative">
+                        <img src="../images/icon/backToList.png" alt="" class="w-100 addressBarImg">
+                        <p class="textAddressBar" onmouseenter="addressBarHoverIn(this)" onmouseleave="addressBarHoverOut(this)">
+                            <a class="mr-3 linkBtn" href="">صفحه محصولات</a>
+                            <span><img src="../images/icon/chervon1.svg" alt="chevron" style="transform: rotate(90deg)"></span>
+                        </p>
+                    </div>
+                    <div class="col-1 px-0 position-relative">
+                        <img src="../images/icon/basket.png" data-address=this alt="" class="w-100 addressBarImg">
+                        <p class="textAddressBar" onmouseenter="addressBarHoverIn(this)" onmouseleave="addressBarHoverOut(this)">
+                            <a href="" class="linkBtn">سبد خرید</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section Id="cardShow">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="tab-content tab-pane px-4 py-4">
+                        <div class="border p-3 bg-white">
+                            <div class="kala d-flex flex-column align-items-center">
+                                <div><img src="../images/product/ferrari-foldable-led-twist-scooter-red-comparison.jpg" alt=""></div>
+                                <p>اسکوتر فراری جم شو <span>مدل G5</span></p>
+                                <p style="color: #ab0112">50,000 تومان</p>
+                                <a href="#" class="btnShop p-2 text-center">مشاهده و خرید محصول</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tab-content tab-pane px-4 py-4">
+                        <div class="border p-3 bg-white">
+                            <div class="kala d-flex flex-column align-items-center">
+                                <div><img src="../images/product/ferrari-foldable-led-twist-scooter-red-comparison.jpg" alt=""></div>
+                                <p>اسکوتر فراری جم شو <span>مدل G5</span></p>
+                                <p style="color: #ab0112">50,000 تومان</p>
+                                <a href="#" class="btnShop p-2 text-center">مشاهده و خرید محصول</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="tab-content tab-pane px-4 py-4">
+                        <div class="addKala p-3 bg-white">
+                            <div class="kala d-flex flex-column align-items-center">
+                                <p class="m-0 ">افزودن کالا به لیست مقایسه</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  Tab Product  -->
+    <section id="tabProduct" class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <ul class="nav nav-pills pr-0 d-flex justify-content-around">
+                        <li class="active position-relative">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../images/icon/tabProduct.png" alt="tabProductIcon">
+                                <a class="p-2">مقایسه</a>
+                            </div>
+                        </li>
+                        <li class="active position-relative">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../images/icon/tabProduct.png" alt="tabProductIcon">
+                                <a class="p-2">مقایسه</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-6 col-lg-4">
+                    <div class="tab-content">
+                        <div id="ProductComparison1" class="tab-pane fade px-4 active show">
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <p class="tabTitr">کلاس وزنی:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">سنگین</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabTitr">وزن:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">1850 گرم</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabTitr">ویژگی های خاص:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">مجهز به ترمز , دارای کمک فنر</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabTitr">ساختار بدنه:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">اسکلت بدنه فلزی + روکش و دسته ها از جنس پلاستیک</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-lg-4">
+                    <div class="tab-content">
+                        <div id="ProductComparison2" class="tab-pane fade px-4 active show">
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <p class="tabTitr">کلاس وزنی:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">سبک</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabTitr">وزن:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">1850 گرم</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabTitr">ویژگی های خاص:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">مجهز به ترمز , دارای کمک فنر</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabTitr">ساختار بدنه:</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="tabText">اسکلت بدنه فلزی + روکش و دسته ها از جنس پلاستیک</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-4">
+                    <img src="../images/Banner/productBanner.png" alt="product Banner">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+
+
+<!--Footer & contact me-->
+<footer id="footer" class="footer text-light text-justify">
+    <div class="bg-footer">
+        <div class="container-fluid pl-2">
+            <div class="row">
+                <div class="col-12 d-lg-none px-2 mb-3 mb-lg-0">
+                    <div class="contact position-relative d-flex flex-column align-items-center">
+                        <div class="triangle position-relative">
+                            <img class="titleTriangle w-100 h-100" src="../images/Banner/footer-Titel.png" alt="">
+                            <div class="title w-100 h-100 d-flex justify-content-center">
+                                <h3 class="mb-0">با ما همراه باشید...</h3>
+                            </div>
+                        </div>
+                        <div class="link my-2">
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/twitter.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/faceBook.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/instagram.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img class="linkPic" src="../images/icon/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <h3 class="mb-1 pb-1 ">عاموتویز</h3>
+                    <p class="mb-5">
+                        فروشگاه آنلاین اسباب بازی
+                    </p>
+                    <h3 class="mb-2">تماس با ما</h3>
+                    <h6>09355250000 - 09355250000</h6>
+                    <img src="../images/Logo/symbolOfTrust1.png" class="trustSymbol mb-lg-2 mt-4 mt-lg-0 d-none d-lg-block" alt="symbol Of Trust">
+                </div>
+                <div class="col-8 col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 px-2">
+                            <h3>دسترسی سریع</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">ثبت نام</a>
+                                </li>
+                                <li>
+                                    <a href="#">سوالات متداول</a>
+                                </li>
+                                <li>
+                                    <a href="#">حقوق کاربران</a>
+                                </li>
+                                <li>
+                                    <a href="#">قوانین سایت</a>
+                                </li>
+                                <li>
+                                    <a href="#">قواعد بازپرداخت وجه</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-3 px-2">
+                            <h3 class="">خدمات مشتریان</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">وبلاگ عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">درباره عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">نحوه کار عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری با عاموتویز</a>
+                                </li>
+                                <li>
+                                    <a href="#">همکاری سازمانی</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-5 px-2 mb-3 mb-lg-0">
+                            <div class="contact position-relative d-none d-lg-flex flex-column align-items-center">
+                                <div class="triangle position-relative">
+                                    <img class="titleTriangle w-100 h-100" src="../images/Banner/footer-Titel.png" alt="">
+                                    <div class="title w-100 h-100 d-flex justify-content-center">
+                                        <h3 class="mb-0">با ما همراه باشید...</h3>
+                                    </div>
+                                </div>
+                                <div class="link my-2">
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/twitter.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/faceBook.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/instagram.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img class="linkPic" src="../images/icon/youtube.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="mailbox mb-4">
+                                    <p class="mt-4">
+                                        عضویت در خبرنامه
+                                    </p>
+                                    <form class="mail" method="post">
+                                        <input class="border-0" type="email" name="email" placeholder="ایمیل خود را وارد کنید">
+                                        <button class="border-0 bg-primary" type="submit">عضویت</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="mr-md-5 p-2 mb-0">از مطالب این وب‌سایت فقط می‌توانید برای مقاصد غیرتجاری و با ذکر منبع استفاده کنید. تمامی حقوق این وب‌سایت به عاموتویز تعلق دارد.</p>
+    </div>
+</footer>
+
+
+<a href="#header" id="go-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+<script src="../js/lightbox-plus-jquery.min.js"></script>
+<script src="../js/jquery-3.5.1.slim.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-slider.min.js"></script>
+<script src="../js/event.js"></script>
+<script src="../js/magnifier.js"></script>
+<script src="../js/smooth-scroll.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/main-slider.js"></script>
+<script src="../js/scripts.js"></script>
+<script src="../js/product.js"></script>
+

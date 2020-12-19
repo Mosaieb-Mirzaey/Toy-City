@@ -1,0 +1,161 @@
+a{
+    color: #666;
+}
+a:hover{
+    font-size: 0.81rem;
+}
+
+/*<--cardShow-->*/
+@media {
+    #comparisonPage #cardShow .btnShop{
+        background-color: #ab0112;
+        color: white;
+        font-family: iranyekanwebbold, sans-serif;
+    }
+    #comparisonPage #cardShow .addKala{
+        border: 2px dashed red;
+    }
+}
+
+/*<--Tab Product-->*/
+@media {
+     #comparisonPage{
+        background-color: #edf8fa;
+    }
+     #comparisonPage .addressBar .addressBarImg{
+        height: 35px;
+    }
+     #comparisonPage .addressBar .textAddressBar{
+        margin-right: 16px;
+        margin-top: -29px;
+    }
+     #comparisonPage .addressBar .textAddressBar .linkBtn{
+        font-size: 0.77rem;
+    }
+    #comparisonPage #tabProduct{
+        padding-bottom: 50px;
+    }
+     #comparisonPage #tabProduct .nav .active a{
+        color: white;
+    }
+     #comparisonPage #tabProduct .nav li a{
+        font-family: iranyekanwebbold, sans-serif;
+         position: relative;
+         margin-top: -35px;
+         z-index: 1;
+    }
+     #comparisonPage #tabProduct .nav li img{
+         width: 7rem;
+         z-index: 0;
+     }
+     #comparisonPage #tabProduct .tab-pane{
+        position: relative;
+        background-color: white;
+        padding: 20px;
+    }
+     #comparisonPage #tabProduct .tab-pane:before{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background:url("../images/icon/productTopIcon.png") no-repeat 0 0;
+        top: 0;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+     #comparisonPage #tabProduct .tab-pane:after{
+        content: "";
+        width: 100%;
+        height: 60px;
+        background:url("../images/icon/productSubIcon.png") no-repeat 0 0;
+        bottom: -35px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+     #comparisonPage #tabProduct .descriptionTitle{
+        font-family: IRANYekanExtraBold, sans-serif;
+        font-size: 1rem;
+        color: #565656;
+    }
+     #comparisonPage #tabProduct .descriptionContent{
+        font-family: iranyekanwebbold, sans-serif;
+        font-size: 0.85rem;
+        color: #565656;
+        line-height: 27px;
+    }
+    #comparisonPage #tabProduct .tabTitr{
+        background-color: #bcbcbc;
+        padding: 6px;
+    }
+     #comparisonPage #tabProduct .tabText{
+        padding: 4px;
+    }
+     #comparisonPage #tabProduct #UserComments .userOpinion{
+        font-family: "IRANYekanExtraBold", sans-serif;
+        font-size: 0.85rem;
+        color: #707070;
+    }
+     #comparisonPage #tabProduct #UserComments .opinion .badge{
+        color: #707070;
+        font-size: 0.7rem;
+        font-family: IRANYekanLight, sans-serif;
+    }
+     #comparisonPage #tabProduct #UserComments .CommentOption{
+        color: #707070;
+        font-size: 0.8rem;
+        font-family: iranyekanwebmedium, sans-serif;
+    }
+     #comparisonPage #tabProduct #UserComments .opinion .advice{
+        display: block;
+        width: fit-content;
+        font-family: IRANYekanLight, sans-serif;
+        font-size: 0.8rem;
+        background-color: #f1feff;
+        border: 1px solid #c2f2f7;
+        color: #1599a9;
+        padding: 7px 10px 7px 12px;
+        margin: 5px 2px 15px 2px;
+    }
+}
+
+
+
+/* *-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* */
+
+/* Mobile devices (mobile, Max width 576px) */
+@media (max-width: 576px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+}
+
+/* Medium devices (tablets, Max width 768px) */
+@media (max-width: 768px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* large devices (tablets, Max width 992px) */
+@media (max-width: 992px){
+    #tabProduct .nav a {
+        font-size: 0.83rem;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
